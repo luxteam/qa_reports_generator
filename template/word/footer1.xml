@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:ftr xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
+  xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex"
+  xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex"
+  xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex"
+  xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex"
+  xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex"
+  xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex"
+  xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex"
+  xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex"
+  xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink"
+  xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:oel="http://schemas.microsoft.com/office/2019/extlst"
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+  xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
+  xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+  xmlns:w10="urn:schemas-microsoft-com:office:word"
+  xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+  xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+  xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml"
+  xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex"
+  xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid"
+  xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml"
+  xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash"
+  xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex"
+  xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
+  xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk"
+  xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
+  xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+  mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh wp14">
+  <w:p w14:paraId="209FB684" w14:textId="56A296B1" w:rsidR="001266FA" w:rsidRPr="004667F2"
+    w:rsidRDefault="001266FA" w:rsidP="00C46BF7">
+    <w:pPr>
+      <w:pStyle w:val="a5" />
+      <w:tabs>
+        <w:tab w:val="clear" w:pos="9355" />
+        <w:tab w:val="right" w:pos="8640" />
+      </w:tabs>
+      <w:ind w:right="-723" />
+      <w:rPr>
+        <w:sz w:val="18" />
+        <w:szCs w:val="18" />
+        <w:lang w:val="en-US" />
+      </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="00F3662C">
+      <w:rPr>
+        <w:b />
+        <w:noProof />
+        <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+        <w:sz w:val="19" />
+        <w:szCs w:val="19" />
+        <w:lang w:val="en-US" w:eastAsia="en-US" />
+      </w:rPr>
+      <mc:AlternateContent>
+        <mc:Choice Requires="wps">
+          <w:drawing>
+            <wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0"
+              relativeHeight="251660800" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1"
+              wp14:anchorId="2D7E194B" wp14:editId="0EA9CB13">
+              <wp:simplePos x="0" y="0" />
+              <wp:positionH relativeFrom="column">
+                <wp:posOffset>-5080</wp:posOffset>
+              </wp:positionH>
+              <wp:positionV relativeFrom="paragraph">
+                <wp:posOffset>-6985</wp:posOffset>
+              </wp:positionV>
+              <wp:extent cx="6027420" cy="0" />
+              <wp:effectExtent l="0" t="0" r="0" b="0" />
+              <wp:wrapNone />
+              <wp:docPr id="15" name="Straight Connector 15" />
+              <wp:cNvGraphicFramePr />
+              <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+                <a:graphicData
+                  uri="http://schemas.microsoft.com/office/word/2010/wordprocessingShape">
+                  <wps:wsp>
+                    <wps:cNvCnPr />
+                    <wps:spPr>
+                      <a:xfrm>
+                        <a:off x="0" y="0" />
+                        <a:ext cx="6027420" cy="0" />
+                      </a:xfrm>
+                      <a:prstGeom prst="line">
+                        <a:avLst />
+                      </a:prstGeom>
+                      <a:ln>
+                        <a:solidFill>
+                          <a:srgbClr val="5080BC" />
+                        </a:solidFill>
+                      </a:ln>
+                      <a:effectLst />
+                    </wps:spPr>
+                    <wps:style>
+                      <a:lnRef idx="2">
+                        <a:schemeClr val="accent1" />
+                      </a:lnRef>
+                      <a:fillRef idx="0">
+                        <a:schemeClr val="accent1" />
+                      </a:fillRef>
+                      <a:effectRef idx="1">
+                        <a:schemeClr val="accent1" />
+                      </a:effectRef>
+                      <a:fontRef idx="minor">
+                        <a:schemeClr val="tx1" />
+                      </a:fontRef>
+                    </wps:style>
+                    <wps:bodyPr />
+                  </wps:wsp>
+                </a:graphicData>
+              </a:graphic>
+              <wp14:sizeRelH relativeFrom="margin">
+                <wp14:pctWidth>0</wp14:pctWidth>
+              </wp14:sizeRelH>
+            </wp:anchor>
+          </w:drawing>
+        </mc:Choice>
+        <mc:Fallback>
+          <w:pict>
+            <v:line w14:anchorId="280F564F" id="Straight Connector 15" o:spid="_x0000_s1026"
+              style="position:absolute;z-index:251660800;visibility:visible;mso-wrap-style:square;mso-width-percent:0;mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;mso-position-horizontal-relative:text;mso-position-vertical:absolute;mso-position-vertical-relative:text;mso-width-percent:0;mso-width-relative:margin"
+              from="-.4pt,-.55pt" to="474.2pt,-.55pt"
+              o:gfxdata="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&#xA;AAAAPAUAAAAA&#xA;"
+              strokecolor="#5080bc" strokeweight=".85pt" />
+          </w:pict>
+        </mc:Fallback>
+      </mc:AlternateContent>
+    </w:r>
+    <w:r w:rsidRPr="00F3662C">
+      <w:rPr>
+        <w:b />
+        <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+        <w:sz w:val="18" />
+        <w:szCs w:val="18" />
+        <w:lang w:val="en-US" />
+      </w:rPr>
+      <w:t>Prepared by</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C46BF7">
+      <w:rPr>
+        <w:sz w:val="18" />
+        <w:szCs w:val="18" />
+        <w:lang w:val="en-US" />
+      </w:rPr>
+      <w:t xml:space="preserve">: QA Team, </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F3662C">
+      <w:rPr>
+        <w:b />
+        <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+        <w:sz w:val="18" />
+        <w:szCs w:val="18" />
+        <w:lang w:val="en-US" />
+      </w:rPr>
+      <w:t>Report Period</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C46BF7">
+      <w:rPr>
+        <w:sz w:val="18" />
+        <w:szCs w:val="18" />
+        <w:lang w:val="en-US" />
+      </w:rPr>
+      <w:t xml:space="preserve">: </w:t>
+    </w:r>
+    <w:r>
+      <w:rPr>
+        <w:sz w:val="18" />
+        <w:szCs w:val="18" />
+        <w:lang w:val="en-US" />
+      </w:rPr>
+      <w:t id="REPORT_PERIOD">07-October-2022 - 20-October-2022</w:t>
+    </w:r>
+    <w:sdt>
+      <w:sdtPr>
+        <w:rPr>
+          <w:b />
+        </w:rPr>
+        <w:id w:val="-1414009724" />
+        <w:docPartObj>
+          <w:docPartGallery w:val="Page Numbers (Top of Page)" />
+          <w:docPartUnique />
+        </w:docPartObj>
+      </w:sdtPr>
+      <w:sdtEndPr>
+        <w:rPr>
+          <w:noProof />
+        </w:rPr>
+      </w:sdtEndPr>
+      <w:sdtContent>
+        <w:r w:rsidRPr="00BE3FEF">
+          <w:rPr>
+            <w:b />
+            <w:lang w:val="en-US" />
+          </w:rPr>
+          <w:t xml:space="preserve">  </w:t>
+        </w:r>
+        <w:r w:rsidRPr="00BE3FEF">
+          <w:rPr>
+            <w:b />
+            <w:lang w:val="en-US" />
+          </w:rPr>
+          <w:tab />
+        </w:r>
+        <w:r w:rsidRPr="00BE3FEF">
+          <w:rPr>
+            <w:b />
+            <w:lang w:val="en-US" />
+          </w:rPr>
+          <w:tab />
+        </w:r>
+        <w:r w:rsidRPr="00C537BB">
+          <w:rPr>
+            <w:b />
+            <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+          </w:rPr>
+          <w:fldChar w:fldCharType="begin" />
+        </w:r>
+        <w:r w:rsidRPr="00C537BB">
+          <w:rPr>
+            <w:b />
+            <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+            <w:lang w:val="en-US" />
+          </w:rPr>
+          <w:instrText xml:space="preserve"> PAGE   \* MERGEFORMAT </w:instrText>
+        </w:r>
+        <w:r w:rsidRPr="00C537BB">
+          <w:rPr>
+            <w:b />
+            <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+          </w:rPr>
+          <w:fldChar w:fldCharType="separate" />
+        </w:r>
+        <w:r w:rsidR="00420396">
+          <w:rPr>
+            <w:b />
+            <w:noProof />
+            <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+            <w:lang w:val="en-US" />
+          </w:rPr>
+          <w:t>10</w:t>
+        </w:r>
+        <w:r w:rsidRPr="00C537BB">
+          <w:rPr>
+            <w:b />
+            <w:noProof />
+            <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+          </w:rPr>
+          <w:fldChar w:fldCharType="end" />
+        </w:r>
+      </w:sdtContent>
+    </w:sdt>
+  </w:p>
+</w:ftr>
