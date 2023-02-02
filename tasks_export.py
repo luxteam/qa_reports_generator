@@ -112,6 +112,8 @@ def get_tasks():
     new_projects_info = _get_projects_info(report_date=last_thursday)
 
     # combine info
+    # filter previous week tasks (only completed)
+
     all_projects_info = deepcopy(new_projects_info)
 
     for project in old_projects_info:
@@ -119,7 +121,7 @@ def get_tasks():
         new_tasks = set([task["description"] for task in all_project_info])
 
         for task in old_projects_info[project]:
-            if task["description"] not in new_tasks:
+            if task['status'] == "complete" and task["description"] not in new_tasks:
                 all_project_info.append(task)
 
     return all_projects_info
