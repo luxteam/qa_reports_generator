@@ -2,6 +2,7 @@ import os
 from datetime import datetime, timedelta
 from atlassian import Jira
 from common import Projects
+import json
 import urllib
 
 JIRA_URL = os.getenv("JIRA_URL", "https://amdrender.atlassian.net/")
@@ -59,8 +60,8 @@ def get_bugs():
         issues = jira_instance.jql(jql_request)
         count = issues["total"]
 
-        link = urllib.parse.quote(
-            "https://amdrender.atlassian.net/issues/?jql=project = {project} AND issuetype = Bug AND created >= {from_date} AND created <= {to_date} ORDER BY created DESC".format(
+        link = "https://amdrender.atlassian.net/issues/?jql=" + urllib.parse.quote(
+            "project = {project} AND issuetype = Bug AND created >= {from_date} AND created <= {to_date} ORDER BY created DESC".format(
                 from_date=(datetime.now() - timedelta(weeks=2)).strftime("%Y-%m-%d"),
                 to_date=datetime.now().strftime("%Y-%m-%d"),
                 project=project_jira_name,
@@ -70,3 +71,16 @@ def get_bugs():
         new_bugs[project] = {"count": int(count), "link": link}
 
     return new_bugs
+
+
+if __name__ == "__main__":
+    print("Bugs: ")
+    bugs = get_bugs()
+    for project in projects_jira_names:
+        print(projects_jira_names[project] + ": ")
+        print(json.dumps(bugs[project], indent=4))
+
+    print("Blockers:")
+    blockers = get_blockers()
+    for blocker in blockers:
+        print(json.dumps(blocker, indent=4))
