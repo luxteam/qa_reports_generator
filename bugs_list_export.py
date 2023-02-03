@@ -62,8 +62,8 @@ def get_bugs(report_date: datetime):
 
         link = "https://amdrender.atlassian.net/issues/?jql=" + urllib.parse.quote(
             "project = {project} AND issuetype = Bug AND created >= {from_date} AND created <= {to_date} ORDER BY created DESC".format(
-                from_date=(datetime.now() - timedelta(weeks=2)).strftime("%Y-%m-%d"),
-                to_date=datetime.now().strftime("%Y-%m-%d"),
+                from_date=(report_date - timedelta(weeks=2)).strftime("%Y-%m-%d"),
+                to_date=report_date.strftime("%Y-%m-%d"),
                 project=project_jira_name,
             )
         )
@@ -75,7 +75,7 @@ def get_bugs(report_date: datetime):
 
 if __name__ == "__main__":
     print("Bugs: ")
-    bugs = get_bugs()
+    bugs = get_bugs(datetime.today())
     for project in projects_jira_names:
         print(projects_jira_names[project] + ": ")
         print(json.dumps(bugs[project], indent=4))
