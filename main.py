@@ -40,7 +40,7 @@ def append_bullet_list_element_after(
 def add_blocker_bullet_list_element(
     element: etree.Element, link: Link, description: str
 ) -> etree.Element:
-    content = ("[", link, "]", description)
+    content = ("[", link, "]", word.create_whitespace(), description)
     bullet = word.create_bullet(list_id=9, lvl=1, content=content)
 
     # append this bullet element after provided
