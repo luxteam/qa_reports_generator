@@ -3206,29 +3206,7 @@
         </w:rPr>
         <w:t>- last known good build in Jenkins</w:t>
       </w:r>
-    </w:p>
-    <w:p w14:paraId="3FBDA6A2" w14:textId="6E479AEA" w:rsidR="009E00CF" w:rsidRDefault="009E00CF">
-      <w:pPr>
-        <w:spacing w:before="0" w:after="0" />
-        <w:contextualSpacing />
-        <w:rPr>
-          <w:rFonts w:cs="Open Sans" />
-          <w:b />
-          <w:color w:val="404040" w:themeColor="text1" w:themeTint="BF" />
-          <w:sz w:val="18" />
-          <w:szCs w:val="18" />
-          <w:lang w:val="en-US" />
-        </w:rPr>
-      </w:pPr>
       <w:r>
-        <w:rPr>
-          <w:rFonts w:cs="Open Sans" />
-          <w:b />
-          <w:color w:val="404040" w:themeColor="text1" w:themeTint="BF" />
-          <w:sz w:val="18" />
-          <w:szCs w:val="18" />
-          <w:lang w:val="en-US" />
-        </w:rPr>
         <w:br w:type="page" />
       </w:r>
     </w:p>
