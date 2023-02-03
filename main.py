@@ -277,7 +277,7 @@ def main():
     prepare_working_directory()
 
     # eval report dates
-    report_date = datetime.today()
+    report_date = datetime.today() - timedelta(days=1)
     report_start_date = report_date - timedelta(weeks=2)
 
     # load document.xml (main xml file)
@@ -351,7 +351,7 @@ def main():
     ###############################################################
     # update bugs links
 
-    projects_bugs = get_bugs()
+    projects_bugs = get_bugs(report_date)
 
     for project in projects_bugs:
         link_id = ids.BUGS_LINK_ID[project]
