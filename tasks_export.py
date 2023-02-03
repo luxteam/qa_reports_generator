@@ -100,10 +100,9 @@ def get_main_tasks(projects_info):
     return main_tasks
 
 
-def get_tasks():
-    today = datetime.today()
-    offset = (today.weekday() - THURSDAY) % 7
-    last_thursday = today - timedelta(days=offset)
+def get_tasks(report_date: datetime):
+    offset = (report_date.weekday() - THURSDAY) % 7
+    last_thursday = report_date - timedelta(days=offset)
 
     previous_thursday = last_thursday - timedelta(weeks=1)
 
@@ -121,7 +120,7 @@ def get_tasks():
         new_tasks = set([task["description"] for task in all_project_info])
 
         for task in old_projects_info[project]:
-            if task['status'] == "complete" and task["description"] not in new_tasks:
+            if task["status"] == "complete" and task["description"] not in new_tasks:
                 all_project_info.append(task)
 
     return all_projects_info

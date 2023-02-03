@@ -310,7 +310,7 @@ def main():
     ###############################################################
     # import tasks
 
-    projects_tasks = get_tasks()
+    projects_tasks = get_tasks(report_date)
 
     for project in ids.TASK_LISTS_ID:
         tasks = projects_tasks[project]
