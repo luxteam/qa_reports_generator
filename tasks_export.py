@@ -129,7 +129,7 @@ def get_tasks(report_date: datetime):
 if __name__ == "__main__":
     # Tasks
     print("Tasks:")
-    tasks = get_tasks()
+    tasks = get_tasks(datetime.today())
     for project in projects_confluence_names:
         print(projects_confluence_names[project] + ":")
         print(json.dumps(tasks[project], indent=4))

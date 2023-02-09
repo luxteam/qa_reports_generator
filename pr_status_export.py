@@ -11,6 +11,10 @@ projects_info = {
         "owner": "GPUOpen-LibrariesAndSDKs",
         "name": "RadeonProRenderMayaPlugin",
     },
+    Projects.MAYA_USD: {
+        "owner": "GPUOpen-LibrariesAndSDKs",
+        "name": "RadeonProRenderMayaUSD",
+    },
     Projects.BLENDER_RPR: {
         "owner": "GPUOpen-LibrariesAndSDKs",
         "name": "RadeonProRenderBlenderAddon",
@@ -82,3 +86,15 @@ def get_pull_requests_status(project: Projects):
         )
 
     return pr_data
+
+
+if __name__ == "__main__":
+    for project in projects_info:
+        print(projects_info[project]["name"] + ":")
+        prs = get_pull_requests_status(project)
+        for pr in prs:
+            print(
+                "\tTitle: '{title}', URL: '{url}', State: '{status}'".format(
+                    title=pr["link"].text, url=pr["link"].url, status=pr["status"]
+                )
+            )

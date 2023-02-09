@@ -25,6 +25,7 @@ class Projects(Enum):
     USD_VIEWER_INVENTOR = 10
     ANARI = 11
     BLENDER_HIP = 12
+    WML = 13
 
 
 class ChartType(Enum):

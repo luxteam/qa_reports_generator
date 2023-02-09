@@ -18,7 +18,7 @@ from common import (
 from tasks_export import get_tasks, get_main_tasks
 from bugs_list_export import get_blockers, get_bugs
 from pr_status_export import get_pull_requests_status
-from jenkins_export import get_latest_build_data
+from jenkins_export import get_latest_build_data, get_wml_report_link
 from charts_export import export_charts
 import word
 
@@ -277,7 +277,7 @@ def main():
     prepare_working_directory()
 
     # eval report dates
-    report_date = datetime.today()
+    report_date = datetime.today() - timedelta(days=1)
     report_start_date = report_date - timedelta(weeks=2) + timedelta(days=1)
 
     # load document.xml (main xml file)
@@ -295,8 +295,15 @@ def main():
     # update projects status table
 
     for project in Projects:
-        build_data = get_latest_build_data(project)
-        fill_build_status_table(tree, project, build_data)
+        if project != Projects.WML:
+            build_data = get_latest_build_data(project)
+            fill_build_status_table(tree, project, build_data)
+
+    # WML link should be placed on the project page instead of projects table
+    wml_report_link = get_wml_report_link()
+    word.update_link(
+        tree, link_id=ids.WML_BUILD_LINK, url=wml_report_link, text="Weekly report"
+    )
 
     ###############################################################
     # update PRs status tables

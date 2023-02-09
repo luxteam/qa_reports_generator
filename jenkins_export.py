@@ -5,6 +5,7 @@ from requests.auth import HTTPBasicAuth
 from bs4 import BeautifulSoup
 from typing import Dict
 import json
+from urllib.parse import urljoin
 
 from common import Projects
 
@@ -94,6 +95,15 @@ def get_latest_build_data(project: Projects) -> dict:
     return results
 
 
+def get_wml_report_link():
+    project_path = "job/WML-Weekly"
+    latest_build = _get_latest_build(project_path)
+    return urljoin(latest_build["lastBuild"]["url"], "allure")
+
+
 if __name__ == "__main__":
     for key in PROJECT_TO_JOB_MAPPING.keys():
         print(json.dumps(get_latest_build_data(key), indent=4))
+
+    print("WML :))))))))")
+    print("Report link: {link}".format(link=get_wml_report_link()))
