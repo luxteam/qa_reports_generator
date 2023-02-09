@@ -79,6 +79,8 @@ def fill_pr_table(tree: etree.Element, project: Projects, data: List):
         cells = table_rows[row_num].findall("./{*}tc")
 
         word.set_table_cell_value(cells[0], row_data["link"])
+        if row_data["status"] == "Closed":
+            word.set_table_cell_value(cells[1], "Approved by QA")
         word.set_table_cell_value(cells[2], row_data["status"])
 
 
