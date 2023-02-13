@@ -1738,10 +1738,16 @@
           <w:tcPr>
             <w:tcW w:w="2977" w:type="dxa" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="1281E262" w14:textId="293705B7">
             <w:pPr>
               <w:pStyle w:val="QAReportTablesText" />
+              <w:rPr>
+                <w:highlight w:val="yellow" />
+              </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:t>Waiting for the new PRs</w:t>
+            </w:r>
           </w:p>
         </w:tc>
       </w:tr>
@@ -1828,9 +1834,8 @@
               <w:bottom w:w="100" w:type="dxa" />
               <w:right w:w="100" w:type="dxa" />
             </w:tcMar>
-            <w:vAlign w:val="center" />
           </w:tcPr>
-          <w:p w14:paraId="53F1B238" w14:textId="77777777">
+          <w:p w14:paraId="4FBD6728" w14:textId="77777777">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -1839,7 +1844,7 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:b />
                 <w:bCs />
-                <w:color w:val="FF0000" />
+                <w:color w:val="92D050" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
@@ -1848,10 +1853,10 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:b />
                 <w:bCs />
-                <w:color w:val="FF0000" />
+                <w:color w:val="92D050" />
                 <w:szCs w:val="19" />
               </w:rPr>
-              <w:t>Failed</w:t>
+              <w:t>Stable</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -1859,10 +1864,16 @@
           <w:tcPr>
             <w:tcW w:w="2977" w:type="dxa" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="1281E262" w14:textId="293705B7">
             <w:pPr>
               <w:pStyle w:val="QAReportTablesText" />
+              <w:rPr>
+                <w:highlight w:val="yellow" />
+              </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:t>Waiting for the new PRs</w:t>
+            </w:r>
           </w:p>
         </w:tc>
       </w:tr>
@@ -1948,9 +1959,8 @@
               <w:bottom w:w="100" w:type="dxa" />
               <w:right w:w="100" w:type="dxa" />
             </w:tcMar>
-            <w:vAlign w:val="center" />
           </w:tcPr>
-          <w:p w14:paraId="222BFEC5" w14:textId="77777777">
+          <w:p w14:paraId="4FBD6728" w14:textId="77777777">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -1959,7 +1969,7 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:b />
                 <w:bCs />
-                <w:color w:val="E36C0A" w:themeColor="accent6" w:themeShade="BF" />
+                <w:color w:val="92D050" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
@@ -1968,10 +1978,10 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:b />
                 <w:bCs />
-                <w:color w:val="E36C0A" w:themeColor="accent6" w:themeShade="BF" />
+                <w:color w:val="92D050" />
                 <w:szCs w:val="19" />
               </w:rPr>
-              <w:t>Unstable</w:t>
+              <w:t>Stable</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -1979,10 +1989,16 @@
           <w:tcPr>
             <w:tcW w:w="2977" w:type="dxa" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="1281E262" w14:textId="293705B7">
             <w:pPr>
               <w:pStyle w:val="QAReportTablesText" />
+              <w:rPr>
+                <w:highlight w:val="yellow" />
+              </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:t>Waiting for the new PRs</w:t>
+            </w:r>
           </w:p>
         </w:tc>
       </w:tr>
@@ -2069,7 +2085,7 @@
               <w:right w:w="100" w:type="dxa" />
             </w:tcMar>
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="4FBD6728" w14:textId="77777777">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -2078,17 +2094,27 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:b />
                 <w:bCs />
-                <w:color w:val="auto" />
+                <w:color w:val="92D050" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:b />
+                <w:bCs />
+                <w:color w:val="92D050" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+              <w:t>Stable</w:t>
+            </w:r>
           </w:p>
         </w:tc>
         <w:tc>
           <w:tcPr>
             <w:tcW w:w="2977" w:type="dxa" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="665D53BC" w14:textId="3B8D721C">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -2096,8 +2122,16 @@
               <w:rPr>
                 <w:rFonts w:cs="Open Sans" />
                 <w:szCs w:val="19" />
+                <w:highlight w:val="yellow" />
               </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+              <w:t xml:space="preserve">Waiting for USD Hydra integration</w:t>
+            </w:r>
           </w:p>
         </w:tc>
       </w:tr>
@@ -2183,7 +2217,7 @@
             </w:tcMar>
             <w:vAlign w:val="center" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="53F1B238" w14:textId="77777777">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -2192,17 +2226,27 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:b />
                 <w:bCs />
-                <w:color w:val="auto" />
+                <w:color w:val="FF0000" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:b />
+                <w:bCs />
+                <w:color w:val="FF0000" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+              <w:t>Failed</w:t>
+            </w:r>
           </w:p>
         </w:tc>
         <w:tc>
           <w:tcPr>
             <w:tcW w:w="2977" w:type="dxa" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="4FC059FD" w14:textId="1032292F">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -2212,6 +2256,18 @@
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
+            <w:hyperlink r:id="rId_comment_Render_Studio" w:history="1">
+              <w:r>
+                <w:rPr>
+                  <w:rStyle w:val="Hyperlink" />
+                  <w:rFonts w:cs="Open Sans" />
+                  <w:szCs w:val="19" />
+                  <w:lang w:val="ru-RU" />
+                  <w:rStyle w:val="ab" />
+                </w:rPr>
+                <w:t>Blocker issues</w:t>
+              </w:r>
+            </w:hyperlink>
           </w:p>
         </w:tc>
       </w:tr>
@@ -2298,7 +2354,7 @@
             </w:tcMar>
             <w:vAlign w:val="center" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="222BFEC5" w14:textId="77777777">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -2307,17 +2363,27 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:b />
                 <w:bCs />
-                <w:color w:val="auto" />
+                <w:color w:val="E36C0A" w:themeColor="accent6" w:themeShade="BF" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:b />
+                <w:bCs />
+                <w:color w:val="E36C0A" w:themeColor="accent6" w:themeShade="BF" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+              <w:t>Unstable</w:t>
+            </w:r>
           </w:p>
         </w:tc>
         <w:tc>
           <w:tcPr>
             <w:tcW w:w="2977" w:type="dxa" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="176DFB79" w14:textId="741B9000">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -2327,6 +2393,18 @@
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
+            <w:hyperlink r:id="rId_comment_Houdini" w:history="1">
+              <w:r>
+                <w:rPr>
+                  <w:rStyle w:val="Hyperlink" />
+                  <w:rFonts w:cs="Open Sans" />
+                  <w:szCs w:val="19" />
+                  <w:lang w:val="ru-RU" />
+                  <w:rStyle w:val="ab" />
+                </w:rPr>
+                <w:t>Critical issues</w:t>
+              </w:r>
+            </w:hyperlink>
           </w:p>
         </w:tc>
       </w:tr>
@@ -2413,7 +2491,7 @@
             </w:tcMar>
             <w:vAlign w:val="center" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="222BFEC5" w14:textId="77777777">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -2422,17 +2500,27 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:b />
                 <w:bCs />
-                <w:color w:val="auto" />
+                <w:color w:val="E36C0A" w:themeColor="accent6" w:themeShade="BF" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:b />
+                <w:bCs />
+                <w:color w:val="E36C0A" w:themeColor="accent6" w:themeShade="BF" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+              <w:t>Unstable</w:t>
+            </w:r>
           </w:p>
         </w:tc>
         <w:tc>
           <w:tcPr>
             <w:tcW w:w="2977" w:type="dxa" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="6954E28E" w14:textId="27B2E83A">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -2442,6 +2530,18 @@
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
+            <w:hyperlink r:id="rId_comment_hdRPR" w:history="1">
+              <w:r>
+                <w:rPr>
+                  <w:rStyle w:val="Hyperlink" />
+                  <w:rFonts w:cs="Open Sans" />
+                  <w:szCs w:val="19" />
+                  <w:lang w:val="ru-RU" />
+                  <w:rStyle w:val="ab" />
+                </w:rPr>
+                <w:t>Critical issues</w:t>
+              </w:r>
+            </w:hyperlink>
           </w:p>
         </w:tc>
       </w:tr>
@@ -2524,9 +2624,8 @@
               <w:bottom w:w="100" w:type="dxa" />
               <w:right w:w="100" w:type="dxa" />
             </w:tcMar>
-            <w:vAlign w:val="center" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="4FBD6728" w14:textId="77777777">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -2535,17 +2634,27 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:b />
                 <w:bCs />
-                <w:color w:val="auto" />
+                <w:color w:val="92D050" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:b />
+                <w:bCs />
+                <w:color w:val="92D050" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+              <w:t>Stable</w:t>
+            </w:r>
           </w:p>
         </w:tc>
         <w:tc>
           <w:tcPr>
             <w:tcW w:w="2977" w:type="dxa" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="413E0CC9" w14:textId="4B6B11C4">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -2555,6 +2664,14 @@
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+                <w:lang w:val="ru-RU" />
+              </w:rPr>
+              <w:t>Automation in progress</w:t>
+            </w:r>
           </w:p>
         </w:tc>
       </w:tr>
@@ -2638,7 +2755,7 @@
             </w:tcMar>
             <w:vAlign w:val="center" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="1EA2FD0B" w14:textId="59A2C8E1">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -2647,17 +2764,25 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:b />
                 <w:bCs />
-                <w:color w:val="auto" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:b />
+                <w:bCs />
+                <w:szCs w:val="19" />
+              </w:rPr>
+              <w:t>On hold</w:t>
+            </w:r>
           </w:p>
         </w:tc>
         <w:tc>
           <w:tcPr>
             <w:tcW w:w="2977" w:type="dxa" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="2AC57D14" w14:textId="63DFFC56">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -2667,6 +2792,13 @@
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+              <w:t>Waiting for the new PRs</w:t>
+            </w:r>
           </w:p>
         </w:tc>
       </w:tr>
@@ -2750,7 +2882,7 @@
             </w:tcMar>
             <w:vAlign w:val="center" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="1EA2FD0B" w14:textId="59A2C8E1">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -2759,17 +2891,25 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:b />
                 <w:bCs />
-                <w:color w:val="auto" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:b />
+                <w:bCs />
+                <w:szCs w:val="19" />
+              </w:rPr>
+              <w:t>On hold</w:t>
+            </w:r>
           </w:p>
         </w:tc>
         <w:tc>
           <w:tcPr>
             <w:tcW w:w="2977" w:type="dxa" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="2AC57D14" w14:textId="63DFFC56">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -2779,6 +2919,13 @@
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+              <w:t>Waiting for the new PRs</w:t>
+            </w:r>
           </w:p>
         </w:tc>
       </w:tr>
@@ -2864,7 +3011,7 @@
             </w:tcMar>
             <w:vAlign w:val="center" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="1EA2FD0B" w14:textId="59A2C8E1">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -2873,17 +3020,25 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:b />
                 <w:bCs />
-                <w:color w:val="auto" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:b />
+                <w:bCs />
+                <w:szCs w:val="19" />
+              </w:rPr>
+              <w:t>On hold</w:t>
+            </w:r>
           </w:p>
         </w:tc>
         <w:tc>
           <w:tcPr>
             <w:tcW w:w="2977" w:type="dxa" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="2852A365" w14:textId="44D5ECC1">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -2893,6 +3048,14 @@
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+                <w:lang w:val="ru-RU" />
+              </w:rPr>
+              <w:t>Project on hold</w:t>
+            </w:r>
           </w:p>
         </w:tc>
       </w:tr>
@@ -3005,7 +3168,7 @@
           <w:tcPr>
             <w:tcW w:w="2977" w:type="dxa" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="2852A365" w14:textId="44D5ECC1">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -3015,6 +3178,14 @@
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+                <w:lang w:val="ru-RU" />
+              </w:rPr>
+              <w:t>Project on hold</w:t>
+            </w:r>
           </w:p>
         </w:tc>
       </w:tr>

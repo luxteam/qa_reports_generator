@@ -123,4 +123,16 @@
   <Relationship Id="rId30"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/footer"
     Target="footer1.xml" />
+  <Relationship Id="rId_comment_Render_Studio"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+    Target="https://amdrender.atlassian.net/jira/software/c/projects/RPRUS/issues/?jql=project%20IN%20%28%22AMD%20Render%20Studio%22%29%20AND%20type%20%3D%20%22Bug%22%20AND%20status%20IN%20%28%22In%20Progress%22%2C%22In%20Testing%22%2C%22Selected%20for%20Development%22%2C%22To%20Do%22%2C%22Backlog%22%2C%22Blocked%22%2C%22Testing%20%2F%20QA%22%2C%22Waiting%20for%20merge%22%29%20AND%20priority%20IN%20%28%22Blocker%22%29%20ORDER%20BY%20created%20DESC"
+    TargetMode="External" />
+  <Relationship Id="rId_comment_Houdini"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+    Target="https://amdrender.atlassian.net/jira/software/c/projects/RPRUS/issues/?jql=type%20%3D%20%22Bug%22%20AND%20status%20IN%20%28%22In%20Progress%22%2C%22In%20Testing%22%2C%22Selected%20for%20Development%22%2C%22To%20Do%22%2C%22Backlog%22%2C%22Testing%20%2F%20QA%22%29%20AND%20priority%20%3D%20%22Critical%22%20AND%20project%20%3D%20%22RPRHoudini%22%20ORDER%20BY%20created%20DESC"
+    TargetMode="External" />
+  <Relationship Id="rId_comment_hdRPR"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+    Target="https://amdrender.atlassian.net/jira/software/c/projects/RPRUS/issues/?jql=project%20%3D%20%22RPRUS%22%20AND%20type%20%3D%20%22Bug%22%20AND%20status%20IN%20%28%22In%20Progress%22%2C%22In%20Testing%22%2C%22Selected%20for%20Development%22%2C%22To%20Do%22%29%20AND%20priority%20%3D%20%22Critical%22%20ORDER%20BY%20created%20DESC"
+    TargetMode="External" />
 </Relationships>

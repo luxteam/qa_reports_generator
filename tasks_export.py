@@ -89,13 +89,13 @@ def _get_projects_info(report_date: datetime):
     return projects_info
 
 
-def get_main_tasks(projects_info):
-    main_tasks = []
+def get_main_tasks(projects_info) -> set:
+    main_tasks = set()
 
     for project in projects_info:
         for task in projects_info.get(project):
             if task.get("status") == "complete" and task.get("priority") == "high":
-                main_tasks.append(task.get("description"))
+                main_tasks.add(task.get("description"))
 
     return main_tasks
 
