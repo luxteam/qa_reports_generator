@@ -3420,8 +3420,683 @@
         <w:br w:type="page" />
       </w:r>
     </w:p>
-    <w:p w14:paraId="6AC89052" w14:textId="147A0830" w:rsidR="00782A27" w:rsidRPr="00F70BAD"
-      w:rsidRDefault="00F573B9" w:rsidP="00F70BAD">
+
+    <w:br w:type="page"/>
+    
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="9067" w:type="dxa" />
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
+            w:themeShade="D9" />
+          <w:left w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
+            w:themeShade="D9" />
+          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
+            w:themeShade="D9" />
+          <w:right w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
+            w:themeShade="D9" />
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
+            w:themeShade="D9" />
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
+            w:themeShade="D9" />
+        </w:tblBorders>
+        <w:tblLook w:val="0600" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0"
+          w:noHBand="1" w:noVBand="1" />
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="2122" />
+        <w:gridCol w:w="3685" />
+        <w:gridCol w:w="3260" />
+      </w:tblGrid>
+      <w:tr w14:paraId="3CD0047F" w14:textId="77777777">
+        <w:trPr>
+          <w:trHeight w:val="262" />
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2122" w:type="dxa" />
+            <w:vMerge w:val="restart" />
+            <w:shd w:val="clear" w:color="auto" w:fill="F2F2F2" w:themeFill="background1"
+              w:themeFillShade="F2" />
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p w14:paraId="3A63BC8D" w14:textId="77777777">
+            <w:pPr>
+              <w:pStyle w:val="Tableheading" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+                <w:szCs w:val="19" />
+                <w:lang w:val="en-US" />
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="004355EF">
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+                <w:szCs w:val="19" />
+                <w:lang w:val="en-US" />
+              </w:rPr>
+              <w:lastRenderedPageBreak />
+              <w:t>Project</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6945" w:type="dxa" />
+            <w:gridSpan w:val="2" />
+            <w:shd w:val="clear" w:color="auto" w:fill="F2F2F2" w:themeFill="background1"
+              w:themeFillShade="F2" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p w14:paraId="1F45335C" w14:textId="77777777">
+            <w:pPr>
+              <w:pStyle w:val="Tableheading" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+                <w:szCs w:val="19" />
+                <w:lang w:val="en-US" />
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+                <w:szCs w:val="19" />
+                <w:lang w:val="en-US" />
+              </w:rPr>
+              <w:t>Updates in 2 weeks</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w14:paraId="2C7FC26D" w14:textId="77777777">
+        <w:trPr>
+          <w:trHeight w:val="262" />
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2122" w:type="dxa" />
+            <w:vMerge />
+            <w:shd w:val="clear" w:color="auto" w:fill="F2F2F2" w:themeFill="background1"
+              w:themeFillShade="F2" />
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p w14:paraId="13495F32" w14:textId="77777777">
+            <w:pPr>
+              <w:pStyle w:val="Tableheading" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+                <w:szCs w:val="19" />
+                <w:lang w:val="en-US" />
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3685" w:type="dxa" />
+            <w:shd w:val="clear" w:color="auto" w:fill="F2F2F2" w:themeFill="background1"
+              w:themeFillShade="F2" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p w14:paraId="00D5B997" w14:textId="77777777">
+            <w:pPr>
+              <w:pStyle w:val="Tableheading" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+                <w:szCs w:val="19" />
+                <w:lang w:val="en-US" />
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+                <w:szCs w:val="19" />
+                <w:lang w:val="en-US" />
+              </w:rPr>
+              <w:t xml:space="preserve">Found issues </w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3260" w:type="dxa" />
+            <w:shd w:val="clear" w:color="auto" w:fill="F2F2F2" w:themeFill="background1"
+              w:themeFillShade="F2" />
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p w14:paraId="223D80B7" w14:textId="77777777">
+            <w:pPr>
+              <w:pStyle w:val="Tableheading" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+                <w:szCs w:val="19" />
+                <w:lang w:val="en-US" />
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+                <w:szCs w:val="19" />
+                <w:lang w:val="en-US" />
+              </w:rPr>
+              <w:t>Merged PRs</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w14:paraId="6247FD83" w14:textId="77777777">
+        <w:trPr>
+          <w:trHeight w:val="70" />
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2122" w:type="dxa" />
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p w14:paraId="3C529BB0" w14:textId="77777777">
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+            <w:hyperlink w:anchor="_Maya_RPR_1" w:history="1">
+              <w:r>
+                <w:rPr>
+                  <w:rStyle w:val="Hyperlink" />
+                  <w:rFonts w:cs="Open Sans" />
+                  <w:szCs w:val="19" />
+                </w:rPr>
+                <w:t>Maya RPR</w:t>
+              </w:r>
+            </w:hyperlink>
+          </w:p>
+        </w:tc>
+        <w:tc id="MAYA_RPR_SUMMARY_TABLE_FOUND_ISSUES">
+          <w:tcPr>
+            <w:tcW w:w="3685" w:type="dxa" />
+            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc id="MAYA_RPR_SUMMARY_TABLE_MERGED_PRS">
+          <w:tcPr>
+            <w:tcW w:w="3685" w:type="dxa" />
+            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w14:paraId="0D7B3188" w14:textId="77777777">
+        <w:trPr>
+          <w:trHeight w:val="205" />
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2122" w:type="dxa" />
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p w14:paraId="7ED587DE" w14:textId="77777777">
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+            <w:hyperlink w:anchor="_Blender_RPR" w:history="1">
+              <w:r>
+                <w:rPr>
+                  <w:rStyle w:val="Hyperlink" />
+                  <w:rFonts w:cs="Open Sans" />
+                  <w:szCs w:val="19" />
+                </w:rPr>
+                <w:t>Blender RPR</w:t>
+              </w:r>
+            </w:hyperlink>
+          </w:p>
+        </w:tc>
+        <w:tc id="BLENDER_RPR_SUMMARY_TABLE_FOUND_ISSUES">
+          <w:tcPr>
+            <w:tcW w:w="3685" w:type="dxa" />
+            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc id="BLENDER_RPR_SUMMARY_TABLE_MERGED_PRS">
+          <w:tcPr>
+            <w:tcW w:w="3685" w:type="dxa" />
+            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w14:paraId="68CC2009" w14:textId="77777777">
+        <w:trPr>
+          <w:trHeight w:val="259" />
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2122" w:type="dxa" />
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p w14:paraId="4A27E5EE" w14:textId="77777777">
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+            <w:hyperlink w:anchor="_Maya_USD" w:history="1">
+              <w:r>
+                <w:rPr>
+                  <w:rStyle w:val="Hyperlink" />
+                  <w:rFonts w:cs="Open Sans" />
+                  <w:szCs w:val="19" />
+                </w:rPr>
+                <w:t>Maya USD</w:t>
+              </w:r>
+            </w:hyperlink>
+          </w:p>
+        </w:tc>
+        <w:tc id="MAYA_USD_SUMMARY_TABLE_FOUND_ISSUES">
+          <w:tcPr>
+            <w:tcW w:w="3685" w:type="dxa" />
+            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc id="MAYA_USD_SUMMARY_TABLE_MERGED_PRS">
+          <w:tcPr>
+            <w:tcW w:w="3685" w:type="dxa" />
+            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w14:paraId="3CDCA41C" w14:textId="77777777">
+        <w:trPr>
+          <w:trHeight w:val="259" />
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2122" w:type="dxa" />
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p w14:paraId="79F5F400" w14:textId="77777777">
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+            <w:hyperlink w:anchor="_Blender_USD" w:history="1">
+              <w:r>
+                <w:rPr>
+                  <w:rStyle w:val="Hyperlink" />
+                  <w:rFonts w:cs="Open Sans" />
+                  <w:szCs w:val="19" />
+                </w:rPr>
+                <w:t>Blender USD</w:t>
+              </w:r>
+            </w:hyperlink>
+          </w:p>
+        </w:tc>
+        <w:tc id="BLENDER_USD_SUMMARY_TABLE_FOUND_ISSUES">
+          <w:tcPr>
+            <w:tcW w:w="3685" w:type="dxa" />
+            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc id="BLENDER_USD_SUMMARY_TABLE_MERGED_PRS">
+          <w:tcPr>
+            <w:tcW w:w="3685" w:type="dxa" />
+            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w14:paraId="482BA62A" w14:textId="77777777">
+        <w:trPr>
+          <w:trHeight w:val="259" />
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2122" w:type="dxa" />
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p w14:paraId="7790894E" w14:textId="77777777">
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+            <w:hyperlink w:anchor="_Render_Studio" w:history="1">
+              <w:r>
+                <w:rPr>
+                  <w:rStyle w:val="Hyperlink" />
+                  <w:szCs w:val="19" />
+                </w:rPr>
+                <w:t>Render Studio</w:t>
+              </w:r>
+            </w:hyperlink>
+          </w:p>
+        </w:tc>
+        <w:tc id="RENDER_STUDIO_SUMMARY_TABLE_FOUND_ISSUES">
+          <w:tcPr>
+            <w:tcW w:w="3685" w:type="dxa" />
+            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc id="RENDER_STUDIO_SUMMARY_TABLE_MERGED_PRS">
+          <w:tcPr>
+            <w:tcW w:w="3685" w:type="dxa" />
+            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w14:paraId="3E27A93A" w14:textId="77777777">
+        <w:trPr>
+          <w:trHeight w:val="259" />
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2122" w:type="dxa" />
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p w14:paraId="4D92871A" w14:textId="77777777">
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+            <w:hyperlink w:anchor="_Houdini" w:history="1">
+              <w:r>
+                <w:rPr>
+                  <w:rStyle w:val="Hyperlink" />
+                  <w:rFonts w:cs="Open Sans" />
+                  <w:szCs w:val="19" />
+                </w:rPr>
+                <w:t>Houdini</w:t>
+              </w:r>
+            </w:hyperlink>
+          </w:p>
+        </w:tc>
+        <w:tc id="HOUDINI_SUMMARY_TABLE_FOUND_ISSUES">
+          <w:tcPr>
+            <w:tcW w:w="3685" w:type="dxa" />
+            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc id="HOUDINI_SUMMARY_TABLE_MERGED_PRS">
+          <w:tcPr>
+            <w:tcW w:w="3685" w:type="dxa" />
+            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+
+    <w:br w:type="page"/>
+
+    <w:p w14:paraId="6AC89052" w14:textId="147A0830">
       <w:pPr>
         <w:pStyle w:val="2" />
         <w:spacing w:line="640" w:lineRule="exact" />
@@ -3550,28 +4225,7 @@
           <w:rFonts w:cs="Open Sans" />
           <w:color w:val="FFFFFF" w:themeColor="background1" />
         </w:rPr>
-        <w:t>Projects</w:t>
-      </w:r>
-      <w:r w:rsidR="00964EFD">
-        <w:rPr>
-          <w:rFonts w:cs="Open Sans" />
-          <w:color w:val="FFFFFF" w:themeColor="background1" />
-        </w:rPr>
-        <w:t xml:space="preserve"> </w:t>
-      </w:r>
-      <w:r w:rsidR="004B226F">
-        <w:rPr>
-          <w:rFonts w:cs="Open Sans" />
-          <w:color w:val="FFFFFF" w:themeColor="background1" />
-        </w:rPr>
-        <w:t>S</w:t>
-      </w:r>
-      <w:r w:rsidR="00964EFD">
-        <w:rPr>
-          <w:rFonts w:cs="Open Sans" />
-          <w:color w:val="FFFFFF" w:themeColor="background1" />
-        </w:rPr>
-        <w:t>tatus</w:t>
+        <w:t>Projects Status</w:t>
       </w:r>
       <w:bookmarkStart w:id="5" w:name="_Maya_RPR" />
       <w:bookmarkEnd w:id="2" />

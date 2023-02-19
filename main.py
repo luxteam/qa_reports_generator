@@ -11,13 +11,14 @@ from common import (
     Projects,
     ChartType,
     TaskType,
+    SummaryTableColumn,
     TEMPLATE_PATH,
     WORKING_DIR_PATH,
     PICTURES_PATH,
 )
 from tasks_export import get_tasks, get_main_tasks
 from bugs_list_export import get_blockers, get_bugs
-from pr_status_export import get_pull_requests_status
+from pr_status_export import get_pull_requests_status, get_merged_prs
 from jenkins_export import get_latest_build_data, get_wml_report_link
 from charts_export import export_charts
 import word
@@ -306,6 +307,39 @@ def main():
     word.update_link(
         tree, link_id=ids.WML_BUILD_LINK, url=wml_report_link, text="Weekly report"
     )
+
+    ###############################################################
+    # update summary table
+
+    # Found issues
+    found_issues = get_bugs(report_date)
+
+    for project in found_issues:
+        table_cell_id = ids.SUMMARY_TABLE[project][SummaryTableColumn.FOUND_ISSUES]
+        table_cell = word.find_by_id(tree, table_cell_id)
+
+        text = "Issues ({amount})".format(
+            amount=found_issues[project]["count"]
+        )
+        url = found_issues[project]["link"]
+
+        word.set_table_cell_value(table_cell, Link(url=url, text=text))
+
+
+    # Merged PRs
+
+    for project in ids.SUMMARY_TABLE:
+        table_cell_id = ids.SUMMARY_TABLE[project][SummaryTableColumn.MERGED_PRS]
+        table_cell = word.find_by_id(tree, table_cell_id)
+
+        merged_prs = get_merged_prs(project, report_date)
+
+        url = merged_prs["link"]
+        text = "PRs ({amount})".format(
+            amount=merged_prs["count"]
+        )
+
+        word.set_table_cell_value(table_cell, Link(url=url, text=text))
 
     ###############################################################
     # update PRs status tables

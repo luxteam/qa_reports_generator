@@ -36,3 +36,7 @@ class ChartType(Enum):
 class TaskType(Enum):
     COMPLETED = 1
     PLANNED = 2
+
+class SummaryTableColumn(Enum):
+    FOUND_ISSUES = 1
+    MERGED_PRS = 2

@@ -101,6 +101,7 @@ def get_main_tasks(projects_info) -> set:
 
 
 def get_tasks(report_date: datetime):
+    report_date -= timedelta(weeks=1)
     offset = (report_date.weekday() - THURSDAY) % 7
     last_thursday = report_date - timedelta(days=offset)
 
@@ -137,7 +138,7 @@ if __name__ == "__main__":
     print("\n\n\n\n")
     # Main Tasks
     print("Main tasks")
-    main_tasks = get_main_tasks(tasks)
+    main_tasks = list(get_main_tasks(tasks))
     for project in projects_confluence_names:
         print(projects_confluence_names[project] + ":")
         print(json.dumps(main_tasks, indent=4))

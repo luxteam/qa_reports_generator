@@ -34,8 +34,7 @@ projects_info = {
 two_weeks_ago = datetime.now() - timedelta(weeks=2)
 now = datetime.now()
 
-
-def get_pull_requests_status(project: Projects):
+def request_pull_requests_list(project: Projects):
     owner = projects_info[project]["owner"]
     name = projects_info[project]["name"]
 
@@ -52,11 +51,6 @@ def get_pull_requests_status(project: Projects):
             (
                 lambda pr: pr["state"] == "open"
                 or (
-                    pr.get("closed_at", None) is not None
-                    and datetime.strptime(pr["closed_at"], "%Y-%m-%dT%H:%M:%SZ")
-                    > two_weeks_ago
-                )
-                or (
                     pr.get("merged_at", None) is not None
                     and datetime.strptime(pr["merged_at"], "%Y-%m-%dT%H:%M:%SZ")
                     > two_weeks_ago
@@ -65,6 +59,11 @@ def get_pull_requests_status(project: Projects):
             data,
         )
     )
+
+    return pull_requests
+
+def get_pull_requests_status(project: Projects):
+    pull_requests = request_pull_requests_list(project)
 
     pr_data = []
     for pull_request in pull_requests:
@@ -88,6 +87,30 @@ def get_pull_requests_status(project: Projects):
     return pr_data
 
 
+def get_merged_prs(project: Projects, report_date: datetime):
+    owner = projects_info[project]["owner"]
+    name = projects_info[project]["name"]
+
+    since_date = report_date - timedelta(weeks=2)
+
+    # prepare url
+    url = "https://github.com/{owner}/{name}/pulls?q=is%3Apr+closed%3A%3E{date}".format(owner=owner, name=name, date=since_date.strftime('%Y-%m-%d'))
+
+    # count prs
+    pull_requests = request_pull_requests_list(project)
+    count = len(list(
+        filter(
+            (
+                lambda pr: pr["state"] == "closed"
+            ),
+            pull_requests,
+        )
+    ))
+
+    return {"link": url, "count": count}
+
+
+
 if __name__ == "__main__":
     for project in projects_info:
         print(projects_info[project]["name"] + ":")
@@ -98,3 +121,4 @@ if __name__ == "__main__":
                     title=pr["link"].text, url=pr["link"].url, status=pr["status"]
                 )
             )
+

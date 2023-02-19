@@ -30,6 +30,7 @@ def find_by_id(tree: etree.Element, id: str):
 
 
 def create_page_break():
+    # <w:br w:type="page"/>
     return etree.Element(etree.QName(W_NS, "br"), {etree.QName(W_NS, "type"): "page"})
 
 
@@ -247,6 +248,8 @@ def adjust_image_size(image_el: etree.Element, image_height: int, image_width: i
 def set_table_cell_value(cell: etree.Element, content: Any):
     # find paragraph inside the cell
     paragraph = cell.find("./{*}p")
+    if paragraph is None:
+        paragraph = etree.SubElement(cell, etree.QName(W_NS, "p"))
 
     append_content(paragraph, content)
 

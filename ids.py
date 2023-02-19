@@ -1,10 +1,38 @@
-from common import Projects, ChartType, TaskType
+from common import Projects, ChartType, TaskType, SummaryTableColumn
 
 MAIN_TASKS_LIST = "MAIN_TASKS_LIST_HEADER"
 
 BLOCKERS_LIST = "BLOCKERS_LIST_HEADER"
 
 WML_BUILD_LINK = "WML_BUILD_LINK"
+
+
+SUMMARY_TABLE = {
+    Projects.MAYA_RPR: {
+        SummaryTableColumn.FOUND_ISSUES : "MAYA_RPR_SUMMARY_TABLE_FOUND_ISSUES",
+        SummaryTableColumn.MERGED_PRS: "MAYA_RPR_SUMMARY_TABLE_MERGED_PRS"
+    },
+    Projects.MAYA_USD: {
+        SummaryTableColumn.FOUND_ISSUES : "MAYA_USD_SUMMARY_TABLE_FOUND_ISSUES",
+        SummaryTableColumn.MERGED_PRS: "MAYA_USD_SUMMARY_TABLE_MERGED_PRS"
+    },
+    Projects.BLENDER_RPR: {
+        SummaryTableColumn.FOUND_ISSUES : "BLENDER_RPR_SUMMARY_TABLE_FOUND_ISSUES",
+        SummaryTableColumn.MERGED_PRS: "BLENDER_RPR_SUMMARY_TABLE_MERGED_PRS"
+    },
+    Projects.BLENDER_USD: {
+        SummaryTableColumn.FOUND_ISSUES : "BLENDER_USD_SUMMARY_TABLE_FOUND_ISSUES",
+        SummaryTableColumn.MERGED_PRS: "BLENDER_USD_SUMMARY_TABLE_MERGED_PRS"
+    },
+    Projects.RENDER_STUDIO: {
+        SummaryTableColumn.FOUND_ISSUES : "RENDER_STUDIO_SUMMARY_TABLE_FOUND_ISSUES",
+        SummaryTableColumn.MERGED_PRS: "RENDER_STUDIO_SUMMARY_TABLE_MERGED_PRS"
+    },
+    Projects.HOUDINI: {
+        SummaryTableColumn.FOUND_ISSUES : "HOUDINI_SUMMARY_TABLE_FOUND_ISSUES",
+        SummaryTableColumn.MERGED_PRS: "HOUDINI_SUMMARY_TABLE_MERGED_PRS"
+    }
+}
 
 BUILD_STATUS_TABLE_ROW = {
     Projects.MAYA_RPR: "MAYA_RPR_BUILD_STATUS_TABLE_ROW",
@@ -177,6 +205,18 @@ IDS = [
     CHART_HEADER_ID[Projects.BLENDER_USD][ChartType.ISSUES_UPDATES_2W],
     CHART_HEADER_ID[Projects.HOUDINI][ChartType.UNRESOLVED_ISSUES],
     CHART_HEADER_ID[Projects.HOUDINI][ChartType.ISSUES_UPDATES_2W],
+    SUMMARY_TABLE[Projects.MAYA_RPR][SummaryTableColumn.FOUND_ISSUES],
+    SUMMARY_TABLE[Projects.MAYA_RPR][SummaryTableColumn.MERGED_PRS],
+    SUMMARY_TABLE[Projects.MAYA_USD][SummaryTableColumn.FOUND_ISSUES],
+    SUMMARY_TABLE[Projects.MAYA_USD][SummaryTableColumn.MERGED_PRS],
+    SUMMARY_TABLE[Projects.BLENDER_RPR][SummaryTableColumn.FOUND_ISSUES],
+    SUMMARY_TABLE[Projects.BLENDER_RPR][SummaryTableColumn.MERGED_PRS],
+    SUMMARY_TABLE[Projects.BLENDER_USD][SummaryTableColumn.FOUND_ISSUES],
+    SUMMARY_TABLE[Projects.BLENDER_USD][SummaryTableColumn.MERGED_PRS],
+    SUMMARY_TABLE[Projects.RENDER_STUDIO][SummaryTableColumn.FOUND_ISSUES],
+    SUMMARY_TABLE[Projects.RENDER_STUDIO][SummaryTableColumn.MERGED_PRS],
+    SUMMARY_TABLE[Projects.HOUDINI][SummaryTableColumn.FOUND_ISSUES],
+    SUMMARY_TABLE[Projects.HOUDINI][SummaryTableColumn.MERGED_PRS]
 ]
 
 REPORT_PERIOD_FIELD_ID = "REPORT_PERIOD"
