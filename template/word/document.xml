@@ -3380,49 +3380,7 @@
         <w:t xml:space="preserve"> or blocker issues</w:t>
       </w:r>
     </w:p>
-    <w:p w14:paraId="05B14283" w14:textId="7136007D" w:rsidR="0055642E" w:rsidRPr="009E00CF"
-      w:rsidRDefault="009B41F8" w:rsidP="00C37545">
-      <w:pPr>
-        <w:pStyle w:val="a9" />
-        <w:numPr>
-          <w:ilvl w:val="0" />
-          <w:numId w:val="6" />
-        </w:numPr>
-        <w:rPr>
-          <w:rFonts w:cs="Open Sans" />
-          <w:color w:val="404040" w:themeColor="text1" w:themeTint="BF" />
-          <w:sz w:val="18" />
-          <w:szCs w:val="18" />
-          <w:lang w:val="en-US" />
-        </w:rPr>
-      </w:pPr>
-      <w:r w:rsidRPr="00A41434">
-        <w:rPr>
-          <w:rFonts w:cs="Open Sans" />
-          <w:b />
-          <w:color w:val="404040" w:themeColor="text1" w:themeTint="BF" />
-          <w:sz w:val="18" />
-          <w:szCs w:val="18" />
-          <w:lang w:val="en-US" />
-        </w:rPr>
-        <w:t xml:space="preserve">LKG </w:t>
-      </w:r>
-      <w:r w:rsidRPr="006522AD">
-        <w:rPr>
-          <w:rFonts w:cs="Open Sans" />
-          <w:sz w:val="18" />
-          <w:szCs w:val="18" />
-          <w:lang w:val="en-US" />
-        </w:rPr>
-        <w:t>- last known good build in Jenkins</w:t>
-      </w:r>
-      <w:r>
-        <w:br w:type="page" />
-      </w:r>
-    </w:p>
-
     <w:br w:type="page"/>
-    
     <w:tbl>
       <w:tblPr>
         <w:tblW w:w="9067" w:type="dxa" />
