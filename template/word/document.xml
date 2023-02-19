@@ -1722,16 +1722,6 @@
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:b />
-                <w:bCs />
-                <w:color w:val="92D050" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>Stable</w:t>
-            </w:r>
           </w:p>
         </w:tc>
         <w:tc>
@@ -1848,16 +1838,6 @@
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:b />
-                <w:bCs />
-                <w:color w:val="92D050" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>Stable</w:t>
-            </w:r>
           </w:p>
         </w:tc>
         <w:tc>
@@ -1973,16 +1953,6 @@
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:b />
-                <w:bCs />
-                <w:color w:val="92D050" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>Stable</w:t>
-            </w:r>
           </w:p>
         </w:tc>
         <w:tc>
@@ -2094,20 +2064,9 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:b />
                 <w:bCs />
-                <w:color w:val="92D050" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:b />
-                <w:bCs />
-                <w:color w:val="92D050" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>Stable</w:t>
-            </w:r>
           </w:p>
         </w:tc>
         <w:tc>
@@ -2226,20 +2185,9 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:b />
                 <w:bCs />
-                <w:color w:val="FF0000" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:b />
-                <w:bCs />
-                <w:color w:val="FF0000" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>Failed</w:t>
-            </w:r>
           </w:p>
         </w:tc>
         <w:tc>
@@ -2367,16 +2315,6 @@
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:b />
-                <w:bCs />
-                <w:color w:val="E36C0A" w:themeColor="accent6" w:themeShade="BF" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>Unstable</w:t>
-            </w:r>
           </w:p>
         </w:tc>
         <w:tc>
@@ -2500,7 +2438,6 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:b />
                 <w:bCs />
-                <w:color w:val="E36C0A" w:themeColor="accent6" w:themeShade="BF" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
@@ -2509,7 +2446,7 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:b />
                 <w:bCs />
-                <w:color w:val="E36C0A" w:themeColor="accent6" w:themeShade="BF" />
+                <w:color w:val="E36C0A"/>
                 <w:szCs w:val="19" />
               </w:rPr>
               <w:t>Unstable</w:t>

@@ -101,7 +101,7 @@ def get_main_tasks(projects_info) -> set:
 
 
 def get_tasks(report_date: datetime):
-    report_date -= timedelta(weeks=1)
+
     offset = (report_date.weekday() - THURSDAY) % 7
     last_thursday = report_date - timedelta(days=offset)
 

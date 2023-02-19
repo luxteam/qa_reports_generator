@@ -1,8 +1,9 @@
 import os
 from lxml import etree
 from hashlib import sha1
-from typing import Any
+from typing import Any, Optional
 from copy import deepcopy
+from dataclasses import dataclass
 
 from common import WORKING_DIR_PATH
 from common import Link
@@ -23,6 +24,12 @@ FOOTER_PATH = os.path.join(DOCX_CONTENT_PATH, "footer1.xml")
 RELS_PATH = os.path.join(DOCX_CONTENT_PATH, "_rels/document.xml.rels")
 MEDIA_PATH = os.path.join(DOCX_CONTENT_PATH, "media/")
 REPORT_FILE_PATH = "./report.docx"
+
+@dataclass
+class Text:
+    text: str
+    bold: bool
+    hex_color: str
 
 
 def find_by_id(tree: etree.Element, id: str):
@@ -159,6 +166,11 @@ def append_content(paragraph, content: Any):
     elif isinstance(content, etree._Element):
         paragraph.append(content)
 
+    elif isinstance(content, Text):
+        # add custom text record inside paragraph
+        record = create_text_record(text=content.text, bold=content.bold, hex_color=content.hex_color)
+        paragraph.append(record)
+
     elif isinstance(content, Link):
         # add link record inside paragraph
         hyperlink = create_hyperlink(content)
@@ -170,8 +182,17 @@ def append_content(paragraph, content: Any):
         paragraph.append(record)
 
 
-def create_text_record(text: str):
+def create_text_record(text: str, bold: bool = False, hex_color: str = None):
     record = etree.Element(etree.QName(W_NS, "r"))
+    style = etree.SubElement(record, etree.QName(W_NS, "rPr"))
+
+    if bold:
+        etree.SubElement(style, etree.QName(W_NS, "b"))
+        etree.SubElement(style, etree.QName(W_NS, "bCs"))
+
+    if hex_color is not None:
+        etree.SubElement(style, etree.QName(W_NS, "color"), {etree.QName(W_NS, "val"): hex_color})
+
     text_field = etree.SubElement(record, etree.QName(W_NS, "t"))
     text_field.text = text
 

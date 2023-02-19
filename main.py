@@ -17,7 +17,7 @@ from common import (
     PICTURES_PATH,
 )
 from tasks_export import get_tasks, get_main_tasks
-from bugs_list_export import get_blockers, get_bugs
+from bugs_list_export import get_blockers, get_bugs, get_crits
 from pr_status_export import get_pull_requests_status, get_merged_prs
 from jenkins_export import get_latest_build_data, get_wml_report_link
 from charts_export import export_charts
@@ -107,7 +107,7 @@ def fill_task_lists(tree: etree.Element, task_lists: Dict[TaskType, str], tasks:
     fill_task_list(tree, task_lists[TaskType.PLANNED], planned_tasks)
 
 
-def fill_build_status_table(tree: etree.Element, project: Projects, build_data: Dict):
+def fill_build_status_table(tree: etree.Element, project: Projects, build_data: Dict, blockers: Dict, crits: Dict):
     row_id = ids.BUILD_STATUS_TABLE_ROW[project]
     row = word.find_by_id(tree, row_id)
 
@@ -140,7 +140,22 @@ def fill_build_status_table(tree: etree.Element, project: Projects, build_data: 
         word.set_table_cell_value(cells[2], content)
 
     # 3 cell - Status #########################
-    # skip for now
+    # Stable   - if not crits and blockers
+    # Unstable -  if crits but no blockers
+    # Failed   - if blockers
+    if project in blockers and project in crits:
+        has_blockers = len(blockers[project]) > 0
+        has_crits = len(crits[project]) > 0
+
+        if not has_blockers and not has_crits: # stable
+            content = word.Text(text="Stable", bold=True, hex_color="92D050")
+        elif has_blockers: # failed
+            content = word.Text(text="Failed", bold=True, hex_color="FF0000")
+        else: # unstable
+            content = word.Text(text="Unstable", bold=True, hex_color="E36C0A")
+
+        word.set_table_cell_value(cells[3], content)
+
 
     # 4 cell - Comment ########################
     # skip for now
@@ -297,10 +312,13 @@ def main():
     ###############################################################
     # update projects status table
 
+    blockers = get_blockers()
+    crits = get_crits()
+
     for project in Projects:
         if project != Projects.WML:
             build_data = get_latest_build_data(project)
-            fill_build_status_table(tree, project, build_data)
+            fill_build_status_table(tree, project, build_data, blockers, crits)
 
     # WML link should be placed on the project page instead of projects table
     wml_report_link = get_wml_report_link()
@@ -376,7 +394,10 @@ def main():
     ###############################################################
     # fill blockers list
 
-    blockers = get_blockers()
+    blockers_by_proj = get_blockers()
+    blockers = []
+    for project in blockers_by_proj:
+        blockers.extend(blockers_by_proj[project])
 
     blocker_list_header = word.find_by_id(tree, ids.BLOCKERS_LIST)
 

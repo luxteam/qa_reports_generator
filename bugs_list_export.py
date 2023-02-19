@@ -29,9 +29,9 @@ projects_jira_names = {
     Projects.HOUDINI: "RPRHOUD",
 }
 
-
-def get_blockers():
-    jql_request = 'project in (RPRHOUD, RS, BLEN, RPRBLND, AN, MATX, MAYAUS, PYRENDER, RI, RPRHYB, RPRMAYA, RPRUS, RPRVIEW) AND issuetype = Bug AND status in ("Under Review", Assessment, Backlog, Blocked, "In Progress", "In Review", "In Test", "In Testing", Open, Reopened, "Selected for development", "Testing / QA", "To Do", "Waiting for merge") AND priority = Blocker ORDER BY created DESC'
+def get_project_blockers(project: Projects):
+    name = projects_jira_names[project]
+    jql_request = f'project = {name} AND issuetype = Bug AND status in ("Under Review", Assessment, Backlog, Blocked, "In Progress", "In Review", "In Test", "In Testing", Open, Reopened, "Selected for development", "Testing / QA", "To Do", "Waiting for merge") AND priority = Blocker ORDER BY created DESC'
     issues = jira_instance.jql(jql_request).get("issues")
 
     blockers = []
@@ -45,6 +45,36 @@ def get_blockers():
 
     return blockers
 
+def get_project_crits(project: Projects):
+    name = projects_jira_names[project]
+    jql_request = f'project = {name} AND issuetype = Bug AND status in ("Under Review", Assessment, Backlog, "In Progress", "In Review", "In Test", "In Testing", Open, Reopened, "Selected for development", "Testing / QA", "To Do", "Waiting for merge") AND priority = Critical ORDER BY created DESC'
+    issues = jira_instance.jql(jql_request).get("issues")
+
+    crits = []
+    for issue in issues:
+        crit = {
+            "key": issue["key"],
+            "link": "https://amdrender.atlassian.net/browse/" + issue["key"],
+            "description": issue["fields"]["summary"],
+        }
+        crits.append(crit)
+
+    return crits
+
+
+def get_blockers():
+    blockers = {}
+    for project in projects_jira_names:
+        blockers[project] = get_project_blockers(project)
+    
+    return blockers
+
+def get_crits():
+    crits = {}
+    for project in projects_jira_names:
+        crits[project] = get_project_crits(project)
+
+    return crits
 
 def get_bugs(report_date: datetime):
     new_bugs = {}
