@@ -275,6 +275,16 @@ def set_table_cell_value(cell: etree.Element, content: Any):
     append_content(paragraph, content)
 
 
+def clear_table_cell(cell: etree.Element):
+    # find paragraph inside the cell
+    paragraph = cell.find("./{*}p")
+    
+    # remove all subelements except style tag
+    for element in paragraph:
+        if element.tag != etree.QName(W_NS, "pPr"):
+            remove_element(element)
+
+
 def table_add_rows(table: etree.Element, count: int):
     # find last row in the table
     last_row = table.find("./{*}tr[last()]")

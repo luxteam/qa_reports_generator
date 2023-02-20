@@ -29,16 +29,39 @@ projects_jira_names = {
     Projects.HOUDINI: "RPRHOUD",
 }
 
+projects_jira_statuses = {
+    Projects.MAYA_RPR: '"In Progress","Assessment","In Review","In Test","Open","Reopened"',
+    Projects.MAYA_USD: '"In Progress","Assessment","In Review","In Test","Open","Reopened"',
+    Projects.BLENDER_RPR: '"In Progress","Assessment","In Review","In Test","Open","Reopened"',
+    Projects.BLENDER_USD: '"In Progress","Assessment","In Review","In Test","Open","Reopened"',
+    Projects.RENDER_STUDIO: '"In Progress","Backlog","Blocked","Testing / QA","Waiting for merge"',
+    Projects.HOUDINI: '"Backlog","Blocked","In Progress","Selected for development","Testing / QA"'
+}
+
+def get_blockers_link(project: Projects):
+    name = projects_jira_names[project]
+    statuses = projects_jira_statuses[project]
+    jql_request = f'project = {name} AND issuetype = Bug AND status in ({statuses}) AND priority = Blocker ORDER BY created DESC'
+    return JIRA_URL + f"/jira/software/c/projects/{name}/issues/?jql=" + urllib.parse.quote(jql_request)
+
+def get_crits_link(project: Projects):
+    name = projects_jira_names[project]
+    statuses = projects_jira_statuses[project]
+    jql_request = f'project = {name} AND issuetype = Bug AND status in ({statuses}) AND priority = Critical ORDER BY created DESC'
+    return JIRA_URL + f"/jira/software/c/projects/{name}/issues/?jql=" + urllib.parse.quote(jql_request)
+ 
+
 def get_project_blockers(project: Projects):
     name = projects_jira_names[project]
-    jql_request = f'project = {name} AND issuetype = Bug AND status in ("Under Review", Assessment, Backlog, Blocked, "In Progress", "In Review", "In Test", "In Testing", Open, Reopened, "Selected for development", "Testing / QA", "To Do", "Waiting for merge") AND priority = Blocker ORDER BY created DESC'
+    statuses = projects_jira_statuses[project]
+    jql_request = f'project = {name} AND issuetype = Bug AND status in ({statuses}) AND priority = Blocker ORDER BY created DESC'
     issues = jira_instance.jql(jql_request).get("issues")
 
     blockers = []
     for issue in issues:
         blocker = {
             "key": issue["key"],
-            "link": "https://amdrender.atlassian.net/browse/" + issue["key"],
+            "link": JIRA_URL + "/browse/" + issue["key"],
             "description": issue["fields"]["summary"],
         }
         blockers.append(blocker)
@@ -47,14 +70,15 @@ def get_project_blockers(project: Projects):
 
 def get_project_crits(project: Projects):
     name = projects_jira_names[project]
-    jql_request = f'project = {name} AND issuetype = Bug AND status in ("Under Review", Assessment, Backlog, "In Progress", "In Review", "In Test", "In Testing", Open, Reopened, "Selected for development", "Testing / QA", "To Do", "Waiting for merge") AND priority = Critical ORDER BY created DESC'
+    statuses = projects_jira_statuses[project]
+    jql_request = f'project = {name} AND issuetype = Bug AND status in ({statuses}) AND priority = Critical ORDER BY created DESC'
     issues = jira_instance.jql(jql_request).get("issues")
 
     crits = []
     for issue in issues:
         crit = {
             "key": issue["key"],
-            "link": "https://amdrender.atlassian.net/browse/" + issue["key"],
+            "link": JIRA_URL + "/browse/" + issue["key"],
             "description": issue["fields"]["summary"],
         }
         crits.append(crit)
@@ -90,7 +114,7 @@ def get_bugs(report_date: datetime):
         issues = jira_instance.jql(jql_request)
         count = issues["total"]
 
-        link = "https://amdrender.atlassian.net/issues/?jql=" + urllib.parse.quote(
+        link = JIRA_URL + "/issues/?jql=" + urllib.parse.quote(
             "project = {project} AND issuetype = Bug AND created > {from_date} AND created <= {to_date} ORDER BY created DESC".format(
                 from_date=(report_date - timedelta(weeks=2)).strftime("%Y-%m-%d"),
                 to_date=report_date.strftime("%Y-%m-%d"),

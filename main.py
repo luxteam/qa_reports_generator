@@ -17,7 +17,7 @@ from common import (
     PICTURES_PATH,
 )
 from tasks_export import get_tasks, get_main_tasks
-from bugs_list_export import get_blockers, get_bugs, get_crits
+from bugs_list_export import get_blockers, get_bugs, get_crits, get_blockers_link, get_crits_link
 from pr_status_export import get_pull_requests_status, get_merged_prs
 from jenkins_export import get_latest_build_data, get_wml_report_link
 from charts_export import export_charts
@@ -158,7 +158,21 @@ def fill_build_status_table(tree: etree.Element, project: Projects, build_data: 
 
 
     # 4 cell - Comment ########################
-    # skip for now
+    # if has crits or blockers add link
+    if project in blockers and project in crits:
+        has_blockers = len(blockers[project]) > 0
+        has_crits = len(crits[project]) > 0
+        
+        if not has_blockers and not has_crits: # stable
+            pass
+        elif has_blockers: # failed
+            word.clear_table_cell(cells[4])
+            content = Link(url=get_blockers_link(project), text="Blocker issues")
+            word.set_table_cell_value(cells[4], content)
+        else: # unstable
+            word.clear_table_cell(cells[4])
+            content = Link(url=get_crits_link(project), text="Critical issues")
+            word.set_table_cell_value(cells[4], content)
 
 
 def remove_chart(tree, project, chart_type):
