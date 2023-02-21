@@ -4,6 +4,8 @@ from typing import List, Dict, Tuple
 import shutil
 from datetime import datetime, timedelta
 from PIL import Image
+import matplotlib.pyplot as plt
+import numpy as np
 
 import ids
 from common import (
@@ -12,12 +14,13 @@ from common import (
     ChartType,
     TaskType,
     SummaryTableColumn,
+    IssueType,
     TEMPLATE_PATH,
     WORKING_DIR_PATH,
     PICTURES_PATH,
 )
 from tasks_export import get_tasks, get_main_tasks
-from bugs_list_export import get_blockers, get_bugs, get_crits, get_blockers_link, get_crits_link
+from bugs_list_export import get_blockers, get_bugs, get_crits, get_blockers_link, get_crits_link, get_issues_statistic
 from pr_status_export import get_pull_requests_status, get_merged_prs
 from jenkins_export import get_latest_build_data, get_wml_report_link
 from charts_export import export_charts
@@ -240,15 +243,15 @@ def remove_chart(tree, project, chart_type):
     word.remove_element(image_el)
 
 
-def replace_image(image_el, new_chart_path):
+def replace_image(image_el, new_image_path):
     # identify chart placeholder file location
-    chart_placeholder_path = word.get_image_file_location(image_el)
+    image_placeholder_path = word.get_image_file_location(image_el)
 
     # replace file in archive
-    os.replace(new_chart_path, chart_placeholder_path)
+    os.replace(new_image_path, image_placeholder_path)
 
     # adjust new image size
-    img = Image.open(chart_placeholder_path)
+    img = Image.open(image_placeholder_path)
     word.adjust_image_size(image_el, img.height, img.width)
 
 
@@ -303,6 +306,41 @@ def finalize_report():
     )
     # and change it extension to ".docx"
     os.rename("report.zip", REPORT_FILE_PATH)
+
+
+def get_issues_plot(project: Projects, report_date: datetime):
+    intervals, blockers_per_interval = get_issues_statistic(project, report_date, IssueType.BLOCKER) 
+    _, criticals_per_interval = get_issues_statistic(project, report_date, IssueType.CRITICAL) 
+    
+    # graph
+    xpoints = np.array(intervals)
+    y1points = np.array(blockers_per_interval)
+    y2points = np.array(criticals_per_interval)
+
+    # clear plot
+    plt.clf()
+
+    # remove border
+    _, ax = plt.subplots()
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.spines['left'].set_visible(False)
+
+    # set lines
+    plt.plot(xpoints, y1points, label="Blocker", color='#C95042', linewidth=2)
+    plt.plot(xpoints, y2points, label="Critical", color='#6181EE', linewidth=2)
+
+    # set decorations
+    plt.grid(visible=True, axis='y')
+    plt.xticks(xpoints, rotation=45, ha='right') # X axis description diagonal
+    plt.legend()
+    plt.title("Critical and Blocker")
+    plt.tight_layout()
+
+    # save plot
+    path = PICTURES_PATH + f"/plot_{project}.png"
+    plt.savefig(path)
+    return path
 
 
 def main():
@@ -372,6 +410,16 @@ def main():
         )
 
         word.set_table_cell_value(table_cell, Link(url=url, text=text))
+
+    ###############################################################
+    # update issues plots
+    for project in ids.ISSUES_PLOT:
+        plot_id = ids.ISSUES_PLOT[project]
+        plot = word.find_by_id(tree, plot_id)
+
+        plot_file_path = get_issues_plot(project, report_date)
+
+        replace_image(image_el=plot, new_image_path=plot_file_path)
 
     ###############################################################
     # update PRs status tables

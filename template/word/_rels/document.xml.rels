@@ -135,4 +135,22 @@
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
     Target="https://amdrender.atlassian.net/jira/software/c/projects/RPRUS/issues/?jql=project%20%3D%20%22RPRUS%22%20AND%20type%20%3D%20%22Bug%22%20AND%20status%20IN%20%28%22In%20Progress%22%2C%22In%20Testing%22%2C%22Selected%20for%20Development%22%2C%22To%20Do%22%29%20AND%20priority%20%3D%20%22Critical%22%20ORDER%20BY%20created%20DESC"
     TargetMode="External" />
+  <Relationship Id="rId_RENDER_STUDIO_ISSUES_PLOT"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+    Target="media/issue_plot_rs.png" />
+  <Relationship Id="rId_HOUDINI_ISSUES_PLOT"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+    Target="media/issue_plot_h.png" />
+  <Relationship Id="rId_MAYA_RPR_ISSUES_PLOT"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+    Target="media/issue_plot_mr.png" />
+  <Relationship Id="rId_MAYA_USD_ISSUES_PLOT"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+    Target="media/issue_plot_mu.png" />
+  <Relationship Id="rId_BLENDER_RPR_ISSUES_PLOT"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+    Target="media/issue_plot_br.png" />
+  <Relationship Id="rId_BLENDER_USD_ISSUES_PLOT"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+    Target="media/issue_plot_bu.png" />
 </Relationships>

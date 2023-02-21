@@ -40,3 +40,7 @@ class TaskType(Enum):
 class SummaryTableColumn(Enum):
     FOUND_ISSUES = 1
     MERGED_PRS = 2
+
+class IssueType(Enum):
+    BLOCKER=1
+    CRITICAL=2
