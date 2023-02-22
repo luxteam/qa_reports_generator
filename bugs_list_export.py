@@ -144,13 +144,13 @@ def get_issues_statistic(project: Projects, report_date: datetime, type: IssueTy
 
     # prepare periods array
     period_end = report_date
-    period_start = report_date - timedelta(weeks=2)
+    period_start = report_date - timedelta(weeks=1)
     intervals = []
     # 26 weeks = year
     while period_start >= (report_date - timedelta(weeks=26)):
         intervals.append({"from": period_start.date(), "to": period_end.date()})
         period_end = period_start
-        period_start -= timedelta(weeks=2)
+        period_start -= timedelta(weeks=1)
 
     intervals = intervals[::-1] # reverse list
 

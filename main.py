@@ -4,8 +4,7 @@ from typing import List, Dict, Tuple
 import shutil
 from datetime import datetime, timedelta
 from PIL import Image
-import matplotlib.pyplot as plt
-import numpy as np
+import plotly.graph_objects as go
 
 import ids
 from common import (
@@ -312,34 +311,66 @@ def get_issues_plot(project: Projects, report_date: datetime):
     intervals, blockers_per_interval = get_issues_statistic(project, report_date, IssueType.BLOCKER) 
     _, criticals_per_interval = get_issues_statistic(project, report_date, IssueType.CRITICAL) 
     
-    # graph
-    xpoints = np.array(intervals)
-    y1points = np.array(blockers_per_interval)
-    y2points = np.array(criticals_per_interval)
-
-    # clear plot
-    plt.clf()
-
-    # remove border
-    _, ax = plt.subplots()
-    ax.spines['top'].set_visible(False)
-    ax.spines['right'].set_visible(False)
-    ax.spines['left'].set_visible(False)
-
-    # set lines
-    plt.plot(xpoints, y1points, label="Blocker", color='#C95042', linewidth=2)
-    plt.plot(xpoints, y2points, label="Critical", color='#6181EE', linewidth=2)
-
-    # set decorations
-    plt.grid(visible=True, axis='y')
-    plt.xticks(xpoints, rotation=45, ha='right') # X axis description diagonal
-    plt.legend()
-    plt.title("Critical and Blocker")
-    plt.tight_layout()
+    # create a scatter plot
+    fig = go.Figure(
+        [
+            go.Scatter(
+                x = intervals,
+                y = blockers_per_interval,
+                name="Blocker",
+                line_color="#FF5630"
+            ),
+            go.Scatter(
+                x=intervals,
+                y=criticals_per_interval,
+                name="Critical",
+                line_color="#0065FF"
+            )
+        ],
+        layout=go.Layout(
+            xaxis=dict(
+                tickmode='array',
+                tickvals=intervals,
+                ticktext=[datetime(year=d.year, month=d.month, day=d.day).strftime("%m-%d-%Y") for d in intervals],
+                tickangle=-45,
+                automargin=True,
+                showgrid=False,
+                linecolor="#DADCE2",
+            ),
+            yaxis=dict(
+                showgrid=True,
+                gridcolor="#DADCE2",
+                linecolor="#DADCE2",
+                zeroline=False,
+            ),
+            width=1000,
+            font=dict(
+                size=12
+            ),
+            font_family="Segoe UI",
+            legend=dict(
+                orientation="h",
+                yanchor="bottom",
+                xanchor="right",
+                y=1,
+                x=1,
+                font=dict(
+                    size=16,
+                )
+            ),
+            margin=dict(
+                l=20,
+                r=20,
+                t=5,
+                b=20
+            ),
+            plot_bgcolor='rgba(0,0,0,0)'
+        ),
+    )
 
     # save plot
     path = PICTURES_PATH + f"/plot_{project}.png"
-    plt.savefig(path)
+    fig.write_image(path)
     return path
 
 

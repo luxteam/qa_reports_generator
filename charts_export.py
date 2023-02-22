@@ -63,7 +63,8 @@ def login(driver: webdriver.Firefox):
 
 def export_charts():
     driver = webdriver.Firefox(executable_path="./geckodriver.exe")
-    driver.fullscreen_window()
+    # driver.fullscreen_window()
+    driver.set_window_size(1920,1080)
 
     login(driver)
 
