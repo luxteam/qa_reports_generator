@@ -378,7 +378,7 @@ def main():
     prepare_working_directory()
 
     # eval report dates
-    report_date = datetime.today() - timedelta(days=1)
+    report_date = datetime.today()
     report_start_date = report_date - timedelta(weeks=2) + timedelta(days=1)
 
     # load document.xml (main xml file)
