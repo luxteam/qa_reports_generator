@@ -428,6 +428,9 @@ def main():
     found_issues = get_bugs(report_date)
 
     for project in found_issues:
+        if project == Projects.SOLIDWORKS: # skip solidworks in this table for now
+            continue
+
         table_cell_id = ids.SUMMARY_TABLE[project][SummaryTableColumn.FOUND_ISSUES]
         table_cell = word.find_by_id(tree, table_cell_id)
 
@@ -529,6 +532,9 @@ def main():
     projects_bugs = get_bugs(report_date)
 
     for project in projects_bugs:
+        if project == Projects.SOLIDWORKS: # skip Solidworks bugs link for now
+            continue
+
         link_id = ids.BUGS_LINK_ID[project]
 
         description = "New bugs ({amount})".format(
