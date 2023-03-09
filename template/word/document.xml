@@ -8731,7 +8731,7 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:szCs w:val="19" />
               </w:rPr>
-              <w:t xml:space="preserve">Arseniy </w:t>
+              <w:t xml:space="preserve">Kornishova </w:t>
             </w:r>
             <w:proofErr w:type="spellStart" />
             <w:r w:rsidRPr="00616600">
@@ -8739,7 +8739,7 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:szCs w:val="19" />
               </w:rPr>
-              <w:t>Khodot</w:t>
+              <w:t>Evgeniya</w:t>
             </w:r>
             <w:proofErr w:type="spellEnd" />
           </w:p>
@@ -9185,22 +9185,6 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:szCs w:val="19" />
               </w:rPr>
-              <w:t>Khodot</w:t>
-            </w:r>
-            <w:proofErr w:type="spellEnd" />
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t xml:space="preserve"> Arseniy, </w:t>
-            </w:r>
-            <w:proofErr w:type="spellStart" />
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
               <w:t>Kornishova</w:t>
             </w:r>
             <w:proofErr w:type="spellEnd" />
@@ -9286,23 +9270,7 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:szCs w:val="19" />
               </w:rPr>
-              <w:t xml:space="preserve"> Evgeniya, </w:t>
-            </w:r>
-            <w:proofErr w:type="spellStart" />
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>Khodot</w:t>
-            </w:r>
-            <w:proofErr w:type="spellEnd" />
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t xml:space="preserve"> Arseniy</w:t>
+              <w:t xml:space="preserve"> Evgeniya</w:t>
             </w:r>
           </w:p>
         </w:tc>
