@@ -36,6 +36,14 @@ projects_chart_names = {
         ChartType.UNRESOLVED_ISSUES: "Pie Chart: HOUDINI: UNRESOLVED ISSUES",
         ChartType.ISSUES_UPDATES_2W: "Pie Chart: HOUDINI: ISSUE UPDATES IN 2 WEEKS",
     },
+    Projects.HDRPR: {
+        ChartType.UNRESOLVED_ISSUES: "Pie Chart: hdRPR: Unresolved",
+        ChartType.ISSUES_UPDATES_2W: "Pie Chart: hdRPR: issues updates in 2 weeks",
+    },
+    Projects.RENDER_STUDIO: {
+        ChartType.UNRESOLVED_ISSUES: "Pie Chart: Render Studio: unresolved",
+        ChartType.ISSUES_UPDATES_2W: "Pie Chart: Render Studio: updates in 2 weeks",
+    },
 }
 
 

@@ -28,6 +28,7 @@ projects_jira_names = {
     Projects.RENDER_STUDIO: "RS",
     # Projects.SOLIDWORKS: "SV",
     Projects.HOUDINI: "RPRHOUD",
+    Projects.HDRPR: "RPRUSD"
 }
 
 projects_jira_open_statuses = {
@@ -36,7 +37,8 @@ projects_jira_open_statuses = {
     Projects.BLENDER_RPR: '"In Progress","Assessment","In Review","In Test","Open","Reopened"',
     Projects.BLENDER_USD: '"In Progress","Assessment","In Review","In Test","Open","Reopened"',
     Projects.RENDER_STUDIO: '"In Progress","Backlog","Blocked","Testing / QA","Waiting for merge"',
-    Projects.HOUDINI: '"Backlog","Blocked","In Progress","Selected for development","Testing / QA"'
+    Projects.HOUDINI: '"Backlog","Blocked","In Progress","Selected for development","Testing / QA"',
+    Projects.HDRPR: '"Backlog","In Progress","In Testing","Selected for Development","To Do"'
 }
 
 def get_blockers_link(project: Projects):

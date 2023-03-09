@@ -13,6 +13,20 @@
   <Relationship Id="rId26"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
     Target="media/image10.png" />
+
+  <Relationship Id="rId206"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+    Target="media/image11.png" />
+  <Relationship Id="rId207"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+    Target="media/image12.png" />
+  <Relationship Id="rId208"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+    Target="media/image13.png" />
+  <Relationship Id="rId209"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+    Target="media/image14.png" />
+
   <Relationship Id="rId3"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/customXml"
     Target="../customXml/item3.xml" />
@@ -48,6 +62,10 @@
   <Relationship Id="rId_new_bugs_link_HOUDINI"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
     Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20RPRHOUD%20AND%20issuetype%20%3D%20Bug%20AND%20created%20%3E%3D%202022-10-07%20AND%20created%20%3C%3D%202022-10-20%20ORDER%20BY%20created%20DESC"
+    TargetMode="External" />
+  <Relationship Id="rId_new_bugs_link_HDRPR"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20RPRUSD%20AND%20issuetype%20%3D%20Bug%20AND%20created%20%3E%3D%202022-10-07%20AND%20created%20%3C%3D%202022-10-20%20ORDER%20BY%20created%20DESC"
     TargetMode="External" />
   <Relationship Id="rId25"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
@@ -151,6 +169,9 @@
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
     Target="media/issue_plot_br.png" />
   <Relationship Id="rId_BLENDER_USD_ISSUES_PLOT"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+    Target="media/issue_plot_bu.png" />
+  <Relationship Id="rId_HDRPR_ISSUES_PLOT"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
     Target="media/issue_plot_bu.png" />
 </Relationships>

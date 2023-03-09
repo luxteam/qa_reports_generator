@@ -28,13 +28,15 @@ projects_info = {
         "name": "RadeonProRenderUSD",
     },
     Projects.RENDER_STUDIO: {"owner": "Radeon-Pro", "name": "WebUsdViewer"},
+    Projects.HDRPR: {
+        "owner": "GPUOpen-LibrariesAndSDKs",
+        "name": "RadeonProRenderUSD",
+    }
 }
 
-# Set the time range for pull requests to be included (two weeks ago to now)
-two_weeks_ago = datetime.now() - timedelta(weeks=2)
-now = datetime.now()
+def request_pull_requests_list(project: Projects, report_date: datetime):
+    report_start_date = report_date - timedelta(weeks=2)
 
-def request_pull_requests_list(project: Projects):
     owner = projects_info[project]["owner"]
     name = projects_info[project]["name"]
 
@@ -52,8 +54,8 @@ def request_pull_requests_list(project: Projects):
                 lambda pr: pr["state"] == "open"
                 or (
                     pr.get("merged_at", None) is not None
-                    and datetime.strptime(pr["merged_at"], "%Y-%m-%dT%H:%M:%SZ")
-                    > two_weeks_ago
+                    and datetime.strptime(pr["merged_at"], "%Y-%m-%dT%H:%M:%SZ").date()
+                    > report_start_date.date()
                 )
             ),
             data,
@@ -62,8 +64,8 @@ def request_pull_requests_list(project: Projects):
 
     return pull_requests
 
-def get_pull_requests_status(project: Projects):
-    pull_requests = request_pull_requests_list(project)
+def get_pull_requests_status(project: Projects, report_date: datetime):
+    pull_requests = request_pull_requests_list(project, report_date)
 
     pr_data = []
     for pull_request in pull_requests:
@@ -94,14 +96,14 @@ def get_merged_prs(project: Projects, report_date: datetime):
     since_date = report_date - timedelta(weeks=2)
 
     # prepare url
-    url = "https://github.com/{owner}/{name}/pulls?q=is%3Apr+closed%3A%3E{date}".format(owner=owner, name=name, date=since_date.strftime('%Y-%m-%d'))
+    url = "https://github.com/{owner}/{name}/pulls?q=is%3Apr+is%3Amerged+closed%3A%3E{date}".format(owner=owner, name=name, date=since_date.strftime('%Y-%m-%d'))
 
     # count prs
-    pull_requests = request_pull_requests_list(project)
+    pull_requests = request_pull_requests_list(project, report_date)
     count = len(list(
         filter(
             (
-                lambda pr: pr["state"] == "closed"
+                lambda pr: bool(pr.get("merged_at", None))
             ),
             pull_requests,
         )
@@ -114,7 +116,7 @@ def get_merged_prs(project: Projects, report_date: datetime):
 if __name__ == "__main__":
     for project in projects_info:
         print(projects_info[project]["name"] + ":")
-        prs = get_pull_requests_status(project)
+        prs = get_pull_requests_status(project, datetime.now())
         for pr in prs:
             print(
                 "\tTitle: '{title}', URL: '{url}', State: '{status}'".format(
@@ -122,3 +124,8 @@ if __name__ == "__main__":
                 )
             )
 
+        info = get_merged_prs(project, datetime.now()) 
+        print("Link: " + info['link'])
+        print("Merged: " + str(info['count']))
+
+    

@@ -18,9 +18,9 @@ from common import (
     WORKING_DIR_PATH,
     PICTURES_PATH,
 )
-from tasks_export import get_tasks, get_main_tasks
-from bugs_list_export import get_blockers, get_bugs, get_crits, get_blockers_link, get_crits_link, get_issues_statistic
-from pr_status_export import get_pull_requests_status, get_merged_prs
+from confluence_export import get_tasks, get_main_tasks
+from jira_export import get_blockers, get_bugs, get_crits, get_blockers_link, get_crits_link, get_issues_statistic
+from github_export import get_pull_requests_status, get_merged_prs
 from jenkins_export import get_latest_build_data, get_wml_report_link
 from charts_export import export_charts
 import word
@@ -169,11 +169,13 @@ def fill_build_status_table(tree: etree.Element, project: Projects, build_data: 
             pass
         elif has_blockers: # failed
             word.clear_table_cell(cells[4])
-            content = Link(url=get_blockers_link(project), text="Blocker issues")
+            amount = len(blockers[project])
+            content = Link(url=get_blockers_link(project), text=f"Blocker issues ({amount})")
             word.set_table_cell_value(cells[4], content)
         else: # unstable
             word.clear_table_cell(cells[4])
-            content = Link(url=get_crits_link(project), text="Critical issues")
+            amount = len(crits[project])
+            content = Link(url=get_crits_link(project), text=f"Critical issues ({amount})")
             word.set_table_cell_value(cells[4], content)
 
 
@@ -342,6 +344,7 @@ def get_issues_plot(project: Projects, report_date: datetime):
                 gridcolor="#DADCE2",
                 linecolor="#DADCE2",
                 zeroline=False,
+                tickformat=',d'
             ),
             width=1000,
             font=dict(
@@ -367,6 +370,12 @@ def get_issues_plot(project: Projects, report_date: datetime):
             plot_bgcolor='rgba(0,0,0,0)'
         ),
     )
+    # workaround to avoid yaxis label 0, 0.2, 0.4, 0.6, 0.8, 1
+    max_value = max(max(criticals_per_interval), max(blockers_per_interval))
+    if max_value < 4:
+        fig.update_yaxes(
+            tickvals = [*range(max_value+1)]
+        )
 
     # save plot
     path = PICTURES_PATH + f"/plot_{project}.png"
@@ -376,6 +385,7 @@ def get_issues_plot(project: Projects, report_date: datetime):
 
 def main():
     prepare_working_directory()
+    print("[0/11] Initial preparations...")
 
     # eval report dates
     report_date = datetime.today()
@@ -394,6 +404,7 @@ def main():
 
     ###############################################################
     # update projects status table
+    print("[1/11] Projects status table...")
 
     blockers = get_blockers()
     crits = get_crits()
@@ -411,6 +422,7 @@ def main():
 
     ###############################################################
     # update summary table
+    print("[2/11] Summary table...")
 
     # Found issues
     found_issues = get_bugs(report_date)
@@ -428,7 +440,6 @@ def main():
 
 
     # Merged PRs
-
     for project in ids.SUMMARY_TABLE:
         table_cell_id = ids.SUMMARY_TABLE[project][SummaryTableColumn.MERGED_PRS]
         table_cell = word.find_by_id(tree, table_cell_id)
@@ -444,6 +455,8 @@ def main():
 
     ###############################################################
     # update issues plots
+    print("[3/11] Issue plots...")
+
     for project in ids.ISSUES_PLOT:
         plot_id = ids.ISSUES_PLOT[project]
         plot = word.find_by_id(tree, plot_id)
@@ -454,15 +467,17 @@ def main():
 
     ###############################################################
     # update PRs status tables
+    print("[4/11] PRs status tables...")
 
     for project in ids.PR_STATUS_TABLE_ID:
-        data = get_pull_requests_status(project)
+        data = get_pull_requests_status(project, report_date)
         fill_pr_table(tree, project, data)
 
         project_added_elements[project] += len(data)
 
     ###############################################################
     # import tasks
+    print("[5/11] Task lists...")
 
     projects_tasks = get_tasks(report_date)
 
@@ -476,6 +491,7 @@ def main():
 
     ###############################################################
     # fill main tasks table
+    print("[6/11] Main tasks...")
 
     main_tasks = get_main_tasks(projects_tasks)
 
@@ -486,6 +502,7 @@ def main():
 
     ###############################################################
     # fill blockers list
+    print("[7/11] Blockers list...")
 
     blockers_by_proj = get_blockers()
     blockers = []
@@ -507,6 +524,7 @@ def main():
 
     ###############################################################
     # update bugs links
+    print("[8/11] Bugs links")
 
     projects_bugs = get_bugs(report_date)
 
@@ -524,6 +542,7 @@ def main():
 
     ###############################################################
     # update report period in footer
+    print("[9/11] Report dates...")
 
     footer_tree = word.load_xml(word.FOOTER_PATH)
 
@@ -537,45 +556,12 @@ def main():
 
     ###############################################################
     # import images
+    print("[10/11] Charts...")
 
     available_charts = export_charts()
 
     # for pages allignment
     projects_with_charts = set()
-
-    # for testing purposes
-    # available_charts = {
-    #     Projects.MAYA_RPR: {
-    #         # ChartType.UNRESOLVED_ISSUES: "",
-    #         # ChartType.ISSUES_UPDATES_2W: ""
-    #         ChartType.UNRESOLVED_ISSUES: "pics/chart_1_1.png",
-    #         ChartType.ISSUES_UPDATES_2W: "pics/chart_1_2.png",
-    #     },
-    #     Projects.MAYA_USD: {
-    #         # ChartType.UNRESOLVED_ISSUES: "",
-    #         # ChartType.ISSUES_UPDATES_2W: ""
-    #         ChartType.UNRESOLVED_ISSUES: "pics/chart_2_1.png",
-    #         ChartType.ISSUES_UPDATES_2W: "pics/chart_2_2.png",
-    #     },
-    #     Projects.BLENDER_RPR: {
-    #         # ChartType.UNRESOLVED_ISSUES: "",
-    #         # ChartType.ISSUES_UPDATES_2W: ""
-    #         ChartType.UNRESOLVED_ISSUES: "pics/chart_3_1.png",
-    #         ChartType.ISSUES_UPDATES_2W: "pics/chart_3_2.png",
-    #     },
-    #     Projects.BLENDER_USD: {
-    #         # ChartType.UNRESOLVED_ISSUES: "",
-    #         # ChartType.ISSUES_UPDATES_2W: ""
-    #         ChartType.UNRESOLVED_ISSUES: "pics/chart_4_1.png",
-    #         ChartType.ISSUES_UPDATES_2W: "pics/chart_4_2.png",
-    #     },
-    #     Projects.HOUDINI: {
-    #         # ChartType.UNRESOLVED_ISSUES: "",
-    #         # ChartType.ISSUES_UPDATES_2W: ""
-    #         ChartType.UNRESOLVED_ISSUES: "pics/chart_7_1.png",
-    #         ChartType.ISSUES_UPDATES_2W: "pics/chart_7_2.png",
-    #     },
-    # }
 
     for project in ids.CHART_ID:
         for chart_type in ChartType:
@@ -604,6 +590,7 @@ def main():
             word.append_element_after(new_el=page_break, after=bugs_link_paragraph)
 
     ###############################################################
+    print("[11/11] Saving report...")
 
     # save report document.xml
     word.write_xml(tree, word.DOCUMENT_PATH)

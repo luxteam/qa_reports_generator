@@ -101,11 +101,10 @@ def get_main_tasks(projects_info) -> set:
 
 
 def get_tasks(report_date: datetime):
-
     offset = (report_date.weekday() - THURSDAY) % 7
     last_thursday = report_date - timedelta(days=offset)
 
-    previous_thursday = last_thursday - timedelta(weeks=1)
+    previous_thursday = last_thursday - timedelta(weeks=2)
 
     # get info about projects on this week and previous
     old_projects_info = _get_projects_info(report_date=previous_thursday)
