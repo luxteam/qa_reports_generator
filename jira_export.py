@@ -109,18 +109,18 @@ def get_bugs(report_date: datetime):
     for project in projects_jira_names:
         project_jira_name = projects_jira_names[project]
 
-        jql_request = "created > {from_date} AND created <= {to_date} AND project = {project} AND issuetype = Bug ORDER BY created DESC".format(
+        jql_request = "created > {from_date} AND created < {to_date} AND project = {project} AND issuetype = Bug ORDER BY created DESC".format(
             from_date=(report_date - timedelta(weeks=2)).strftime("%Y-%m-%d"),
-            to_date=report_date.strftime("%Y-%m-%d"),
+            to_date=(report_date + timedelta(days=1)).strftime("%Y-%m-%d"),
             project=project_jira_name,
         )
         issues = jira_instance.jql(jql_request)
         count = issues["total"]
 
         link = JIRA_URL + "/issues/?jql=" + urllib.parse.quote(
-            "project = {project} AND issuetype = Bug AND created > {from_date} AND created <= {to_date} ORDER BY created DESC".format(
+            "project = {project} AND issuetype = Bug AND created > {from_date} AND created < {to_date} ORDER BY created DESC".format(
                 from_date=(report_date - timedelta(weeks=2)).strftime("%Y-%m-%d"),
-                to_date=report_date.strftime("%Y-%m-%d"),
+                to_date=(report_date + timedelta(days=1)).strftime("%Y-%m-%d"),
                 project=project_jira_name,
             )
         )
@@ -184,5 +184,6 @@ if __name__ == "__main__":
 
     print("Blockers:")
     blockers = get_blockers()
-    for blocker in blockers:
-        print(json.dumps(blocker, indent=4))
+    for project in blockers:
+        print(projects_jira_names[project])
+        print(json.dumps(blockers[project], indent=4))
