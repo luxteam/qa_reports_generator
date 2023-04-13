@@ -1626,9 +1626,9 @@
           </w:p>
         </w:tc>
       </w:tr>
-      <w:tr id="MAYA_RPR_BUILD_STATUS_TABLE_ROW">
+      <w:tr id="RENDER_STUDIO_BUILD_STATUS_TABLE_ROW">
         <w:trPr>
-          <w:trHeight w:val="70" />
+          <w:trHeight w:val="259" />
         </w:trPr>
         <w:tc>
           <w:tcPr>
@@ -1641,18 +1641,16 @@
               <w:spacing w:before="10" w:after="10" />
               <w:jc w:val="center" />
               <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
-            <w:hyperlink w:anchor="_Maya_RPR_1" w:history="1">
+            <w:hyperlink w:anchor="_Render_Studio" w:history="1">
               <w:r w:rsidR="009E00CF" w:rsidRPr="004355EF">
                 <w:rPr>
                   <w:rStyle w:val="ab" />
-                  <w:rFonts w:cs="Open Sans" />
                   <w:szCs w:val="19" />
                 </w:rPr>
-                <w:t>Maya RPR</w:t>
+                <w:t>Render Studio</w:t>
               </w:r>
             </w:hyperlink>
           </w:p>
@@ -1708,8 +1706,9 @@
               <w:bottom w:w="100" w:type="dxa" />
               <w:right w:w="100" w:type="dxa" />
             </w:tcMar>
+            <w:vAlign w:val="center" />
           </w:tcPr>
-          <w:p w14:paraId="4FBD6728" w14:textId="77777777">
+          <w:p w14:paraId="53F1B238" w14:textId="77777777">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -1718,7 +1717,6 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:b />
                 <w:bCs />
-                <w:color w:val="92D050" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
@@ -1728,30 +1726,7 @@
           <w:tcPr>
             <w:tcW w:w="2977" w:type="dxa" />
           </w:tcPr>
-          <w:p w14:paraId="1281E262" w14:textId="293705B7">
-            <w:pPr>
-              <w:pStyle w:val="QAReportTablesText" />
-              <w:rPr>
-                <w:highlight w:val="yellow" />
-              </w:rPr>
-            </w:pPr>
-            <w:r>
-              <w:t>Waiting for the new PRs</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
-      <w:tr id="BLENDER_RPR_BUILD_STATUS_TABLE_ROW">
-        <w:trPr>
-          <w:trHeight w:val="205" />
-        </w:trPr>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="2122" w:type="dxa" />
-            <w:vAlign w:val="center" />
-          </w:tcPr>
-          <w:p w14:paraId="79332C3E" w14:textId="77777777" w:rsidR="009E00CF" w:rsidRPr="004355EF"
-            w:rsidRDefault="00000000" w:rsidP="00867A59">
+          <w:p w14:paraId="4FC059FD" w14:textId="1032292F">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -1761,99 +1736,18 @@
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
-            <w:hyperlink w:anchor="_Blender_RPR" w:history="1">
-              <w:r w:rsidR="009E00CF" w:rsidRPr="004355EF">
+            <w:hyperlink r:id="rId_comment_Render_Studio" w:history="1">
+              <w:r>
                 <w:rPr>
-                  <w:rStyle w:val="ab" />
+                  <w:rStyle w:val="Hyperlink" />
                   <w:rFonts w:cs="Open Sans" />
                   <w:szCs w:val="19" />
+                  <w:lang w:val="ru-RU" />
+                  <w:rStyle w:val="ab" />
                 </w:rPr>
-                <w:t>Blender RPR</w:t>
+                <w:t>Blocker issues</w:t>
               </w:r>
             </w:hyperlink>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="1417" w:type="dxa" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-            <w:vAlign w:val="center" />
-          </w:tcPr>
-          <w:p>
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="1418" w:type="dxa" />
-            <w:vAlign w:val="center" />
-          </w:tcPr>
-          <w:p>
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="1134" w:type="dxa" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="4FBD6728" w14:textId="77777777">
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:b />
-                <w:bCs />
-                <w:color w:val="92D050" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="2977" w:type="dxa" />
-          </w:tcPr>
-          <w:p w14:paraId="1281E262" w14:textId="293705B7">
-            <w:pPr>
-              <w:pStyle w:val="QAReportTablesText" />
-              <w:rPr>
-                <w:highlight w:val="yellow" />
-              </w:rPr>
-            </w:pPr>
-            <w:r>
-              <w:t>Waiting for the new PRs</w:t>
-            </w:r>
           </w:p>
         </w:tc>
       </w:tr>
@@ -2094,9 +1988,9 @@
           </w:p>
         </w:tc>
       </w:tr>
-      <w:tr id="RENDER_STUDIO_BUILD_STATUS_TABLE_ROW">
+      <w:tr id="MAYA_RPR_BUILD_STATUS_TABLE_ROW">
         <w:trPr>
-          <w:trHeight w:val="259" />
+          <w:trHeight w:val="70" />
         </w:trPr>
         <w:tc>
           <w:tcPr>
@@ -2109,16 +2003,18 @@
               <w:spacing w:before="10" w:after="10" />
               <w:jc w:val="center" />
               <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
-            <w:hyperlink w:anchor="_Render_Studio" w:history="1">
+            <w:hyperlink w:anchor="_Maya_RPR_1" w:history="1">
               <w:r w:rsidR="009E00CF" w:rsidRPr="004355EF">
                 <w:rPr>
                   <w:rStyle w:val="ab" />
+                  <w:rFonts w:cs="Open Sans" />
                   <w:szCs w:val="19" />
                 </w:rPr>
-                <w:t>Render Studio</w:t>
+                <w:t>Maya RPR</w:t>
               </w:r>
             </w:hyperlink>
           </w:p>
@@ -2174,9 +2070,8 @@
               <w:bottom w:w="100" w:type="dxa" />
               <w:right w:w="100" w:type="dxa" />
             </w:tcMar>
-            <w:vAlign w:val="center" />
           </w:tcPr>
-          <w:p w14:paraId="53F1B238" w14:textId="77777777">
+          <w:p w14:paraId="4FBD6728" w14:textId="77777777">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -2185,6 +2080,7 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:b />
                 <w:bCs />
+                <w:color w:val="92D050" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
@@ -2194,7 +2090,30 @@
           <w:tcPr>
             <w:tcW w:w="2977" w:type="dxa" />
           </w:tcPr>
-          <w:p w14:paraId="4FC059FD" w14:textId="1032292F">
+          <w:p w14:paraId="1281E262" w14:textId="293705B7">
+            <w:pPr>
+              <w:pStyle w:val="QAReportTablesText" />
+              <w:rPr>
+                <w:highlight w:val="yellow" />
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:t>Waiting for the new PRs</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr id="BLENDER_RPR_BUILD_STATUS_TABLE_ROW">
+        <w:trPr>
+          <w:trHeight w:val="205" />
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2122" w:type="dxa" />
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p w14:paraId="79332C3E" w14:textId="77777777" w:rsidR="009E00CF" w:rsidRPr="004355EF"
+            w:rsidRDefault="00000000" w:rsidP="00867A59">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
@@ -2204,18 +2123,99 @@
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
-            <w:hyperlink r:id="rId_comment_Render_Studio" w:history="1">
-              <w:r>
+            <w:hyperlink w:anchor="_Blender_RPR" w:history="1">
+              <w:r w:rsidR="009E00CF" w:rsidRPr="004355EF">
                 <w:rPr>
-                  <w:rStyle w:val="Hyperlink" />
+                  <w:rStyle w:val="ab" />
                   <w:rFonts w:cs="Open Sans" />
                   <w:szCs w:val="19" />
-                  <w:lang w:val="ru-RU" />
-                  <w:rStyle w:val="ab" />
                 </w:rPr>
-                <w:t>Blocker issues</w:t>
+                <w:t>Blender RPR</w:t>
               </w:r>
             </w:hyperlink>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1417" w:type="dxa" />
+            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1418" w:type="dxa" />
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1134" w:type="dxa" />
+            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="4FBD6728" w14:textId="77777777">
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:b />
+                <w:bCs />
+                <w:color w:val="92D050" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2977" w:type="dxa" />
+          </w:tcPr>
+          <w:p w14:paraId="1281E262" w14:textId="293705B7">
+            <w:pPr>
+              <w:pStyle w:val="QAReportTablesText" />
+              <w:rPr>
+                <w:highlight w:val="yellow" />
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:t>Waiting for the new PRs</w:t>
+            </w:r>
           </w:p>
         </w:tc>
       </w:tr>
@@ -3499,38 +3499,36 @@
           </w:p>
         </w:tc>
       </w:tr>
-      <w:tr w14:paraId="6247FD83" w14:textId="77777777">
+      <w:tr w14:paraId="482BA62A" w14:textId="77777777">
         <w:trPr>
-          <w:trHeight w:val="70" />
+          <w:trHeight w:val="259" />
         </w:trPr>
         <w:tc>
           <w:tcPr>
             <w:tcW w:w="2122" w:type="dxa" />
             <w:vAlign w:val="center" />
           </w:tcPr>
-          <w:p w14:paraId="3C529BB0" w14:textId="77777777">
+          <w:p w14:paraId="7790894E" w14:textId="77777777">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
               <w:jc w:val="center" />
               <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
-            <w:hyperlink w:anchor="_Maya_RPR_1" w:history="1">
+            <w:hyperlink w:anchor="_Render_Studio" w:history="1">
               <w:r>
                 <w:rPr>
                   <w:rStyle w:val="Hyperlink" />
-                  <w:rFonts w:cs="Open Sans" />
                   <w:szCs w:val="19" />
                 </w:rPr>
-                <w:t>Maya RPR</w:t>
+                <w:t>Render Studio</w:t>
               </w:r>
             </w:hyperlink>
           </w:p>
         </w:tc>
-        <w:tc id="MAYA_RPR_SUMMARY_TABLE_FOUND_ISSUES">
+        <w:tc id="RENDER_STUDIO_SUMMARY_TABLE_FOUND_ISSUES">
           <w:tcPr>
             <w:tcW w:w="3685" w:type="dxa" />
             <w:shd w:val="clear" w:color="auto" w:fill="auto" />
@@ -3554,87 +3552,7 @@
             </w:pPr>
           </w:p>
         </w:tc>
-        <w:tc id="MAYA_RPR_SUMMARY_TABLE_MERGED_PRS">
-          <w:tcPr>
-            <w:tcW w:w="3685" w:type="dxa" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-            <w:vAlign w:val="center" />
-          </w:tcPr>
-          <w:p>
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-          </w:p>
-        </w:tc>
-      </w:tr>
-      <w:tr w14:paraId="0D7B3188" w14:textId="77777777">
-        <w:trPr>
-          <w:trHeight w:val="205" />
-        </w:trPr>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="2122" w:type="dxa" />
-            <w:vAlign w:val="center" />
-          </w:tcPr>
-          <w:p w14:paraId="7ED587DE" w14:textId="77777777">
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-            <w:hyperlink w:anchor="_Blender_RPR" w:history="1">
-              <w:r>
-                <w:rPr>
-                  <w:rStyle w:val="Hyperlink" />
-                  <w:rFonts w:cs="Open Sans" />
-                  <w:szCs w:val="19" />
-                </w:rPr>
-                <w:t>Blender RPR</w:t>
-              </w:r>
-            </w:hyperlink>
-          </w:p>
-        </w:tc>
-        <w:tc id="BLENDER_RPR_SUMMARY_TABLE_FOUND_ISSUES">
-          <w:tcPr>
-            <w:tcW w:w="3685" w:type="dxa" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-            <w:vAlign w:val="center" />
-          </w:tcPr>
-          <w:p>
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-          </w:p>
-        </w:tc>
-        <w:tc id="BLENDER_RPR_SUMMARY_TABLE_MERGED_PRS">
+        <w:tc id="RENDER_STUDIO_SUMMARY_TABLE_MERGED_PRS">
           <w:tcPr>
             <w:tcW w:w="3685" w:type="dxa" />
             <w:shd w:val="clear" w:color="auto" w:fill="auto" />
@@ -3819,36 +3737,38 @@
           </w:p>
         </w:tc>
       </w:tr>
-      <w:tr w14:paraId="482BA62A" w14:textId="77777777">
+      <w:tr w14:paraId="6247FD83" w14:textId="77777777">
         <w:trPr>
-          <w:trHeight w:val="259" />
+          <w:trHeight w:val="70" />
         </w:trPr>
         <w:tc>
           <w:tcPr>
             <w:tcW w:w="2122" w:type="dxa" />
             <w:vAlign w:val="center" />
           </w:tcPr>
-          <w:p w14:paraId="7790894E" w14:textId="77777777">
+          <w:p w14:paraId="3C529BB0" w14:textId="77777777">
             <w:pPr>
               <w:pStyle w:val="Tabletext" />
               <w:spacing w:before="10" w:after="10" />
               <w:jc w:val="center" />
               <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
-            <w:hyperlink w:anchor="_Render_Studio" w:history="1">
+            <w:hyperlink w:anchor="_Maya_RPR_1" w:history="1">
               <w:r>
                 <w:rPr>
                   <w:rStyle w:val="Hyperlink" />
+                  <w:rFonts w:cs="Open Sans" />
                   <w:szCs w:val="19" />
                 </w:rPr>
-                <w:t>Render Studio</w:t>
+                <w:t>Maya RPR</w:t>
               </w:r>
             </w:hyperlink>
           </w:p>
         </w:tc>
-        <w:tc id="RENDER_STUDIO_SUMMARY_TABLE_FOUND_ISSUES">
+        <w:tc id="MAYA_RPR_SUMMARY_TABLE_FOUND_ISSUES">
           <w:tcPr>
             <w:tcW w:w="3685" w:type="dxa" />
             <w:shd w:val="clear" w:color="auto" w:fill="auto" />
@@ -3872,7 +3792,87 @@
             </w:pPr>
           </w:p>
         </w:tc>
-        <w:tc id="RENDER_STUDIO_SUMMARY_TABLE_MERGED_PRS">
+        <w:tc id="MAYA_RPR_SUMMARY_TABLE_MERGED_PRS">
+          <w:tcPr>
+            <w:tcW w:w="3685" w:type="dxa" />
+            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w14:paraId="0D7B3188" w14:textId="77777777">
+        <w:trPr>
+          <w:trHeight w:val="205" />
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2122" w:type="dxa" />
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p w14:paraId="7ED587DE" w14:textId="77777777">
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+            <w:hyperlink w:anchor="_Blender_RPR" w:history="1">
+              <w:r>
+                <w:rPr>
+                  <w:rStyle w:val="Hyperlink" />
+                  <w:rFonts w:cs="Open Sans" />
+                  <w:szCs w:val="19" />
+                </w:rPr>
+                <w:t>Blender RPR</w:t>
+              </w:r>
+            </w:hyperlink>
+          </w:p>
+        </w:tc>
+        <w:tc id="BLENDER_RPR_SUMMARY_TABLE_FOUND_ISSUES">
+          <w:tcPr>
+            <w:tcW w:w="3685" w:type="dxa" />
+            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+            <w:vAlign w:val="center" />
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc id="BLENDER_RPR_SUMMARY_TABLE_MERGED_PRS">
           <w:tcPr>
             <w:tcW w:w="3685" w:type="dxa" />
             <w:shd w:val="clear" w:color="auto" w:fill="auto" />
@@ -4193,1179 +4193,580 @@
       <w:bookmarkEnd w:id="4" />
       <w:bookmarkEnd w:id="5" />
     </w:p>
-    <w:p w14:paraId="74FBB4AA" w14:textId="05869459" w:rsidR="00782A27" w:rsidRPr="00782A27"
-      w:rsidRDefault="00782A27" w:rsidP="00F67C4A">
-      <w:pPr>
-        <w:pStyle w:val="2" />
-        <w:spacing w:line="240" w:lineRule="auto" />
-      </w:pPr>
-      <w:bookmarkStart w:id="6" w:name="_Maya_RPR_1" />
-      <w:bookmarkStart w:id="7" w:name="_Toc125915290" />
-      <w:bookmarkEnd w:id="6" />
-      <w:r>
-        <w:t>Maya RPR</w:t>
-      </w:r>
-      <w:bookmarkEnd w:id="7" />
-    </w:p>
-    <w:p id="MAYA_RPR_TASK_LIST_HEADER_COMPLETED" w14:paraId="70A6D05B" w14:textId="3E79533E"
-      w:rsidR="00702B32" w:rsidRPr="009E00CF"
-      w:rsidRDefault="00782A27" w:rsidP="009E00CF">
-      <w:pPr>
-        <w:pStyle w:val="3" />
-        <w:spacing w:line="240" w:lineRule="auto" />
-      </w:pPr>
-      <w:r w:rsidRPr="00335F80">
-        <w:t>Completed Tasks</w:t>
-      </w:r>
-    </w:p>
-    <w:p id="MAYA_RPR_TASK_LIST_HEADER_PLANNED" w14:paraId="41202A2B" w14:textId="6233C3E5"
-      w:rsidR="00782A27" w:rsidRPr="009E00CF"
-      w:rsidRDefault="00782A27" w:rsidP="009E00CF">
-      <w:pPr>
-        <w:pStyle w:val="3" />
-      </w:pPr>
-      <w:r w:rsidRPr="00335F80">
-        <w:t>Planned Activities</w:t>
-      </w:r>
-    </w:p>
-    <w:p w14:paraId="09FE867F" w14:textId="32732DED" w:rsidR="00782A27" w:rsidRDefault="00782A27"
-      w:rsidP="006C37CC">
-      <w:pPr>
-        <w:pStyle w:val="3" />
-        <w:spacing w:line="240" w:lineRule="auto" />
-      </w:pPr>
-      <w:r w:rsidRPr="00335F80">
-        <w:t>Pull Requests Status</w:t>
-      </w:r>
-    </w:p>
-    <w:tbl id="MAYA_RPR_PR_STATUS_TBL">
-      <w:tblPr>
-        <w:tblW w:w="5000" w:type="pct" />
-        <w:tblBorders>
-          <w:top w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
-            w:themeShade="D9" />
-          <w:left w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
-            w:themeShade="D9" />
-          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
-            w:themeShade="D9" />
-          <w:right w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
-            w:themeShade="D9" />
-          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
-            w:themeShade="D9" />
-          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
-            w:themeShade="D9" />
-        </w:tblBorders>
-        <w:tblLook w:val="0600" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0"
-          w:noHBand="1" w:noVBand="1" />
-      </w:tblPr>
-      <w:tblGrid>
-        <w:gridCol w:w="4585" />
-        <w:gridCol w:w="3599" />
-        <w:gridCol w:w="1163" />
-      </w:tblGrid>
-      <w:tr w:rsidR="00DF24EA" w:rsidRPr="001A7256" w14:paraId="7DD7AB5F" w14:textId="77777777"
-        w:rsidTr="0003239C">
-        <w:trPr>
-          <w:trHeight w:val="297" />
-        </w:trPr>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="2453" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="F2F2F2" w:themeFill="background1"
-              w:themeFillShade="F2" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="1E35B9CA" w14:textId="77777777" w:rsidR="00DF24EA" w:rsidRPr="001A7256"
-            w:rsidRDefault="00DF24EA" w:rsidP="0003239C">
-            <w:pPr>
-              <w:pStyle w:val="Tableheading" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:szCs w:val="19" />
-                <w:lang w:val="en-US" />
-              </w:rPr>
-            </w:pPr>
-            <w:r w:rsidRPr="001A7256">
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:szCs w:val="19" />
-                <w:lang w:val="en-US" />
-              </w:rPr>
-              <w:t>Pull Request</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="1925" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="F2F2F2" w:themeFill="background1"
-              w:themeFillShade="F2" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="0E254E3B" w14:textId="77777777" w:rsidR="00DF24EA" w:rsidRPr="001A7256"
-            w:rsidRDefault="00DF24EA" w:rsidP="0003239C">
-            <w:pPr>
-              <w:pStyle w:val="Tableheading" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:szCs w:val="19" />
-                <w:lang w:val="en-US" />
-              </w:rPr>
-            </w:pPr>
-            <w:r w:rsidRPr="001A7256">
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:szCs w:val="19" />
-                <w:lang w:val="en-US" />
-              </w:rPr>
-              <w:t>Comments</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="622" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="F2F2F2" w:themeFill="background1"
-              w:themeFillShade="F2" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="4836EABA" w14:textId="77777777" w:rsidR="00DF24EA" w:rsidRPr="001A7256"
-            w:rsidRDefault="00DF24EA" w:rsidP="0003239C">
-            <w:pPr>
-              <w:pStyle w:val="Tableheading" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:szCs w:val="19" />
-                <w:lang w:val="en-US" />
-              </w:rPr>
-            </w:pPr>
-            <w:r w:rsidRPr="001A7256">
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:szCs w:val="19" />
-                <w:lang w:val="en-US" />
-              </w:rPr>
-              <w:t>Status</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
-      <w:tr w:rsidR="00DF24EA" w:rsidRPr="001A7256" w14:paraId="19078575" w14:textId="77777777"
-        w:rsidTr="006C37CC">
-        <w:trPr>
-          <w:trHeight w:val="331" />
-        </w:trPr>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="2453" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="55D6587E" w14:textId="0566C65F" w:rsidR="00DF24EA"
-            w:rsidRDefault="00DF24EA" w:rsidP="0003239C">
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="1925" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="1B0DB2B7" w14:textId="181DB39C" w:rsidR="00DF24EA" w:rsidRPr="00DF24EA"
-            w:rsidRDefault="00DF24EA" w:rsidP="00DF24EA">
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="622" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="778DE141" w14:textId="625CAB1F" w:rsidR="00DF24EA"
-            w:rsidRDefault="00DF24EA" w:rsidP="00DF24EA">
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-          </w:p>
-        </w:tc>
-      </w:tr>
-    </w:tbl>
-    <w:p id="MAYA_RPR_BUGS_LINK">
-      <w:pPr>
-        <w:rPr>
-          <w:rFonts w:cs="Open Sans" />
-        </w:rPr>
-      </w:pPr>
-      <w:hyperlink r:id="rId_new_bugs_link_MAYA_RPR">
-        <w:r>
-          <w:rPr>
-            <w:rStyle w:val="ab" />
-          </w:rPr>
-          <w:t>New bugs (7)</w:t>
-        </w:r>
-      </w:hyperlink>
-    </w:p>
-    <w:p>
-        <w:pPr>
-            <w:tabs>
-                <w:tab w:val="left" w:pos="9090" />
-            </w:tabs>
-            <w:ind w:firstLine="720" />
+    <w:p w14:paraId="1654948A" w14:textId="77777777" w:rsidR="006E4C6B" w:rsidRDefault="006E4C6B"
+    w:rsidP="006E4C6B">
+    <w:pPr>
+      <w:pStyle w:val="2" />
+    </w:pPr>
+    <w:bookmarkStart w:id="15" w:name="_Toc125037329" />
+    <w:bookmarkStart w:id="16" w:name="_Toc125915294" />
+    <w:bookmarkStart w:id="12" w:name="_Render_Studio" />
+    <w:r w:rsidRPr="003E6A00">
+      <w:lastRenderedPageBreak />
+      <w:t>Render Studio</w:t>
+    </w:r>
+    <w:bookmarkEnd w:id="12" />
+    <w:bookmarkEnd w:id="15" />
+    <w:bookmarkEnd w:id="16" />
+  </w:p>
+  <w:p id="RENDER_STUDIO_TASK_LIST_HEADER_COMPLETED" w14:paraId="589FF0EC" w14:textId="3CB2EB07"
+    w:rsidR="006E4C6B" w:rsidRPr="006E4C6B"
+    w:rsidRDefault="006E4C6B" w:rsidP="006E4C6B">
+    <w:pPr>
+      <w:pStyle w:val="3" />
+    </w:pPr>
+    <w:r w:rsidRPr="0027267B">
+      <w:t>Completed Tasks</w:t>
+    </w:r>
+  </w:p>
+  <w:p id="RENDER_STUDIO_TASK_LIST_HEADER_PLANNED" w14:paraId="58BEE80D" w14:textId="6581703C"
+    w:rsidR="006E4C6B" w:rsidRPr="006E4C6B"
+    w:rsidRDefault="006E4C6B" w:rsidP="006E4C6B">
+    <w:pPr>
+      <w:pStyle w:val="3" />
+    </w:pPr>
+    <w:r w:rsidRPr="000D719B">
+      <w:t>Planned activities</w:t>
+    </w:r>
+  </w:p>
+  <w:p w14:paraId="2ED91F21" w14:textId="77777777" w:rsidR="006E4C6B" w:rsidRDefault="006E4C6B"
+    w:rsidP="006E4C6B">
+    <w:pPr>
+      <w:pStyle w:val="3" />
+    </w:pPr>
+    <w:r>
+      <w:t>Pull Requests Status</w:t>
+    </w:r>
+  </w:p>
+  <w:tbl id="RENDER_STUDIO_PR_STATUS_TBL">
+    <w:tblPr>
+      <w:tblW w:w="5000" w:type="pct" />
+      <w:tblBorders>
+        <w:top w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
+          w:themeShade="D9" />
+        <w:left w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
+          w:themeShade="D9" />
+        <w:bottom w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
+          w:themeShade="D9" />
+        <w:right w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
+          w:themeShade="D9" />
+        <w:insideH w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
+          w:themeShade="D9" />
+        <w:insideV w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
+          w:themeShade="D9" />
+      </w:tblBorders>
+      <w:tblLook w:val="0600" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0"
+        w:noHBand="1" w:noVBand="1" />
+    </w:tblPr>
+    <w:tblGrid>
+      <w:gridCol w:w="6025" />
+      <w:gridCol w:w="2159" />
+      <w:gridCol w:w="1163" />
+    </w:tblGrid>
+    <w:tr w:rsidR="006E4C6B" w:rsidRPr="006E4D0A" w14:paraId="376AA74A" w14:textId="77777777"
+      w:rsidTr="00867A59">
+      <w:trPr>
+        <w:trHeight w:val="297" />
+      </w:trPr>
+      <w:tc>
+        <w:tcPr>
+          <w:tcW w:w="3223" w:type="pct" />
+          <w:shd w:val="clear" w:color="auto" w:fill="F2F2F2" w:themeFill="background1"
+            w:themeFillShade="F2" />
+          <w:tcMar>
+            <w:top w:w="100" w:type="dxa" />
+            <w:left w:w="100" w:type="dxa" />
+            <w:bottom w:w="100" w:type="dxa" />
+            <w:right w:w="100" w:type="dxa" />
+          </w:tcMar>
+        </w:tcPr>
+        <w:p w14:paraId="5A8BF7C0" w14:textId="77777777" w:rsidR="006E4C6B" w:rsidRPr="002D67A0"
+          w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
+          <w:pPr>
+            <w:pStyle w:val="Tableheading" />
+            <w:jc w:val="center" />
             <w:rPr>
-                <w:lang w:val="en-US" />
+              <w:rFonts w:cs="Open Sans" />
+              <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+              <w:sz w:val="20" />
+              <w:szCs w:val="20" />
+              <w:lang w:val="en-US" />
             </w:rPr>
-        </w:pPr>
-        <w:r>
+          </w:pPr>
+          <w:r w:rsidRPr="002D67A0">
             <w:rPr>
-                <w:caps />
-                <w:noProof />
-                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:sz w:val="28" />
-                <w:szCs w:val="28" />
-                <w:lang w:val="en-US" />
+              <w:rFonts w:cs="Open Sans" />
+              <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+              <w:sz w:val="20" />
+              <w:szCs w:val="20" />
+              <w:lang w:val="en-US" />
             </w:rPr>
-            <w:drawing id="MAYA_RPR_ISSUES_PLOT">
-                <wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0"
-                    relativeHeight="251675648" behindDoc="0" locked="0" layoutInCell="1"
-                    allowOverlap="1">
-                    <wp:simplePos x="0" y="0" />
-                    <wp:positionH relativeFrom="margin">
-                        <wp:align>left</wp:align>
-                    </wp:positionH>
-                    <wp:positionV relativeFrom="paragraph">
-                        <wp:posOffset>361950</wp:posOffset>
-                    </wp:positionV>
-                    <wp:extent cx="6037580" cy="3018790" />
-                    <wp:effectExtent l="0" t="0" r="1270" b="0" />
-                    <wp:wrapSquare wrapText="bothSides" />
-                    <wp:docPr id="1000" name="Picture" />
-                    <wp:cNvGraphicFramePr>
-                        <a:graphicFrameLocks
-                            xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
-                            noChangeAspect="1" />
-                    </wp:cNvGraphicFramePr>
-                    <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
-                        <a:graphicData
-                            uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
-                            <pic:pic
-                                xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
-                                <pic:nvPicPr>
-                                    <pic:cNvPr id="1000" name="Picture" />
-                                    <pic:cNvPicPr />
-                                </pic:nvPicPr>
-                                <pic:blipFill>
-                                    <a:blip r:embed="rId_MAYA_RPR_ISSUES_PLOT">
-                                        <a:extLst>
-                                            <a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
-                                                <a14:useLocalDpi
-                                                    xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main"
-                                                    val="0" />
-                                            </a:ext>
-                                        </a:extLst>
-                                    </a:blip>
-                                    <a:stretch>
-                                        <a:fillRect />
-                                    </a:stretch>
-                                </pic:blipFill>
-                                <pic:spPr>
-                                    <a:xfrm>
-                                        <a:off x="0" y="0" />
-                                        <a:ext cx="6037580" cy="3018790" />
-                                    </a:xfrm>
-                                    <a:prstGeom prst="rect">
-                                        <a:avLst />
-                                    </a:prstGeom>
-                                </pic:spPr>
-                            </pic:pic>
-                        </a:graphicData>
-                    </a:graphic>
-                    <wp14:sizeRelH relativeFrom="margin">
-                        <wp14:pctWidth>0</wp14:pctWidth>
-                    </wp14:sizeRelH>
-                    <wp14:sizeRelV relativeFrom="margin">
-                        <wp14:pctHeight>0</wp14:pctHeight>
-                    </wp14:sizeRelV>
-                </wp:anchor>
-            </w:drawing>
-        </w:r>
-        <w:r>
+            <w:t>Pull Request</w:t>
+          </w:r>
+        </w:p>
+      </w:tc>
+      <w:tc>
+        <w:tcPr>
+          <w:tcW w:w="1155" w:type="pct" />
+          <w:shd w:val="clear" w:color="auto" w:fill="F2F2F2" w:themeFill="background1"
+            w:themeFillShade="F2" />
+          <w:tcMar>
+            <w:top w:w="100" w:type="dxa" />
+            <w:left w:w="100" w:type="dxa" />
+            <w:bottom w:w="100" w:type="dxa" />
+            <w:right w:w="100" w:type="dxa" />
+          </w:tcMar>
+        </w:tcPr>
+        <w:p w14:paraId="46AC5485" w14:textId="77777777" w:rsidR="006E4C6B" w:rsidRPr="002D67A0"
+          w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
+          <w:pPr>
+            <w:pStyle w:val="Tableheading" />
+            <w:jc w:val="center" />
             <w:rPr>
-                <w:caps />
-                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:sz w:val="28" />
-                <w:szCs w:val="28" />
-                <w:lang w:val="en-US" />
+              <w:rFonts w:cs="Open Sans" />
+              <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+              <w:sz w:val="20" />
+              <w:szCs w:val="20" />
+              <w:lang w:val="en-US" />
             </w:rPr>
-            <w:t xml:space="preserve">CRITICAL AND BLOCKER</w:t>
-        </w:r>
-    </w:p>
-
-    <w:p>
-      <w:pPr>
-        <w:spacing w:before="0" w:after="0" />
-        <w:contextualSpacing />
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-      </w:pPr>
+          </w:pPr>
+          <w:r w:rsidRPr="002D67A0">
+            <w:rPr>
+              <w:rFonts w:cs="Open Sans" />
+              <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+              <w:sz w:val="20" />
+              <w:szCs w:val="20" />
+              <w:lang w:val="en-US" />
+            </w:rPr>
+            <w:t>Comments</w:t>
+          </w:r>
+        </w:p>
+      </w:tc>
+      <w:tc>
+        <w:tcPr>
+          <w:tcW w:w="622" w:type="pct" />
+          <w:shd w:val="clear" w:color="auto" w:fill="F2F2F2" w:themeFill="background1"
+            w:themeFillShade="F2" />
+          <w:tcMar>
+            <w:top w:w="100" w:type="dxa" />
+            <w:left w:w="100" w:type="dxa" />
+            <w:bottom w:w="100" w:type="dxa" />
+            <w:right w:w="100" w:type="dxa" />
+          </w:tcMar>
+        </w:tcPr>
+        <w:p w14:paraId="5C334F00" w14:textId="77777777" w:rsidR="006E4C6B" w:rsidRPr="002D67A0"
+          w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
+          <w:pPr>
+            <w:pStyle w:val="Tableheading" />
+            <w:jc w:val="center" />
+            <w:rPr>
+              <w:rFonts w:cs="Open Sans" />
+              <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+              <w:sz w:val="20" />
+              <w:szCs w:val="20" />
+              <w:lang w:val="en-US" />
+            </w:rPr>
+          </w:pPr>
+          <w:r w:rsidRPr="002D67A0">
+            <w:rPr>
+              <w:rFonts w:cs="Open Sans" />
+              <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+              <w:sz w:val="20" />
+              <w:szCs w:val="20" />
+              <w:lang w:val="en-US" />
+            </w:rPr>
+            <w:t>Status</w:t>
+          </w:r>
+        </w:p>
+      </w:tc>
+    </w:tr>
+    <w:tr w:rsidR="006E4C6B" w:rsidRPr="002356AE" w14:paraId="0F24C47C" w14:textId="77777777"
+      w:rsidTr="00867A59">
+      <w:trPr>
+        <w:trHeight w:val="313" />
+      </w:trPr>
+      <w:tc>
+        <w:tcPr>
+          <w:tcW w:w="3223" w:type="pct" />
+          <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+          <w:tcMar>
+            <w:top w:w="100" w:type="dxa" />
+            <w:left w:w="100" w:type="dxa" />
+            <w:bottom w:w="100" w:type="dxa" />
+            <w:right w:w="100" w:type="dxa" />
+          </w:tcMar>
+        </w:tcPr>
+        <w:p w14:paraId="11A09821" w14:textId="514CC0CE" w:rsidR="006E4C6B" w:rsidRPr="004355EF"
+          w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
+          <w:pPr>
+            <w:jc w:val="center" />
+            <w:rPr>
+              <w:rStyle w:val="ab" />
+              <w:sz w:val="19" />
+              <w:szCs w:val="19" />
+              <w:lang w:val="en-US" />
+            </w:rPr>
+          </w:pPr>
+        </w:p>
+      </w:tc>
+      <w:tc>
+        <w:tcPr>
+          <w:tcW w:w="1155" w:type="pct" />
+          <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+          <w:tcMar>
+            <w:top w:w="100" w:type="dxa" />
+            <w:left w:w="100" w:type="dxa" />
+            <w:bottom w:w="100" w:type="dxa" />
+            <w:right w:w="100" w:type="dxa" />
+          </w:tcMar>
+        </w:tcPr>
+        <w:p w14:paraId="58F8E016" w14:textId="6E55167E" w:rsidR="006E4C6B" w:rsidRPr="004355EF"
+          w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
+          <w:pPr>
+            <w:pStyle w:val="QAReportTablesText" />
+          </w:pPr>
+        </w:p>
+      </w:tc>
+      <w:tc>
+        <w:tcPr>
+          <w:tcW w:w="622" w:type="pct" />
+          <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+          <w:tcMar>
+            <w:top w:w="100" w:type="dxa" />
+            <w:left w:w="100" w:type="dxa" />
+            <w:bottom w:w="100" w:type="dxa" />
+            <w:right w:w="100" w:type="dxa" />
+          </w:tcMar>
+        </w:tcPr>
+        <w:p w14:paraId="5EB98B60" w14:textId="2CDB2632" w:rsidR="006E4C6B" w:rsidRPr="004355EF"
+          w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
+          <w:pPr>
+            <w:pStyle w:val="QAReportTablesText" />
+          </w:pPr>
+        </w:p>
+      </w:tc>
+    </w:tr>
+  </w:tbl>
+  <w:p id="RENDER_STUDIO_BUGS_LINK">
+    <w:pPr>
+      <w:rPr>
+        <w:rFonts w:cs="Open Sans" />
+      </w:rPr>
+    </w:pPr>
+    <w:hyperlink r:id="rId_new_bugs_link_RENDER_STUDIO">
       <w:r>
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-        <w:fldChar w:fldCharType="end" />
-      </w:r>
-    </w:p>
-
-    <w:p w14:paraId="3355F509" w14:textId="123D1C71" w:rsidR="00117934" w:rsidRDefault="003622FE"
-      w:rsidP="00F67C4A">
-      <w:pPr>
-        <w:pStyle w:val="3" />
-        <w:spacing w:before="120" w:line="360" w:lineRule="auto" />
-        <w:ind w:firstLine="720" />
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:noProof />
-        </w:rPr>
-        <w:drawing id="MAYA_RPR_CHART_ISSUES_UPDATES_2W">
-          <wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0"
-            relativeHeight="251665408" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1"
-            wp14:anchorId="2301C799" wp14:editId="1976EEF5">
-            <wp:simplePos x="0" y="0" />
-            <wp:positionH relativeFrom="column">
-                <wp:posOffset>2980690</wp:posOffset>
-            </wp:positionH>
-            <wp:positionV relativeFrom="paragraph">
-                <wp:posOffset>423545</wp:posOffset>
-            </wp:positionV>
-            <wp:extent cx="2928620" cy="4164965" />
-            <wp:effectExtent l="0" t="0" r="5715" b="6985" />
-            <wp:wrapNone />
-            <wp:docPr id="5" name="Picture 5" />
-            <wp:cNvGraphicFramePr>
-              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
-                noChangeAspect="1" />
-            </wp:cNvGraphicFramePr>
-            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
-              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
-                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
-                  <pic:nvPicPr>
-                    <pic:cNvPr id="5" name="Picture 5" />
-                    <pic:cNvPicPr>
-                      <a:picLocks noChangeAspect="1" noChangeArrowheads="1" />
-                    </pic:cNvPicPr>
-                  </pic:nvPicPr>
-                  <pic:blipFill>
-                    <a:blip r:embed="rId11">
-                      <a:extLst>
-                        <a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
-                          <a14:useLocalDpi
-                            xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main"
-                            val="0" />
-                        </a:ext>
-                      </a:extLst>
-                    </a:blip>
-                    <a:stretch>
-                      <a:fillRect />
-                    </a:stretch>
-                  </pic:blipFill>
-                  <pic:spPr bwMode="auto">
-                    <a:xfrm>
-                      <a:off x="0" y="0" />
-                      <a:ext cx="2928620" cy="4164965" />
-                    </a:xfrm>
-                    <a:prstGeom prst="rect">
-                      <a:avLst />
-                    </a:prstGeom>
-                    <a:noFill />
-                    <a:ln>
-                      <a:noFill />
-                    </a:ln>
-                  </pic:spPr>
-                </pic:pic>
-              </a:graphicData>
-            </a:graphic>
-            <wp14:sizeRelH relativeFrom="margin">
-              <wp14:pctWidth>0</wp14:pctWidth>
-            </wp14:sizeRelH>
-            <wp14:sizeRelV relativeFrom="margin">
-              <wp14:pctHeight>0</wp14:pctHeight>
-            </wp14:sizeRelV>
-          </wp:anchor>
-        </w:drawing>
-      </w:r>
-      <w:r>
-        <w:rPr>
-          <w:noProof />
-        </w:rPr>
-        <w:drawing id="MAYA_RPR_CHART_UNRESOLVED_ISSUES">
-          <wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0"
-            relativeHeight="251666432" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1"
-            wp14:anchorId="049267EB" wp14:editId="4D78DB7D">
-            <wp:simplePos x="0" y="0" />
-            <wp:positionH relativeFrom="column">
-                <wp:posOffset>-156210</wp:posOffset>
-            </wp:positionH>
-            <wp:positionV relativeFrom="paragraph">
-                <wp:posOffset>423545</wp:posOffset>
-            </wp:positionV>
-            <wp:extent cx="2928620" cy="4164965" />
-            <wp:effectExtent l="0" t="0" r="5715" b="6985" />
-            <wp:wrapNone />
-            <wp:docPr id="2" name="Picture 2" />
-            <wp:cNvGraphicFramePr>
-              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
-                noChangeAspect="1" />
-            </wp:cNvGraphicFramePr>
-            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
-              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
-                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
-                  <pic:nvPicPr>
-                    <pic:cNvPr id="2" name="Picture 2" />
-                    <pic:cNvPicPr>
-                      <a:picLocks noChangeAspect="1" noChangeArrowheads="1" />
-                    </pic:cNvPicPr>
-                  </pic:nvPicPr>
-                  <pic:blipFill>
-                    <a:blip r:embed="rId12">
-                      <a:extLst>
-                        <a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
-                          <a14:useLocalDpi
-                            xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main"
-                            val="0" />
-                        </a:ext>
-                      </a:extLst>
-                    </a:blip>
-                    <a:stretch>
-                      <a:fillRect />
-                    </a:stretch>
-                  </pic:blipFill>
-                  <pic:spPr bwMode="auto">
-                    <a:xfrm>
-                      <a:off x="0" y="0" />
-                      <a:ext cx="2928620" cy="4164965" />
-                    </a:xfrm>
-                    <a:prstGeom prst="rect">
-                      <a:avLst />
-                    </a:prstGeom>
-                    <a:noFill />
-                    <a:ln>
-                      <a:noFill />
-                    </a:ln>
-                  </pic:spPr>
-                </pic:pic>
-              </a:graphicData>
-            </a:graphic>
-            <wp14:sizeRelH relativeFrom="margin">
-              <wp14:pctWidth>0</wp14:pctWidth>
-            </wp14:sizeRelH>
-            <wp14:sizeRelV relativeFrom="margin">
-              <wp14:pctHeight>0</wp14:pctHeight>
-            </wp14:sizeRelV>
-          </wp:anchor>
-        </w:drawing>
-      </w:r>
-      <w:r id="MAYA_RPR_UNRESOLVED_ISSUES_HEADER">
-        <w:t>Unresolved issues</w:t>
-      </w:r>
-      <w:r>
-        <w:tab />
-      </w:r>
-      <w:r>
-        <w:tab />
-      </w:r>
-      <w:r>
-        <w:tab />
-      </w:r>
-      <w:r id="MAYA_RPR_ISSUES_UPDATES_2W_HEADER">
-        <w:t>Issues Updates in 2 weeks</w:t>
-      </w:r>
-    </w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p w14:paraId="06DB85FA" w14:textId="4C34606F" w:rsidR="009E00CF" w:rsidRDefault="00000000"
-      w:rsidP="00C21915">
-      <w:pPr>
-        <w:spacing w:before="480" w:line="480" w:lineRule="auto" />
         <w:rPr>
           <w:rStyle w:val="ab" />
-          <w:lang w:val="en-US" />
         </w:rPr>
-      </w:pPr>
-      <w:hyperlink r:id="rId13" w:history="1">
-        <w:r w:rsidR="0003239C" w:rsidRPr="000E5CDD">
+        <w:t>New bugs (7)</w:t>
+      </w:r>
+    </w:hyperlink>
+  </w:p>
+  <w:p>
+      <w:pPr>
+          <w:tabs>
+              <w:tab w:val="left" w:pos="9090" />
+          </w:tabs>
+          <w:ind w:firstLine="720" />
           <w:rPr>
-            <w:rStyle w:val="ab" />
-            <w:lang w:val="en-US" />
+              <w:lang w:val="en-US" />
           </w:rPr>
-          <w:t>View issues</w:t>
-        </w:r>
-      </w:hyperlink>
-      <w:r>
-        <w:br w:type="page"/>
-      </w:r>
-    </w:p>
-    <w:p w14:paraId="1DBDE3F4" w14:textId="1CD8C3CF" w:rsidR="006E4C6B" w:rsidRPr="006E4C6B"
-      w:rsidRDefault="006E4C6B" w:rsidP="006E4C6B">
-      <w:pPr>
-        <w:pStyle w:val="2" />
-      </w:pPr>
-      <w:bookmarkStart w:id="8" w:name="_Toc125915291" />
-      <w:bookmarkStart w:id="9" w:name="_Blender_RPR" />
-      <w:r>
-        <w:lastRenderedPageBreak />
-        <w:t>Blender RPR</w:t>
-      </w:r>
-      <w:bookmarkEnd w:id="9" />
-      <w:bookmarkEnd w:id="8" />
-    </w:p>
-    <w:p id="BLENDER_RPR_TASK_LIST_HEADER_COMPLETED" w14:paraId="382F8C5C" w14:textId="76F0296C"
-      w:rsidR="006E4C6B" w:rsidRPr="006E4C6B"
-      w:rsidRDefault="006E4C6B" w:rsidP="006E4C6B">
-      <w:pPr>
-        <w:pStyle w:val="3" />
-      </w:pPr>
-      <w:r w:rsidRPr="0088542A">
-        <w:t>Completed Tasks</w:t>
-      </w:r>
-    </w:p>
-    <w:p id="BLENDER_RPR_TASK_LIST_HEADER_PLANNED" w14:paraId="3F8CB6BB" w14:textId="255044AC"
-      w:rsidR="006E4C6B" w:rsidRPr="006E4C6B"
-      w:rsidRDefault="006E4C6B" w:rsidP="006E4C6B">
-      <w:pPr>
-        <w:pStyle w:val="3" />
       </w:pPr>
       <w:r>
-        <w:t>Planned Activities</w:t>
-      </w:r>
-    </w:p>
-    <w:p w14:paraId="144AEB58" w14:textId="77777777" w:rsidR="006E4C6B" w:rsidRDefault="006E4C6B"
-      w:rsidP="006E4C6B">
-      <w:pPr>
-        <w:pStyle w:val="3" />
-      </w:pPr>
-      <w:r>
-        <w:t>Pull Requests Status</w:t>
-      </w:r>
-    </w:p>
-    <w:tbl id="BLENDER_RPR_PR_STATUS_TBL">
-      <w:tblPr>
-        <w:tblW w:w="5000" w:type="pct" />
-        <w:tblBorders>
-          <w:top w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
-            w:themeShade="D9" />
-          <w:left w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
-            w:themeShade="D9" />
-          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
-            w:themeShade="D9" />
-          <w:right w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
-            w:themeShade="D9" />
-          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
-            w:themeShade="D9" />
-          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
-            w:themeShade="D9" />
-        </w:tblBorders>
-        <w:tblLook w:val="0600" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0"
-          w:noHBand="1" w:noVBand="1" />
-      </w:tblPr>
-      <w:tblGrid>
-        <w:gridCol w:w="4585" />
-        <w:gridCol w:w="3599" />
-        <w:gridCol w:w="1163" />
-      </w:tblGrid>
-      <w:tr w:rsidR="006E4C6B" w:rsidRPr="001A7256" w14:paraId="2AD93293" w14:textId="77777777"
-        w:rsidTr="00867A59">
-        <w:trPr>
-          <w:trHeight w:val="297" />
-        </w:trPr>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="2453" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="F2F2F2" w:themeFill="background1"
-              w:themeFillShade="F2" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="1933466B" w14:textId="77777777" w:rsidR="006E4C6B" w:rsidRPr="002D67A0"
-            w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
-            <w:pPr>
-              <w:pStyle w:val="Tableheading" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:sz w:val="20" />
-                <w:szCs w:val="20" />
-                <w:lang w:val="en-US" />
-              </w:rPr>
-            </w:pPr>
-            <w:r w:rsidRPr="002D67A0">
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:sz w:val="20" />
-                <w:szCs w:val="20" />
-                <w:lang w:val="en-US" />
-              </w:rPr>
-              <w:t>Pull Request</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="1925" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="F2F2F2" w:themeFill="background1"
-              w:themeFillShade="F2" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="5F213A3B" w14:textId="77777777" w:rsidR="006E4C6B" w:rsidRPr="002D67A0"
-            w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
-            <w:pPr>
-              <w:pStyle w:val="Tableheading" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:sz w:val="20" />
-                <w:szCs w:val="20" />
-                <w:lang w:val="en-US" />
-              </w:rPr>
-            </w:pPr>
-            <w:r w:rsidRPr="002D67A0">
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:sz w:val="20" />
-                <w:szCs w:val="20" />
-                <w:lang w:val="en-US" />
-              </w:rPr>
-              <w:t>Comments</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="622" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="F2F2F2" w:themeFill="background1"
-              w:themeFillShade="F2" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="18C3CE97" w14:textId="77777777" w:rsidR="006E4C6B" w:rsidRPr="002D67A0"
-            w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
-            <w:pPr>
-              <w:pStyle w:val="Tableheading" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:sz w:val="20" />
-                <w:szCs w:val="20" />
-                <w:lang w:val="en-US" />
-              </w:rPr>
-            </w:pPr>
-            <w:r w:rsidRPr="002D67A0">
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:sz w:val="20" />
-                <w:szCs w:val="20" />
-                <w:lang w:val="en-US" />
-              </w:rPr>
-              <w:t>Status</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
-      <w:tr w:rsidR="006E4C6B" w:rsidRPr="00562209" w14:paraId="41E49BD5" w14:textId="77777777"
-        w:rsidTr="00867A59">
-        <w:trPr>
-          <w:trHeight w:val="361" />
-        </w:trPr>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="2453" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="69760253" w14:textId="6E3A96D7" w:rsidR="006E4C6B" w:rsidRPr="004355EF"
-            w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
-            <w:pPr>
-              <w:pStyle w:val="QAReportTablesText" />
-              <w:rPr>
-                <w:rStyle w:val="ab" />
-                <w:rFonts w:cs="Arial" />
-                <w:lang w:eastAsia="ja-JP" />
-              </w:rPr>
-            </w:pPr>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="1925" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="6F440A95" w14:textId="11F13994" w:rsidR="006E4C6B" w:rsidRPr="004355EF"
-            w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
-            <w:pPr>
-              <w:pStyle w:val="QAReportTablesText" />
-            </w:pPr>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="622" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="2056ED91" w14:textId="76721735" w:rsidR="006E4C6B" w:rsidRPr="004355EF"
-            w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
-            <w:pPr>
-              <w:pStyle w:val="QAReportTablesText" />
-            </w:pPr>
-          </w:p>
-        </w:tc>
-      </w:tr>
-    </w:tbl>
-    <w:p id="BLENDER_RPR_BUGS_LINK">
-      <w:pPr>
-        <w:rPr>
-          <w:rFonts w:cs="Open Sans" />
-        </w:rPr>
-      </w:pPr>
-      <w:hyperlink r:id="rId_new_bugs_link_BLENDER_RPR">
-        <w:r>
           <w:rPr>
-            <w:rStyle w:val="ab" />
+              <w:caps />
+              <w:noProof />
+              <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+              <w:sz w:val="28" />
+              <w:szCs w:val="28" />
+              <w:lang w:val="en-US" />
           </w:rPr>
-          <w:t>New bugs (7)</w:t>
-        </w:r>
-      </w:hyperlink>
-    </w:p>
-    <w:p>
-        <w:pPr>
-            <w:tabs>
-                <w:tab w:val="left" w:pos="9090" />
-            </w:tabs>
-            <w:ind w:firstLine="720" />
-            <w:rPr>
-                <w:lang w:val="en-US" />
-            </w:rPr>
-        </w:pPr>
-        <w:r>
-            <w:rPr>
-                <w:caps />
-                <w:noProof />
-                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:sz w:val="28" />
-                <w:szCs w:val="28" />
-                <w:lang w:val="en-US" />
-            </w:rPr>
-            <w:drawing id="BLENDER_RPR_ISSUES_PLOT">
-                <wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0"
-                    relativeHeight="251675648" behindDoc="0" locked="0" layoutInCell="1"
-                    allowOverlap="1">
-                    <wp:simplePos x="0" y="0" />
-                    <wp:positionH relativeFrom="margin">
-                        <wp:align>left</wp:align>
-                    </wp:positionH>
-                    <wp:positionV relativeFrom="paragraph">
-                        <wp:posOffset>361950</wp:posOffset>
-                    </wp:positionV>
-                    <wp:extent cx="6037580" cy="3018790" />
-                    <wp:effectExtent l="0" t="0" r="1270" b="0" />
-                    <wp:wrapSquare wrapText="bothSides" />
-                    <wp:docPr id="1001" name="Picture" />
-                    <wp:cNvGraphicFramePr>
-                        <a:graphicFrameLocks
-                            xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
-                            noChangeAspect="1" />
-                    </wp:cNvGraphicFramePr>
-                    <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
-                        <a:graphicData
-                            uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
-                            <pic:pic
-                                xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
-                                <pic:nvPicPr>
-                                    <pic:cNvPr id="1001" name="Picture" />
-                                    <pic:cNvPicPr />
-                                </pic:nvPicPr>
-                                <pic:blipFill>
-                                    <a:blip r:embed="rId_BLENDER_RPR_ISSUES_PLOT">
-                                        <a:extLst>
-                                            <a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
-                                                <a14:useLocalDpi
-                                                    xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main"
-                                                    val="0" />
-                                            </a:ext>
-                                        </a:extLst>
-                                    </a:blip>
-                                    <a:stretch>
-                                        <a:fillRect />
-                                    </a:stretch>
-                                </pic:blipFill>
-                                <pic:spPr>
-                                    <a:xfrm>
-                                        <a:off x="0" y="0" />
-                                        <a:ext cx="6037580" cy="3018790" />
-                                    </a:xfrm>
-                                    <a:prstGeom prst="rect">
-                                        <a:avLst />
-                                    </a:prstGeom>
-                                </pic:spPr>
-                            </pic:pic>
-                        </a:graphicData>
-                    </a:graphic>
-                    <wp14:sizeRelH relativeFrom="margin">
-                        <wp14:pctWidth>0</wp14:pctWidth>
-                    </wp14:sizeRelH>
-                    <wp14:sizeRelV relativeFrom="margin">
-                        <wp14:pctHeight>0</wp14:pctHeight>
-                    </wp14:sizeRelV>
-                </wp:anchor>
-            </w:drawing>
-        </w:r>
-        <w:r>
-            <w:rPr>
-                <w:caps />
-                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:sz w:val="28" />
-                <w:szCs w:val="28" />
-                <w:lang w:val="en-US" />
-            </w:rPr>
-            <w:t xml:space="preserve">CRITICAL AND BLOCKER</w:t>
-        </w:r>
-    </w:p>
-
-    <w:p>
-      <w:pPr>
-        <w:spacing w:before="0" w:after="0" />
-        <w:contextualSpacing />
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-        <w:fldChar w:fldCharType="end" />
+          <w:drawing id="RENDER_STUDIO_ISSUES_PLOT">
+              <wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0"
+                  relativeHeight="251675648" behindDoc="0" locked="0" layoutInCell="1"
+                  allowOverlap="1">
+                  <wp:simplePos x="0" y="0" />
+                  <wp:positionH relativeFrom="margin">
+                      <wp:align>left</wp:align>
+                  </wp:positionH>
+                  <wp:positionV relativeFrom="paragraph">
+                      <wp:posOffset>361950</wp:posOffset>
+                  </wp:positionV>
+                  <wp:extent cx="6037580" cy="3018790" />
+                  <wp:effectExtent l="0" t="0" r="1270" b="0" />
+                  <wp:wrapSquare wrapText="bothSides" />
+                  <wp:docPr id="1005" name="Picture" />
+                  <wp:cNvGraphicFramePr>
+                      <a:graphicFrameLocks
+                          xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+                          noChangeAspect="1" />
+                  </wp:cNvGraphicFramePr>
+                  <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+                      <a:graphicData
+                          uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                          <pic:pic
+                              xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                              <pic:nvPicPr>
+                                  <pic:cNvPr id="1005" name="Picture" />
+                                  <pic:cNvPicPr />
+                              </pic:nvPicPr>
+                              <pic:blipFill>
+                                    <a:blip r:embed="rId_RENDER_STUDIO_ISSUES_PLOT">
+                                      <a:extLst>
+                                          <a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
+                                              <a14:useLocalDpi
+                                                  xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main"
+                                                  val="0" />
+                                          </a:ext>
+                                      </a:extLst>
+                                  </a:blip>
+                                  <a:stretch>
+                                      <a:fillRect />
+                                  </a:stretch>
+                              </pic:blipFill>
+                              <pic:spPr>
+                                  <a:xfrm>
+                                      <a:off x="0" y="0" />
+                                      <a:ext cx="6037580" cy="3018790" />
+                                  </a:xfrm>
+                                  <a:prstGeom prst="rect">
+                                      <a:avLst />
+                                  </a:prstGeom>
+                              </pic:spPr>
+                          </pic:pic>
+                      </a:graphicData>
+                  </a:graphic>
+                  <wp14:sizeRelH relativeFrom="margin">
+                      <wp14:pctWidth>0</wp14:pctWidth>
+                  </wp14:sizeRelH>
+                  <wp14:sizeRelV relativeFrom="margin">
+                      <wp14:pctHeight>0</wp14:pctHeight>
+                  </wp14:sizeRelV>
+              </wp:anchor>
+          </w:drawing>
       </w:r>
-    </w:p>
-
-    <w:p w14:paraId="49E265E3" w14:textId="08C14A45" w:rsidR="006E4C6B" w:rsidRPr="0003239C"
-      w:rsidRDefault="006E4C6B" w:rsidP="006E4C6B">
-      <w:pPr>
-        <w:pStyle w:val="3" />
-        <w:spacing w:before="120" w:line="360" w:lineRule="auto" />
-        <w:ind w:firstLine="720" />
-      </w:pPr>
       <w:r>
-        <w:rPr>
-          <w:noProof />
-        </w:rPr>
-        <w:drawing id="BLENDER_RPR_CHART_UNRESOLVED_ISSUES">
-          <wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0"
-            relativeHeight="251662336" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1"
-            wp14:anchorId="06A7F741" wp14:editId="0E3F721A">
-            <wp:simplePos x="0" y="0" />
-            <wp:positionH relativeFrom="column">
-                <wp:posOffset>-156210</wp:posOffset>
-            </wp:positionH>
-            <wp:positionV relativeFrom="paragraph">
-                <wp:posOffset>423545</wp:posOffset>
-            </wp:positionV>
-            <wp:extent cx="2927985" cy="4164965" />
-            <wp:effectExtent l="0" t="0" r="5715" b="6985" />
-            <wp:wrapNone />
-            <wp:docPr id="9" name="Picture 9" />
-            <wp:cNvGraphicFramePr>
-              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
-                noChangeAspect="1" />
-            </wp:cNvGraphicFramePr>
-            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
-              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
-                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
-                  <pic:nvPicPr>
-                    <pic:cNvPr id="9" name="Picture 9" />
-                    <pic:cNvPicPr>
-                      <a:picLocks noChangeAspect="1" noChangeArrowheads="1" />
-                    </pic:cNvPicPr>
-                  </pic:nvPicPr>
-                  <pic:blipFill>
-                    <a:blip r:embed="rId14">
-                      <a:extLst>
-                        <a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
-                          <a14:useLocalDpi
-                            xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main"
-                            val="0" />
-                        </a:ext>
-                      </a:extLst>
-                    </a:blip>
-                    <a:stretch>
-                      <a:fillRect />
-                    </a:stretch>
-                  </pic:blipFill>
-                  <pic:spPr bwMode="auto">
-                    <a:xfrm>
-                      <a:off x="0" y="0" />
-                      <a:ext cx="2927985" cy="4164965" />
-                    </a:xfrm>
-                    <a:prstGeom prst="rect">
-                      <a:avLst />
-                    </a:prstGeom>
-                    <a:noFill />
-                    <a:ln>
-                      <a:noFill />
-                    </a:ln>
-                  </pic:spPr>
-                </pic:pic>
-              </a:graphicData>
-            </a:graphic>
-            <wp14:sizeRelH relativeFrom="margin">
-              <wp14:pctWidth>0</wp14:pctWidth>
-            </wp14:sizeRelH>
-            <wp14:sizeRelV relativeFrom="margin">
-              <wp14:pctHeight>0</wp14:pctHeight>
-            </wp14:sizeRelV>
-          </wp:anchor>
-        </w:drawing>
+          <w:rPr>
+              <w:caps />
+              <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+              <w:sz w:val="28" />
+              <w:szCs w:val="28" />
+              <w:lang w:val="en-US" />
+          </w:rPr>
+          <w:t xml:space="preserve">CRITICAL AND BLOCKER</w:t>
       </w:r>
-      <w:r w:rsidRPr="007F5255">
-        <w:rPr>
-          <w:noProof />
-        </w:rPr>
-        <w:drawing id="BLENDER_RPR_CHART_ISSUES_UPDATES_2W">
-          <wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0"
-            relativeHeight="251663360" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1"
-            wp14:anchorId="4B02A27C" wp14:editId="06CDF9E7">
-            <wp:simplePos x="0" y="0" />
-            <wp:positionH relativeFrom="column">
+  </w:p>
+  <w:p>
+    <w:pPr>
+      <w:rPr>
+        <w:rFonts w:cs="Open Sans" />
+        <w:caps />
+      </w:rPr>
+    </w:pPr>
+    <w:r>
+      <w:rPr>
+        <w:rFonts w:cs="Open Sans" />
+        <w:caps />
+      </w:rPr>
+      <w:fldChar w:fldCharType="end" />
+    </w:r>
+  </w:p>
+  <w:p>
+    <w:pPr>
+      <w:pStyle w:val="3" />
+      <w:spacing w:before="120" w:line="360" w:lineRule="auto" />
+      <w:ind w:firstLine="720" />
+    </w:pPr>
+    <w:r>
+      <w:rPr>
+        <w:noProof />
+      </w:rPr>
+      <w:drawing id="RS_CHART_ISSUES_UPDATES_2W">
+        <wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0"
+          relativeHeight="251665408" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1">
+          <wp:simplePos x="0" y="0" />
+          <wp:positionH relativeFrom="column">
               <wp:posOffset>2980690</wp:posOffset>
-            </wp:positionH>
-            <wp:positionV relativeFrom="paragraph">
+          </wp:positionH>
+          <wp:positionV relativeFrom="paragraph">
               <wp:posOffset>423545</wp:posOffset>
-            </wp:positionV>
-            <wp:extent cx="2927985" cy="4164965" />
-            <wp:effectExtent l="0" t="0" r="5715" b="6985" />
-            <wp:wrapNone />
-            <wp:docPr id="12" name="Picture 12" />
-            <wp:cNvGraphicFramePr>
-              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
-                noChangeAspect="1" />
-            </wp:cNvGraphicFramePr>
-            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
-              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
-                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
-                  <pic:nvPicPr>
-                    <pic:cNvPr id="12" name="Picture 12" />
-                    <pic:cNvPicPr>
-                      <a:picLocks noChangeAspect="1" noChangeArrowheads="1" />
-                    </pic:cNvPicPr>
-                  </pic:nvPicPr>
-                  <pic:blipFill>
-                    <a:blip r:embed="rId15">
-                      <a:extLst>
-                        <a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
-                          <a14:useLocalDpi
-                            xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main"
-                            val="0" />
-                        </a:ext>
-                      </a:extLst>
-                    </a:blip>
-                    <a:stretch>
-                      <a:fillRect />
-                    </a:stretch>
-                  </pic:blipFill>
-                  <pic:spPr bwMode="auto">
-                    <a:xfrm>
-                      <a:off x="0" y="0" />
-                      <a:ext cx="2927985" cy="4164965" />
-                    </a:xfrm>
-                    <a:prstGeom prst="rect">
-                      <a:avLst />
-                    </a:prstGeom>
+          </wp:positionV>
+          <wp:extent cx="2928620" cy="4164965" />
+          <wp:effectExtent l="0" t="0" r="5715" b="6985" />
+          <wp:wrapNone />
+          <wp:docPr id="1010" name="Picture" />
+          <wp:cNvGraphicFramePr>
+            <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+              noChangeAspect="1" />
+          </wp:cNvGraphicFramePr>
+          <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+            <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+              <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:nvPicPr>
+                  <pic:cNvPr id="1010" name="Picture" />
+                  <pic:cNvPicPr>
+                    <a:picLocks noChangeAspect="1" noChangeArrowheads="1" />
+                  </pic:cNvPicPr>
+                </pic:nvPicPr>
+                <pic:blipFill>
+                  <a:blip r:embed="rId208">
+                    <a:extLst>
+                      <a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
+                        <a14:useLocalDpi
+                          xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main"
+                          val="0" />
+                      </a:ext>
+                    </a:extLst>
+                  </a:blip>
+                  <a:stretch>
+                    <a:fillRect />
+                  </a:stretch>
+                </pic:blipFill>
+                <pic:spPr bwMode="auto">
+                  <a:xfrm>
+                    <a:off x="0" y="0" />
+                    <a:ext cx="2928620" cy="4164965" />
+                  </a:xfrm>
+                  <a:prstGeom prst="rect">
+                    <a:avLst />
+                  </a:prstGeom>
+                  <a:noFill />
+                  <a:ln>
                     <a:noFill />
-                    <a:ln>
-                      <a:noFill />
-                    </a:ln>
-                  </pic:spPr>
-                </pic:pic>
-              </a:graphicData>
-            </a:graphic>
-            <wp14:sizeRelH relativeFrom="margin">
-              <wp14:pctWidth>0</wp14:pctWidth>
-            </wp14:sizeRelH>
-            <wp14:sizeRelV relativeFrom="margin">
-              <wp14:pctHeight>0</wp14:pctHeight>
-            </wp14:sizeRelV>
-          </wp:anchor>
-        </w:drawing>
-      </w:r>
-      <w:r id="BLENDER_RPR_UNRESOLVED_ISSUES_HEADER">
-        <w:t>Unresolved issues</w:t>
-      </w:r>
-      <w:r>
-        <w:tab />
-      </w:r>
-      <w:r>
-        <w:tab />
-      </w:r>
-      <w:r>
-        <w:tab />
-      </w:r>
-      <w:r id="BLENDER_RPR_ISSUES_UPDATES_2W_HEADER">
-        <w:t>Issues Updates in 2 weekS </w:t>
-      </w:r>
-    </w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p w14:paraId="72D9F5CF" w14:textId="2EB7F1DF" w:rsidR="006E4C6B" w:rsidRDefault="00000000"
-      w:rsidP="006E4C6B">
-      <w:pPr>
+                  </a:ln>
+                </pic:spPr>
+              </pic:pic>
+            </a:graphicData>
+          </a:graphic>
+          <wp14:sizeRelH relativeFrom="margin">
+            <wp14:pctWidth>0</wp14:pctWidth>
+          </wp14:sizeRelH>
+          <wp14:sizeRelV relativeFrom="margin">
+            <wp14:pctHeight>0</wp14:pctHeight>
+          </wp14:sizeRelV>
+        </wp:anchor>
+      </w:drawing>
+    </w:r>
+    <w:r>
+      <w:rPr>
+        <w:noProof />
+      </w:rPr>
+      <w:drawing id="RS_CHART_UNRESOLVED_ISSUES">
+        <wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0"
+          relativeHeight="251666432" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1">
+          <wp:simplePos x="0" y="0" />
+          <wp:positionH relativeFrom="column">
+              <wp:posOffset>-156210</wp:posOffset>
+          </wp:positionH>
+          <wp:positionV relativeFrom="paragraph">
+              <wp:posOffset>423545</wp:posOffset>
+          </wp:positionV>
+          <wp:extent cx="2928620" cy="4164965" />
+          <wp:effectExtent l="0" t="0" r="5715" b="6985" />
+          <wp:wrapNone />
+          <wp:docPr id="1011" name="Picture" />
+          <wp:cNvGraphicFramePr>
+            <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+              noChangeAspect="1" />
+          </wp:cNvGraphicFramePr>
+          <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+            <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+              <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:nvPicPr>
+                  <pic:cNvPr id="1011" name="Picture" />
+                  <pic:cNvPicPr>
+                    <a:picLocks noChangeAspect="1" noChangeArrowheads="1" />
+                  </pic:cNvPicPr>
+                </pic:nvPicPr>
+                <pic:blipFill>
+                  <a:blip r:embed="rId209">
+                    <a:extLst>
+                      <a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
+                        <a14:useLocalDpi
+                          xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main"
+                          val="0" />
+                      </a:ext>
+                    </a:extLst>
+                  </a:blip>
+                  <a:stretch>
+                    <a:fillRect />
+                  </a:stretch>
+                </pic:blipFill>
+                <pic:spPr bwMode="auto">
+                  <a:xfrm>
+                    <a:off x="0" y="0" />
+                    <a:ext cx="2928620" cy="4164965" />
+                  </a:xfrm>
+                  <a:prstGeom prst="rect">
+                    <a:avLst />
+                  </a:prstGeom>
+                  <a:noFill />
+                  <a:ln>
+                    <a:noFill />
+                  </a:ln>
+                </pic:spPr>
+              </pic:pic>
+            </a:graphicData>
+          </a:graphic>
+          <wp14:sizeRelH relativeFrom="margin">
+            <wp14:pctWidth>0</wp14:pctWidth>
+          </wp14:sizeRelH>
+          <wp14:sizeRelV relativeFrom="margin">
+            <wp14:pctHeight>0</wp14:pctHeight>
+          </wp14:sizeRelV>
+        </wp:anchor>
+      </w:drawing>
+    </w:r>
+    <w:r id="RS_UNRESOLVED_ISSUES_HEADER">
+      <w:t>Unresolved issues</w:t>
+    </w:r>
+    <w:r>
+      <w:tab />
+    </w:r>
+    <w:r>
+      <w:tab />
+    </w:r>
+    <w:r>
+      <w:tab />
+    </w:r>
+    <w:r id="RS_ISSUES_UPDATES_2W_HEADER">
+      <w:t>Issues Updates in 2 weeks</w:t>
+    </w:r>
+  </w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p w14:paraId="2F2970AD" w14:textId="41E1CA62" w:rsidR="006E4C6B" w:rsidRDefault="00000000"
+    w:rsidP="004671BD">
+    <w:hyperlink r:id="rId24" w:history="1">
+      <w:r w:rsidR="006E4C6B" w:rsidRPr="00DE0CF7">
         <w:rPr>
           <w:rStyle w:val="ab" />
-          <w:lang w:val="en-US" />
+          <w:lang w:val="en-US" w:eastAsia="ja-JP" />
         </w:rPr>
-      </w:pPr>
-      <w:hyperlink r:id="rId16" w:history="1">
-        <w:r w:rsidR="006E4C6B" w:rsidRPr="000E5CDD">
-          <w:rPr>
-            <w:rStyle w:val="ab" />
-            <w:lang w:val="en-US" />
-          </w:rPr>
-          <w:t>View issues</w:t>
-        </w:r>
-      </w:hyperlink>
-      <w:r>
-        <w:br w:type="page"/>
+        <w:t>View issues</w:t>
       </w:r>
-    </w:p>
-    <w:p w14:paraId="4E309785" w14:textId="3781FC18" w:rsidR="00673017" w:rsidRPr="00673017"
+    </w:hyperlink>
+    <w:r>
+      <w:br w:type="page" />
+    </w:r>
+  </w:p>
+  <w:p w14:paraId="4E309785" w14:textId="3781FC18" w:rsidR="00673017" w:rsidRPr="00673017"
       w:rsidRDefault="00633AAB" w:rsidP="00673017">
       <w:pPr>
         <w:pStyle w:val="2" />
@@ -6548,52 +5949,52 @@
         <w:br w:type="page" />
       </w:r>
     </w:p>
-    <w:p w14:paraId="1654948A" w14:textId="77777777" w:rsidR="006E4C6B" w:rsidRDefault="006E4C6B"
-      w:rsidP="006E4C6B">
+    <w:p w14:paraId="74FBB4AA" w14:textId="05869459" w:rsidR="00782A27" w:rsidRPr="00782A27"
+      w:rsidRDefault="00782A27" w:rsidP="00F67C4A">
       <w:pPr>
         <w:pStyle w:val="2" />
+        <w:spacing w:line="240" w:lineRule="auto" />
       </w:pPr>
-      <w:bookmarkStart w:id="15" w:name="_Toc125037329" />
-      <w:bookmarkStart w:id="16" w:name="_Toc125915294" />
-      <w:bookmarkStart w:id="12" w:name="_Render_Studio" />
-      <w:r w:rsidRPr="003E6A00">
-        <w:lastRenderedPageBreak />
-        <w:t>Render Studio</w:t>
+      <w:bookmarkStart w:id="6" w:name="_Maya_RPR_1" />
+      <w:bookmarkStart w:id="7" w:name="_Toc125915290" />
+      <w:bookmarkEnd w:id="6" />
+      <w:r>
+        <w:t>Maya RPR</w:t>
       </w:r>
-      <w:bookmarkEnd w:id="12" />
-      <w:bookmarkEnd w:id="15" />
-      <w:bookmarkEnd w:id="16" />
+      <w:bookmarkEnd w:id="7" />
     </w:p>
-    <w:p id="RENDER_STUDIO_TASK_LIST_HEADER_COMPLETED" w14:paraId="589FF0EC" w14:textId="3CB2EB07"
-      w:rsidR="006E4C6B" w:rsidRPr="006E4C6B"
-      w:rsidRDefault="006E4C6B" w:rsidP="006E4C6B">
+    <w:p id="MAYA_RPR_TASK_LIST_HEADER_COMPLETED" w14:paraId="70A6D05B" w14:textId="3E79533E"
+      w:rsidR="00702B32" w:rsidRPr="009E00CF"
+      w:rsidRDefault="00782A27" w:rsidP="009E00CF">
       <w:pPr>
         <w:pStyle w:val="3" />
+        <w:spacing w:line="240" w:lineRule="auto" />
       </w:pPr>
-      <w:r w:rsidRPr="0027267B">
+      <w:r w:rsidRPr="00335F80">
         <w:t>Completed Tasks</w:t>
       </w:r>
     </w:p>
-    <w:p id="RENDER_STUDIO_TASK_LIST_HEADER_PLANNED" w14:paraId="58BEE80D" w14:textId="6581703C"
-      w:rsidR="006E4C6B" w:rsidRPr="006E4C6B"
-      w:rsidRDefault="006E4C6B" w:rsidP="006E4C6B">
+    <w:p id="MAYA_RPR_TASK_LIST_HEADER_PLANNED" w14:paraId="41202A2B" w14:textId="6233C3E5"
+      w:rsidR="00782A27" w:rsidRPr="009E00CF"
+      w:rsidRDefault="00782A27" w:rsidP="009E00CF">
       <w:pPr>
         <w:pStyle w:val="3" />
       </w:pPr>
-      <w:r w:rsidRPr="000D719B">
-        <w:t>Planned activities</w:t>
+      <w:r w:rsidRPr="00335F80">
+        <w:t>Planned Activities</w:t>
       </w:r>
     </w:p>
-    <w:p w14:paraId="2ED91F21" w14:textId="77777777" w:rsidR="006E4C6B" w:rsidRDefault="006E4C6B"
-      w:rsidP="006E4C6B">
+    <w:p w14:paraId="09FE867F" w14:textId="32732DED" w:rsidR="00782A27" w:rsidRDefault="00782A27"
+      w:rsidP="006C37CC">
       <w:pPr>
         <w:pStyle w:val="3" />
+        <w:spacing w:line="240" w:lineRule="auto" />
       </w:pPr>
-      <w:r>
+      <w:r w:rsidRPr="00335F80">
         <w:t>Pull Requests Status</w:t>
       </w:r>
     </w:p>
-    <w:tbl id="RENDER_STUDIO_PR_STATUS_TBL">
+    <w:tbl id="MAYA_RPR_PR_STATUS_TBL">
       <w:tblPr>
         <w:tblW w:w="5000" w:type="pct" />
         <w:tblBorders>
@@ -6614,18 +6015,18 @@
           w:noHBand="1" w:noVBand="1" />
       </w:tblPr>
       <w:tblGrid>
-        <w:gridCol w:w="6025" />
-        <w:gridCol w:w="2159" />
+        <w:gridCol w:w="4585" />
+        <w:gridCol w:w="3599" />
         <w:gridCol w:w="1163" />
       </w:tblGrid>
-      <w:tr w:rsidR="006E4C6B" w:rsidRPr="006E4D0A" w14:paraId="376AA74A" w14:textId="77777777"
-        w:rsidTr="00867A59">
+      <w:tr w:rsidR="00DF24EA" w:rsidRPr="001A7256" w14:paraId="7DD7AB5F" w14:textId="77777777"
+        w:rsidTr="0003239C">
         <w:trPr>
           <w:trHeight w:val="297" />
         </w:trPr>
         <w:tc>
           <w:tcPr>
-            <w:tcW w:w="3223" w:type="pct" />
+            <w:tcW w:w="2453" w:type="pct" />
             <w:shd w:val="clear" w:color="auto" w:fill="F2F2F2" w:themeFill="background1"
               w:themeFillShade="F2" />
             <w:tcMar>
@@ -6635,25 +6036,23 @@
               <w:right w:w="100" w:type="dxa" />
             </w:tcMar>
           </w:tcPr>
-          <w:p w14:paraId="5A8BF7C0" w14:textId="77777777" w:rsidR="006E4C6B" w:rsidRPr="002D67A0"
-            w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
+          <w:p w14:paraId="1E35B9CA" w14:textId="77777777" w:rsidR="00DF24EA" w:rsidRPr="001A7256"
+            w:rsidRDefault="00DF24EA" w:rsidP="0003239C">
             <w:pPr>
               <w:pStyle w:val="Tableheading" />
               <w:jc w:val="center" />
               <w:rPr>
                 <w:rFonts w:cs="Open Sans" />
                 <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:sz w:val="20" />
-                <w:szCs w:val="20" />
+                <w:szCs w:val="19" />
                 <w:lang w:val="en-US" />
               </w:rPr>
             </w:pPr>
-            <w:r w:rsidRPr="002D67A0">
+            <w:r w:rsidRPr="001A7256">
               <w:rPr>
                 <w:rFonts w:cs="Open Sans" />
                 <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:sz w:val="20" />
-                <w:szCs w:val="20" />
+                <w:szCs w:val="19" />
                 <w:lang w:val="en-US" />
               </w:rPr>
               <w:t>Pull Request</w:t>
@@ -6662,7 +6061,7 @@
         </w:tc>
         <w:tc>
           <w:tcPr>
-            <w:tcW w:w="1155" w:type="pct" />
+            <w:tcW w:w="1925" w:type="pct" />
             <w:shd w:val="clear" w:color="auto" w:fill="F2F2F2" w:themeFill="background1"
               w:themeFillShade="F2" />
             <w:tcMar>
@@ -6672,25 +6071,23 @@
               <w:right w:w="100" w:type="dxa" />
             </w:tcMar>
           </w:tcPr>
-          <w:p w14:paraId="46AC5485" w14:textId="77777777" w:rsidR="006E4C6B" w:rsidRPr="002D67A0"
-            w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
+          <w:p w14:paraId="0E254E3B" w14:textId="77777777" w:rsidR="00DF24EA" w:rsidRPr="001A7256"
+            w:rsidRDefault="00DF24EA" w:rsidP="0003239C">
             <w:pPr>
               <w:pStyle w:val="Tableheading" />
               <w:jc w:val="center" />
               <w:rPr>
                 <w:rFonts w:cs="Open Sans" />
                 <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:sz w:val="20" />
-                <w:szCs w:val="20" />
+                <w:szCs w:val="19" />
                 <w:lang w:val="en-US" />
               </w:rPr>
             </w:pPr>
-            <w:r w:rsidRPr="002D67A0">
+            <w:r w:rsidRPr="001A7256">
               <w:rPr>
                 <w:rFonts w:cs="Open Sans" />
                 <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:sz w:val="20" />
-                <w:szCs w:val="20" />
+                <w:szCs w:val="19" />
                 <w:lang w:val="en-US" />
               </w:rPr>
               <w:t>Comments</w:t>
@@ -6709,25 +6106,23 @@
               <w:right w:w="100" w:type="dxa" />
             </w:tcMar>
           </w:tcPr>
-          <w:p w14:paraId="5C334F00" w14:textId="77777777" w:rsidR="006E4C6B" w:rsidRPr="002D67A0"
-            w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
+          <w:p w14:paraId="4836EABA" w14:textId="77777777" w:rsidR="00DF24EA" w:rsidRPr="001A7256"
+            w:rsidRDefault="00DF24EA" w:rsidP="0003239C">
             <w:pPr>
               <w:pStyle w:val="Tableheading" />
               <w:jc w:val="center" />
               <w:rPr>
                 <w:rFonts w:cs="Open Sans" />
                 <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:sz w:val="20" />
-                <w:szCs w:val="20" />
+                <w:szCs w:val="19" />
                 <w:lang w:val="en-US" />
               </w:rPr>
             </w:pPr>
-            <w:r w:rsidRPr="002D67A0">
+            <w:r w:rsidRPr="001A7256">
               <w:rPr>
                 <w:rFonts w:cs="Open Sans" />
                 <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
-                <w:sz w:val="20" />
-                <w:szCs w:val="20" />
+                <w:szCs w:val="19" />
                 <w:lang w:val="en-US" />
               </w:rPr>
               <w:t>Status</w:t>
@@ -6735,14 +6130,14 @@
           </w:p>
         </w:tc>
       </w:tr>
-      <w:tr w:rsidR="006E4C6B" w:rsidRPr="002356AE" w14:paraId="0F24C47C" w14:textId="77777777"
-        w:rsidTr="00867A59">
+      <w:tr w:rsidR="00DF24EA" w:rsidRPr="001A7256" w14:paraId="19078575" w14:textId="77777777"
+        w:rsidTr="006C37CC">
         <w:trPr>
-          <w:trHeight w:val="313" />
+          <w:trHeight w:val="331" />
         </w:trPr>
         <w:tc>
           <w:tcPr>
-            <w:tcW w:w="3223" w:type="pct" />
+            <w:tcW w:w="2453" w:type="pct" />
             <w:shd w:val="clear" w:color="auto" w:fill="auto" />
             <w:tcMar>
               <w:top w:w="100" w:type="dxa" />
@@ -6751,22 +6146,22 @@
               <w:right w:w="100" w:type="dxa" />
             </w:tcMar>
           </w:tcPr>
-          <w:p w14:paraId="11A09821" w14:textId="514CC0CE" w:rsidR="006E4C6B" w:rsidRPr="004355EF"
-            w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
+          <w:p w14:paraId="55D6587E" w14:textId="0566C65F" w:rsidR="00DF24EA"
+            w:rsidRDefault="00DF24EA" w:rsidP="0003239C">
             <w:pPr>
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
               <w:jc w:val="center" />
               <w:rPr>
-                <w:rStyle w:val="ab" />
-                <w:sz w:val="19" />
+                <w:rFonts w:cs="Open Sans" />
                 <w:szCs w:val="19" />
-                <w:lang w:val="en-US" />
               </w:rPr>
             </w:pPr>
           </w:p>
         </w:tc>
         <w:tc>
           <w:tcPr>
-            <w:tcW w:w="1155" w:type="pct" />
+            <w:tcW w:w="1925" w:type="pct" />
             <w:shd w:val="clear" w:color="auto" w:fill="auto" />
             <w:tcMar>
               <w:top w:w="100" w:type="dxa" />
@@ -6775,10 +6170,16 @@
               <w:right w:w="100" w:type="dxa" />
             </w:tcMar>
           </w:tcPr>
-          <w:p w14:paraId="58F8E016" w14:textId="6E55167E" w:rsidR="006E4C6B" w:rsidRPr="004355EF"
-            w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
+          <w:p w14:paraId="1B0DB2B7" w14:textId="181DB39C" w:rsidR="00DF24EA" w:rsidRPr="00DF24EA"
+            w:rsidRDefault="00DF24EA" w:rsidP="00DF24EA">
             <w:pPr>
-              <w:pStyle w:val="QAReportTablesText" />
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
             </w:pPr>
           </w:p>
         </w:tc>
@@ -6793,22 +6194,28 @@
               <w:right w:w="100" w:type="dxa" />
             </w:tcMar>
           </w:tcPr>
-          <w:p w14:paraId="5EB98B60" w14:textId="2CDB2632" w:rsidR="006E4C6B" w:rsidRPr="004355EF"
-            w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
+          <w:p w14:paraId="778DE141" w14:textId="625CAB1F" w:rsidR="00DF24EA"
+            w:rsidRDefault="00DF24EA" w:rsidP="00DF24EA">
             <w:pPr>
-              <w:pStyle w:val="QAReportTablesText" />
+              <w:pStyle w:val="Tabletext" />
+              <w:spacing w:before="10" w:after="10" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:szCs w:val="19" />
+              </w:rPr>
             </w:pPr>
           </w:p>
         </w:tc>
       </w:tr>
     </w:tbl>
-    <w:p id="RENDER_STUDIO_BUGS_LINK">
+    <w:p id="MAYA_RPR_BUGS_LINK">
       <w:pPr>
         <w:rPr>
           <w:rFonts w:cs="Open Sans" />
         </w:rPr>
       </w:pPr>
-      <w:hyperlink r:id="rId_new_bugs_link_RENDER_STUDIO">
+      <w:hyperlink r:id="rId_new_bugs_link_MAYA_RPR">
         <w:r>
           <w:rPr>
             <w:rStyle w:val="ab" />
@@ -6836,7 +6243,7 @@
                 <w:szCs w:val="28" />
                 <w:lang w:val="en-US" />
             </w:rPr>
-            <w:drawing id="RENDER_STUDIO_ISSUES_PLOT">
+            <w:drawing id="MAYA_RPR_ISSUES_PLOT">
                 <wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0"
                     relativeHeight="251675648" behindDoc="0" locked="0" layoutInCell="1"
                     allowOverlap="1">
@@ -6850,7 +6257,7 @@
                     <wp:extent cx="6037580" cy="3018790" />
                     <wp:effectExtent l="0" t="0" r="1270" b="0" />
                     <wp:wrapSquare wrapText="bothSides" />
-                    <wp:docPr id="1005" name="Picture" />
+                    <wp:docPr id="1000" name="Picture" />
                     <wp:cNvGraphicFramePr>
                         <a:graphicFrameLocks
                             xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
@@ -6862,11 +6269,11 @@
                             <pic:pic
                                 xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
                                 <pic:nvPicPr>
-                                    <pic:cNvPr id="1005" name="Picture" />
+                                    <pic:cNvPr id="1000" name="Picture" />
                                     <pic:cNvPicPr />
                                 </pic:nvPicPr>
                                 <pic:blipFill>
-                                      <a:blip r:embed="rId_RENDER_STUDIO_ISSUES_PLOT">
+                                    <a:blip r:embed="rId_MAYA_RPR_ISSUES_PLOT">
                                         <a:extLst>
                                             <a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
                                                 <a14:useLocalDpi
@@ -6911,22 +6318,25 @@
             <w:t xml:space="preserve">CRITICAL AND BLOCKER</w:t>
         </w:r>
     </w:p>
+
     <w:p>
       <w:pPr>
+        <w:spacing w:before="0" w:after="0" />
+        <w:contextualSpacing />
         <w:rPr>
-          <w:rFonts w:cs="Open Sans" />
-          <w:caps />
+          <w:lang w:val="en-US" />
         </w:rPr>
       </w:pPr>
       <w:r>
         <w:rPr>
-          <w:rFonts w:cs="Open Sans" />
-          <w:caps />
+          <w:lang w:val="en-US" />
         </w:rPr>
         <w:fldChar w:fldCharType="end" />
       </w:r>
     </w:p>
-    <w:p>
+
+    <w:p w14:paraId="3355F509" w14:textId="123D1C71" w:rsidR="00117934" w:rsidRDefault="003622FE"
+      w:rsidP="00F67C4A">
       <w:pPr>
         <w:pStyle w:val="3" />
         <w:spacing w:before="120" w:line="360" w:lineRule="auto" />
@@ -6936,9 +6346,10 @@
         <w:rPr>
           <w:noProof />
         </w:rPr>
-        <w:drawing id="RS_CHART_ISSUES_UPDATES_2W">
+        <w:drawing id="MAYA_RPR_CHART_ISSUES_UPDATES_2W">
           <wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0"
-            relativeHeight="251665408" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1">
+            relativeHeight="251665408" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1"
+            wp14:anchorId="2301C799" wp14:editId="1976EEF5">
             <wp:simplePos x="0" y="0" />
             <wp:positionH relativeFrom="column">
                 <wp:posOffset>2980690</wp:posOffset>
@@ -6949,7 +6360,7 @@
             <wp:extent cx="2928620" cy="4164965" />
             <wp:effectExtent l="0" t="0" r="5715" b="6985" />
             <wp:wrapNone />
-            <wp:docPr id="1010" name="Picture" />
+            <wp:docPr id="5" name="Picture 5" />
             <wp:cNvGraphicFramePr>
               <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
                 noChangeAspect="1" />
@@ -6958,13 +6369,13 @@
               <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
                 <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
                   <pic:nvPicPr>
-                    <pic:cNvPr id="1010" name="Picture" />
+                    <pic:cNvPr id="5" name="Picture 5" />
                     <pic:cNvPicPr>
                       <a:picLocks noChangeAspect="1" noChangeArrowheads="1" />
                     </pic:cNvPicPr>
                   </pic:nvPicPr>
                   <pic:blipFill>
-                    <a:blip r:embed="rId208">
+                    <a:blip r:embed="rId11">
                       <a:extLst>
                         <a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
                           <a14:useLocalDpi
@@ -7006,9 +6417,10 @@
         <w:rPr>
           <w:noProof />
         </w:rPr>
-        <w:drawing id="RS_CHART_UNRESOLVED_ISSUES">
+        <w:drawing id="MAYA_RPR_CHART_UNRESOLVED_ISSUES">
           <wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0"
-            relativeHeight="251666432" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1">
+            relativeHeight="251666432" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1"
+            wp14:anchorId="049267EB" wp14:editId="4D78DB7D">
             <wp:simplePos x="0" y="0" />
             <wp:positionH relativeFrom="column">
                 <wp:posOffset>-156210</wp:posOffset>
@@ -7019,7 +6431,7 @@
             <wp:extent cx="2928620" cy="4164965" />
             <wp:effectExtent l="0" t="0" r="5715" b="6985" />
             <wp:wrapNone />
-            <wp:docPr id="1011" name="Picture" />
+            <wp:docPr id="2" name="Picture 2" />
             <wp:cNvGraphicFramePr>
               <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
                 noChangeAspect="1" />
@@ -7028,13 +6440,13 @@
               <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
                 <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
                   <pic:nvPicPr>
-                    <pic:cNvPr id="1011" name="Picture" />
+                    <pic:cNvPr id="2" name="Picture 2" />
                     <pic:cNvPicPr>
                       <a:picLocks noChangeAspect="1" noChangeArrowheads="1" />
                     </pic:cNvPicPr>
                   </pic:nvPicPr>
                   <pic:blipFill>
-                    <a:blip r:embed="rId209">
+                    <a:blip r:embed="rId12">
                       <a:extLst>
                         <a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
                           <a14:useLocalDpi
@@ -7072,7 +6484,7 @@
           </wp:anchor>
         </w:drawing>
       </w:r>
-      <w:r id="RS_UNRESOLVED_ISSUES_HEADER">
+      <w:r id="MAYA_RPR_UNRESOLVED_ISSUES_HEADER">
         <w:t>Unresolved issues</w:t>
       </w:r>
       <w:r>
@@ -7084,7 +6496,7 @@
       <w:r>
         <w:tab />
       </w:r>
-      <w:r id="RS_ISSUES_UPDATES_2W_HEADER">
+      <w:r id="MAYA_RPR_ISSUES_UPDATES_2W_HEADER">
         <w:t>Issues Updates in 2 weeks</w:t>
       </w:r>
     </w:p>
@@ -7106,19 +6518,607 @@
     <w:p></w:p>
     <w:p></w:p>
     <w:p></w:p>
-    <w:p w14:paraId="2F2970AD" w14:textId="41E1CA62" w:rsidR="006E4C6B" w:rsidRDefault="00000000"
-      w:rsidP="004671BD">
-      <w:hyperlink r:id="rId24" w:history="1">
-        <w:r w:rsidR="006E4C6B" w:rsidRPr="00DE0CF7">
+    <w:p w14:paraId="06DB85FA" w14:textId="4C34606F" w:rsidR="009E00CF" w:rsidRDefault="00000000"
+      w:rsidP="00C21915">
+      <w:pPr>
+        <w:spacing w:before="480" w:line="480" w:lineRule="auto" />
+        <w:rPr>
+          <w:rStyle w:val="ab" />
+          <w:lang w:val="en-US" />
+        </w:rPr>
+      </w:pPr>
+      <w:hyperlink r:id="rId13" w:history="1">
+        <w:r w:rsidR="0003239C" w:rsidRPr="000E5CDD">
           <w:rPr>
             <w:rStyle w:val="ab" />
-            <w:lang w:val="en-US" w:eastAsia="ja-JP" />
+            <w:lang w:val="en-US" />
           </w:rPr>
           <w:t>View issues</w:t>
         </w:r>
       </w:hyperlink>
       <w:r>
-        <w:br w:type="page" />
+        <w:br w:type="page"/>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1DBDE3F4" w14:textId="1CD8C3CF" w:rsidR="006E4C6B" w:rsidRPr="006E4C6B"
+      w:rsidRDefault="006E4C6B" w:rsidP="006E4C6B">
+      <w:pPr>
+        <w:pStyle w:val="2" />
+      </w:pPr>
+      <w:bookmarkStart w:id="8" w:name="_Toc125915291" />
+      <w:bookmarkStart w:id="9" w:name="_Blender_RPR" />
+      <w:r>
+        <w:lastRenderedPageBreak />
+        <w:t>Blender RPR</w:t>
+      </w:r>
+      <w:bookmarkEnd w:id="9" />
+      <w:bookmarkEnd w:id="8" />
+    </w:p>
+    <w:p id="BLENDER_RPR_TASK_LIST_HEADER_COMPLETED" w14:paraId="382F8C5C" w14:textId="76F0296C"
+      w:rsidR="006E4C6B" w:rsidRPr="006E4C6B"
+      w:rsidRDefault="006E4C6B" w:rsidP="006E4C6B">
+      <w:pPr>
+        <w:pStyle w:val="3" />
+      </w:pPr>
+      <w:r w:rsidRPr="0088542A">
+        <w:t>Completed Tasks</w:t>
+      </w:r>
+    </w:p>
+    <w:p id="BLENDER_RPR_TASK_LIST_HEADER_PLANNED" w14:paraId="3F8CB6BB" w14:textId="255044AC"
+      w:rsidR="006E4C6B" w:rsidRPr="006E4C6B"
+      w:rsidRDefault="006E4C6B" w:rsidP="006E4C6B">
+      <w:pPr>
+        <w:pStyle w:val="3" />
+      </w:pPr>
+      <w:r>
+        <w:t>Planned Activities</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="144AEB58" w14:textId="77777777" w:rsidR="006E4C6B" w:rsidRDefault="006E4C6B"
+      w:rsidP="006E4C6B">
+      <w:pPr>
+        <w:pStyle w:val="3" />
+      </w:pPr>
+      <w:r>
+        <w:t>Pull Requests Status</w:t>
+      </w:r>
+    </w:p>
+    <w:tbl id="BLENDER_RPR_PR_STATUS_TBL">
+      <w:tblPr>
+        <w:tblW w:w="5000" w:type="pct" />
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
+            w:themeShade="D9" />
+          <w:left w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
+            w:themeShade="D9" />
+          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
+            w:themeShade="D9" />
+          <w:right w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
+            w:themeShade="D9" />
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
+            w:themeShade="D9" />
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="D9D9D9" w:themeColor="background1"
+            w:themeShade="D9" />
+        </w:tblBorders>
+        <w:tblLook w:val="0600" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0"
+          w:noHBand="1" w:noVBand="1" />
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="4585" />
+        <w:gridCol w:w="3599" />
+        <w:gridCol w:w="1163" />
+      </w:tblGrid>
+      <w:tr w:rsidR="006E4C6B" w:rsidRPr="001A7256" w14:paraId="2AD93293" w14:textId="77777777"
+        w:rsidTr="00867A59">
+        <w:trPr>
+          <w:trHeight w:val="297" />
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2453" w:type="pct" />
+            <w:shd w:val="clear" w:color="auto" w:fill="F2F2F2" w:themeFill="background1"
+              w:themeFillShade="F2" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="1933466B" w14:textId="77777777" w:rsidR="006E4C6B" w:rsidRPr="002D67A0"
+            w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
+            <w:pPr>
+              <w:pStyle w:val="Tableheading" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+                <w:sz w:val="20" />
+                <w:szCs w:val="20" />
+                <w:lang w:val="en-US" />
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="002D67A0">
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+                <w:sz w:val="20" />
+                <w:szCs w:val="20" />
+                <w:lang w:val="en-US" />
+              </w:rPr>
+              <w:t>Pull Request</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1925" w:type="pct" />
+            <w:shd w:val="clear" w:color="auto" w:fill="F2F2F2" w:themeFill="background1"
+              w:themeFillShade="F2" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="5F213A3B" w14:textId="77777777" w:rsidR="006E4C6B" w:rsidRPr="002D67A0"
+            w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
+            <w:pPr>
+              <w:pStyle w:val="Tableheading" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+                <w:sz w:val="20" />
+                <w:szCs w:val="20" />
+                <w:lang w:val="en-US" />
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="002D67A0">
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+                <w:sz w:val="20" />
+                <w:szCs w:val="20" />
+                <w:lang w:val="en-US" />
+              </w:rPr>
+              <w:t>Comments</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="622" w:type="pct" />
+            <w:shd w:val="clear" w:color="auto" w:fill="F2F2F2" w:themeFill="background1"
+              w:themeFillShade="F2" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="18C3CE97" w14:textId="77777777" w:rsidR="006E4C6B" w:rsidRPr="002D67A0"
+            w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
+            <w:pPr>
+              <w:pStyle w:val="Tableheading" />
+              <w:jc w:val="center" />
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+                <w:sz w:val="20" />
+                <w:szCs w:val="20" />
+                <w:lang w:val="en-US" />
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="002D67A0">
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+                <w:sz w:val="20" />
+                <w:szCs w:val="20" />
+                <w:lang w:val="en-US" />
+              </w:rPr>
+              <w:t>Status</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="006E4C6B" w:rsidRPr="00562209" w14:paraId="41E49BD5" w14:textId="77777777"
+        w:rsidTr="00867A59">
+        <w:trPr>
+          <w:trHeight w:val="361" />
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2453" w:type="pct" />
+            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="69760253" w14:textId="6E3A96D7" w:rsidR="006E4C6B" w:rsidRPr="004355EF"
+            w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
+            <w:pPr>
+              <w:pStyle w:val="QAReportTablesText" />
+              <w:rPr>
+                <w:rStyle w:val="ab" />
+                <w:rFonts w:cs="Arial" />
+                <w:lang w:eastAsia="ja-JP" />
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1925" w:type="pct" />
+            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="6F440A95" w14:textId="11F13994" w:rsidR="006E4C6B" w:rsidRPr="004355EF"
+            w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
+            <w:pPr>
+              <w:pStyle w:val="QAReportTablesText" />
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="622" w:type="pct" />
+            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+            <w:tcMar>
+              <w:top w:w="100" w:type="dxa" />
+              <w:left w:w="100" w:type="dxa" />
+              <w:bottom w:w="100" w:type="dxa" />
+              <w:right w:w="100" w:type="dxa" />
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="2056ED91" w14:textId="76721735" w:rsidR="006E4C6B" w:rsidRPr="004355EF"
+            w:rsidRDefault="006E4C6B" w:rsidP="00867A59">
+            <w:pPr>
+              <w:pStyle w:val="QAReportTablesText" />
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p id="BLENDER_RPR_BUGS_LINK">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:cs="Open Sans" />
+        </w:rPr>
+      </w:pPr>
+      <w:hyperlink r:id="rId_new_bugs_link_BLENDER_RPR">
+        <w:r>
+          <w:rPr>
+            <w:rStyle w:val="ab" />
+          </w:rPr>
+          <w:t>New bugs (7)</w:t>
+        </w:r>
+      </w:hyperlink>
+    </w:p>
+    <w:p>
+        <w:pPr>
+            <w:tabs>
+                <w:tab w:val="left" w:pos="9090" />
+            </w:tabs>
+            <w:ind w:firstLine="720" />
+            <w:rPr>
+                <w:lang w:val="en-US" />
+            </w:rPr>
+        </w:pPr>
+        <w:r>
+            <w:rPr>
+                <w:caps />
+                <w:noProof />
+                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+                <w:sz w:val="28" />
+                <w:szCs w:val="28" />
+                <w:lang w:val="en-US" />
+            </w:rPr>
+            <w:drawing id="BLENDER_RPR_ISSUES_PLOT">
+                <wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0"
+                    relativeHeight="251675648" behindDoc="0" locked="0" layoutInCell="1"
+                    allowOverlap="1">
+                    <wp:simplePos x="0" y="0" />
+                    <wp:positionH relativeFrom="margin">
+                        <wp:align>left</wp:align>
+                    </wp:positionH>
+                    <wp:positionV relativeFrom="paragraph">
+                        <wp:posOffset>361950</wp:posOffset>
+                    </wp:positionV>
+                    <wp:extent cx="6037580" cy="3018790" />
+                    <wp:effectExtent l="0" t="0" r="1270" b="0" />
+                    <wp:wrapSquare wrapText="bothSides" />
+                    <wp:docPr id="1001" name="Picture" />
+                    <wp:cNvGraphicFramePr>
+                        <a:graphicFrameLocks
+                            xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+                            noChangeAspect="1" />
+                    </wp:cNvGraphicFramePr>
+                    <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+                        <a:graphicData
+                            uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                            <pic:pic
+                                xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                                <pic:nvPicPr>
+                                    <pic:cNvPr id="1001" name="Picture" />
+                                    <pic:cNvPicPr />
+                                </pic:nvPicPr>
+                                <pic:blipFill>
+                                    <a:blip r:embed="rId_BLENDER_RPR_ISSUES_PLOT">
+                                        <a:extLst>
+                                            <a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
+                                                <a14:useLocalDpi
+                                                    xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main"
+                                                    val="0" />
+                                            </a:ext>
+                                        </a:extLst>
+                                    </a:blip>
+                                    <a:stretch>
+                                        <a:fillRect />
+                                    </a:stretch>
+                                </pic:blipFill>
+                                <pic:spPr>
+                                    <a:xfrm>
+                                        <a:off x="0" y="0" />
+                                        <a:ext cx="6037580" cy="3018790" />
+                                    </a:xfrm>
+                                    <a:prstGeom prst="rect">
+                                        <a:avLst />
+                                    </a:prstGeom>
+                                </pic:spPr>
+                            </pic:pic>
+                        </a:graphicData>
+                    </a:graphic>
+                    <wp14:sizeRelH relativeFrom="margin">
+                        <wp14:pctWidth>0</wp14:pctWidth>
+                    </wp14:sizeRelH>
+                    <wp14:sizeRelV relativeFrom="margin">
+                        <wp14:pctHeight>0</wp14:pctHeight>
+                    </wp14:sizeRelV>
+                </wp:anchor>
+            </w:drawing>
+        </w:r>
+        <w:r>
+            <w:rPr>
+                <w:caps />
+                <w:color w:val="595959" w:themeColor="text1" w:themeTint="A6" />
+                <w:sz w:val="28" />
+                <w:szCs w:val="28" />
+                <w:lang w:val="en-US" />
+            </w:rPr>
+            <w:t xml:space="preserve">CRITICAL AND BLOCKER</w:t>
+        </w:r>
+    </w:p>
+
+    <w:p>
+      <w:pPr>
+        <w:spacing w:before="0" w:after="0" />
+        <w:contextualSpacing />
+        <w:rPr>
+          <w:lang w:val="en-US" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:lang w:val="en-US" />
+        </w:rPr>
+        <w:fldChar w:fldCharType="end" />
+      </w:r>
+    </w:p>
+
+    <w:p w14:paraId="49E265E3" w14:textId="08C14A45" w:rsidR="006E4C6B" w:rsidRPr="0003239C"
+      w:rsidRDefault="006E4C6B" w:rsidP="006E4C6B">
+      <w:pPr>
+        <w:pStyle w:val="3" />
+        <w:spacing w:before="120" w:line="360" w:lineRule="auto" />
+        <w:ind w:firstLine="720" />
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof />
+        </w:rPr>
+        <w:drawing id="BLENDER_RPR_CHART_UNRESOLVED_ISSUES">
+          <wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0"
+            relativeHeight="251662336" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1"
+            wp14:anchorId="06A7F741" wp14:editId="0E3F721A">
+            <wp:simplePos x="0" y="0" />
+            <wp:positionH relativeFrom="column">
+                <wp:posOffset>-156210</wp:posOffset>
+            </wp:positionH>
+            <wp:positionV relativeFrom="paragraph">
+                <wp:posOffset>423545</wp:posOffset>
+            </wp:positionV>
+            <wp:extent cx="2927985" cy="4164965" />
+            <wp:effectExtent l="0" t="0" r="5715" b="6985" />
+            <wp:wrapNone />
+            <wp:docPr id="9" name="Picture 9" />
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+                noChangeAspect="1" />
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="9" name="Picture 9" />
+                    <pic:cNvPicPr>
+                      <a:picLocks noChangeAspect="1" noChangeArrowheads="1" />
+                    </pic:cNvPicPr>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId14">
+                      <a:extLst>
+                        <a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
+                          <a14:useLocalDpi
+                            xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main"
+                            val="0" />
+                        </a:ext>
+                      </a:extLst>
+                    </a:blip>
+                    <a:stretch>
+                      <a:fillRect />
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr bwMode="auto">
+                    <a:xfrm>
+                      <a:off x="0" y="0" />
+                      <a:ext cx="2927985" cy="4164965" />
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst />
+                    </a:prstGeom>
+                    <a:noFill />
+                    <a:ln>
+                      <a:noFill />
+                    </a:ln>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+            <wp14:sizeRelH relativeFrom="margin">
+              <wp14:pctWidth>0</wp14:pctWidth>
+            </wp14:sizeRelH>
+            <wp14:sizeRelV relativeFrom="margin">
+              <wp14:pctHeight>0</wp14:pctHeight>
+            </wp14:sizeRelV>
+          </wp:anchor>
+        </w:drawing>
+      </w:r>
+      <w:r w:rsidRPr="007F5255">
+        <w:rPr>
+          <w:noProof />
+        </w:rPr>
+        <w:drawing id="BLENDER_RPR_CHART_ISSUES_UPDATES_2W">
+          <wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0"
+            relativeHeight="251663360" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1"
+            wp14:anchorId="4B02A27C" wp14:editId="06CDF9E7">
+            <wp:simplePos x="0" y="0" />
+            <wp:positionH relativeFrom="column">
+              <wp:posOffset>2980690</wp:posOffset>
+            </wp:positionH>
+            <wp:positionV relativeFrom="paragraph">
+              <wp:posOffset>423545</wp:posOffset>
+            </wp:positionV>
+            <wp:extent cx="2927985" cy="4164965" />
+            <wp:effectExtent l="0" t="0" r="5715" b="6985" />
+            <wp:wrapNone />
+            <wp:docPr id="12" name="Picture 12" />
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+                noChangeAspect="1" />
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="12" name="Picture 12" />
+                    <pic:cNvPicPr>
+                      <a:picLocks noChangeAspect="1" noChangeArrowheads="1" />
+                    </pic:cNvPicPr>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId15">
+                      <a:extLst>
+                        <a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
+                          <a14:useLocalDpi
+                            xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main"
+                            val="0" />
+                        </a:ext>
+                      </a:extLst>
+                    </a:blip>
+                    <a:stretch>
+                      <a:fillRect />
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr bwMode="auto">
+                    <a:xfrm>
+                      <a:off x="0" y="0" />
+                      <a:ext cx="2927985" cy="4164965" />
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst />
+                    </a:prstGeom>
+                    <a:noFill />
+                    <a:ln>
+                      <a:noFill />
+                    </a:ln>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+            <wp14:sizeRelH relativeFrom="margin">
+              <wp14:pctWidth>0</wp14:pctWidth>
+            </wp14:sizeRelH>
+            <wp14:sizeRelV relativeFrom="margin">
+              <wp14:pctHeight>0</wp14:pctHeight>
+            </wp14:sizeRelV>
+          </wp:anchor>
+        </w:drawing>
+      </w:r>
+      <w:r id="BLENDER_RPR_UNRESOLVED_ISSUES_HEADER">
+        <w:t>Unresolved issues</w:t>
+      </w:r>
+      <w:r>
+        <w:tab />
+      </w:r>
+      <w:r>
+        <w:tab />
+      </w:r>
+      <w:r>
+        <w:tab />
+      </w:r>
+      <w:r id="BLENDER_RPR_ISSUES_UPDATES_2W_HEADER">
+        <w:t>Issues Updates in 2 weekS </w:t>
+      </w:r>
+    </w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p w14:paraId="72D9F5CF" w14:textId="2EB7F1DF" w:rsidR="006E4C6B" w:rsidRDefault="00000000"
+      w:rsidP="006E4C6B">
+      <w:pPr>
+        <w:rPr>
+          <w:rStyle w:val="ab" />
+          <w:lang w:val="en-US" />
+        </w:rPr>
+      </w:pPr>
+      <w:hyperlink r:id="rId16" w:history="1">
+        <w:r w:rsidR="006E4C6B" w:rsidRPr="000E5CDD">
+          <w:rPr>
+            <w:rStyle w:val="ab" />
+            <w:lang w:val="en-US" />
+          </w:rPr>
+          <w:t>View issues</w:t>
+        </w:r>
+      </w:hyperlink>
+      <w:r>
+        <w:br w:type="page"/>
       </w:r>
     </w:p>
     <w:p w14:paraId="4ACF12CC" w14:textId="472E48F8" w:rsidR="004671BD" w:rsidRDefault="004671BD"
@@ -8310,6 +8310,252 @@
           </w:p>
         </w:tc>
       </w:tr>
+
+      <w:tr w:rsidR="006C6FDC" w:rsidRPr="00CE04F3" w14:paraId="7D1E8823" w14:textId="77777777"
+      w:rsidTr="008D638D">
+      <w:trPr>
+        <w:trHeight w:val="236" />
+      </w:trPr>
+      <w:tc>
+        <w:tcPr>
+          <w:tcW w:w="1696" w:type="pct" />
+          <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+          <w:tcMar>
+            <w:top w:w="100" w:type="dxa" />
+            <w:left w:w="100" w:type="dxa" />
+            <w:bottom w:w="100" w:type="dxa" />
+            <w:right w:w="100" w:type="dxa" />
+          </w:tcMar>
+        </w:tcPr>
+        <w:p w14:paraId="629101F3" w14:textId="3A77373F" w:rsidR="006C6FDC" w:rsidRPr="00F41822"
+          w:rsidRDefault="006C6FDC" w:rsidP="006C6FDC">
+          <w:pPr>
+            <w:pStyle w:val="Tabletext" />
+            <w:spacing w:before="10" w:after="10" />
+            <w:jc w:val="center" />
+            <w:rPr>
+              <w:rFonts w:cs="Open Sans" />
+              <w:szCs w:val="19" />
+            </w:rPr>
+          </w:pPr>
+          <w:r>
+            <w:rPr>
+              <w:rFonts w:cs="Open Sans" />
+              <w:szCs w:val="19" />
+            </w:rPr>
+            <w:t>Render Studio</w:t>
+          </w:r>
+        </w:p>
+      </w:tc>
+      <w:tc>
+        <w:tcPr>
+          <w:tcW w:w="3304" w:type="pct" />
+          <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+          <w:tcMar>
+            <w:top w:w="100" w:type="dxa" />
+            <w:left w:w="100" w:type="dxa" />
+            <w:bottom w:w="100" w:type="dxa" />
+            <w:right w:w="100" w:type="dxa" />
+          </w:tcMar>
+        </w:tcPr>
+        <w:p w14:paraId="7004A443" w14:textId="1E081C30" w:rsidR="006C6FDC" w:rsidRPr="00F41822"
+          w:rsidRDefault="006C6FDC" w:rsidP="006C6FDC">
+          <w:pPr>
+            <w:pStyle w:val="Tabletext" />
+            <w:spacing w:before="10" w:after="10" />
+            <w:jc w:val="center" />
+            <w:rPr>
+              <w:rFonts w:cs="Open Sans" />
+              <w:szCs w:val="19" />
+            </w:rPr>
+          </w:pPr>
+          <w:r w:rsidRPr="00616600">
+            <w:rPr>
+              <w:rFonts w:cs="Open Sans" />
+              <w:szCs w:val="19" />
+            </w:rPr>
+            <w:t xml:space="preserve">Kornishova </w:t>
+          </w:r>
+          <w:proofErr w:type="spellStart" />
+          <w:r w:rsidRPr="00616600">
+            <w:rPr>
+              <w:rFonts w:cs="Open Sans" />
+              <w:szCs w:val="19" />
+            </w:rPr>
+            <w:t>Evgeniya</w:t>
+          </w:r>
+          <w:proofErr w:type="spellEnd" />
+        </w:p>
+      </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="006C6FDC" w:rsidRPr="00F86009" w14:paraId="05F4A8CC" w14:textId="77777777"
+    w:rsidTr="008D638D">
+    <w:trPr>
+      <w:trHeight w:val="236" />
+    </w:trPr>
+    <w:tc>
+      <w:tcPr>
+        <w:tcW w:w="1696" w:type="pct" />
+        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+        <w:tcMar>
+          <w:top w:w="100" w:type="dxa" />
+          <w:left w:w="100" w:type="dxa" />
+          <w:bottom w:w="100" w:type="dxa" />
+          <w:right w:w="100" w:type="dxa" />
+        </w:tcMar>
+      </w:tcPr>
+      <w:p w14:paraId="7048423F" w14:textId="4620E009" w:rsidR="006C6FDC"
+        w:rsidRDefault="006C6FDC" w:rsidP="006C6FDC">
+        <w:pPr>
+          <w:pStyle w:val="Tabletext" />
+          <w:spacing w:before="10" w:after="10" />
+          <w:jc w:val="center" />
+          <w:rPr>
+            <w:rFonts w:cs="Open Sans" />
+            <w:szCs w:val="19" />
+          </w:rPr>
+        </w:pPr>
+        <w:r>
+          <w:rPr>
+            <w:rFonts w:cs="Open Sans" />
+            <w:szCs w:val="19" />
+          </w:rPr>
+          <w:t>USD Maya</w:t>
+        </w:r>
+      </w:p>
+    </w:tc>
+    <w:tc>
+      <w:tcPr>
+        <w:tcW w:w="3304" w:type="pct" />
+        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+        <w:tcMar>
+          <w:top w:w="100" w:type="dxa" />
+          <w:left w:w="100" w:type="dxa" />
+          <w:bottom w:w="100" w:type="dxa" />
+          <w:right w:w="100" w:type="dxa" />
+        </w:tcMar>
+      </w:tcPr>
+      <w:p w14:paraId="1F2267CB" w14:textId="14957E74" w:rsidR="006C6FDC"
+        w:rsidRDefault="006C6FDC" w:rsidP="006C6FDC">
+        <w:pPr>
+          <w:pStyle w:val="Tabletext" />
+          <w:spacing w:before="10" w:after="10" />
+          <w:jc w:val="center" />
+          <w:rPr>
+            <w:rFonts w:cs="Open Sans" />
+            <w:szCs w:val="19" />
+          </w:rPr>
+        </w:pPr>
+        <w:r w:rsidRPr="008D638D">
+          <w:rPr>
+            <w:rFonts w:cs="Open Sans" />
+            <w:szCs w:val="19" />
+          </w:rPr>
+          <w:t>Dwight David</w:t>
+        </w:r>
+        <w:r>
+          <w:rPr>
+            <w:rFonts w:cs="Open Sans" />
+            <w:szCs w:val="19" />
+          </w:rPr>
+          <w:t>, Kornishova Evgeniya</w:t>
+        </w:r>
+      </w:p>
+    </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="006C6FDC" w:rsidRPr="00F86009" w14:paraId="6B8FC6CB" w14:textId="77777777"
+  w:rsidTr="008D638D">
+  <w:trPr>
+    <w:trHeight w:val="236" />
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="1696" w:type="pct" />
+      <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+      <w:tcMar>
+        <w:top w:w="100" w:type="dxa" />
+        <w:left w:w="100" w:type="dxa" />
+        <w:bottom w:w="100" w:type="dxa" />
+        <w:right w:w="100" w:type="dxa" />
+      </w:tcMar>
+    </w:tcPr>
+    <w:p w14:paraId="0EDC796A" w14:textId="0D57CA7D" w:rsidR="006C6FDC"
+      w:rsidRDefault="006C6FDC" w:rsidP="006C6FDC">
+      <w:pPr>
+        <w:pStyle w:val="Tabletext" />
+        <w:spacing w:before="10" w:after="10" />
+        <w:jc w:val="center" />
+        <w:rPr>
+          <w:rFonts w:cs="Open Sans" />
+          <w:szCs w:val="19" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:cs="Open Sans" />
+          <w:szCs w:val="19" />
+        </w:rPr>
+        <w:t>USD Blender</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="3304" w:type="pct" />
+      <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+      <w:tcMar>
+        <w:top w:w="100" w:type="dxa" />
+        <w:left w:w="100" w:type="dxa" />
+        <w:bottom w:w="100" w:type="dxa" />
+        <w:right w:w="100" w:type="dxa" />
+      </w:tcMar>
+    </w:tcPr>
+    <w:p w14:paraId="3B2A9480" w14:textId="3A87F892" w:rsidR="006C6FDC"
+      w:rsidRDefault="006C6FDC" w:rsidP="006C6FDC">
+      <w:pPr>
+        <w:pStyle w:val="Tabletext" />
+        <w:spacing w:before="10" w:after="10" />
+        <w:jc w:val="center" />
+        <w:rPr>
+          <w:rFonts w:cs="Open Sans" />
+          <w:szCs w:val="19" />
+        </w:rPr>
+      </w:pPr>
+      <w:proofErr w:type="spellStart" />
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:cs="Open Sans" />
+          <w:szCs w:val="19" />
+        </w:rPr>
+        <w:t>Rozghon</w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd" />
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:cs="Open Sans" />
+          <w:szCs w:val="19" />
+        </w:rPr>
+        <w:t xml:space="preserve"> Artur, </w:t>
+      </w:r>
+      <w:proofErr w:type="spellStart" />
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:cs="Open Sans" />
+          <w:szCs w:val="19" />
+        </w:rPr>
+        <w:t>Kornishova</w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd" />
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:cs="Open Sans" />
+          <w:szCs w:val="19" />
+        </w:rPr>
+        <w:t xml:space="preserve"> Evgeniya</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+      </w:tr>
       <w:tr w:rsidR="008D638D" w:rsidRPr="00F86009" w14:paraId="191132CF" w14:textId="77777777"
         w:rsidTr="008D638D">
         <w:trPr>
@@ -8392,81 +8638,7 @@
           </w:p>
         </w:tc>
       </w:tr>
-      <w:tr w:rsidR="006C6FDC" w:rsidRPr="00F86009" w14:paraId="05F4A8CC" w14:textId="77777777"
-        w:rsidTr="008D638D">
-        <w:trPr>
-          <w:trHeight w:val="236" />
-        </w:trPr>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="1696" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="7048423F" w14:textId="4620E009" w:rsidR="006C6FDC"
-            w:rsidRDefault="006C6FDC" w:rsidP="006C6FDC">
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>USD Maya</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="3304" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="1F2267CB" w14:textId="14957E74" w:rsidR="006C6FDC"
-            w:rsidRDefault="006C6FDC" w:rsidP="006C6FDC">
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-            <w:r w:rsidRPr="008D638D">
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>Dwight David</w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>, Kornishova Evgeniya</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
+      
       <w:tr w:rsidR="006C6FDC" w:rsidRPr="00F86009" w14:paraId="181EAE79" w14:textId="77777777"
         w:rsidTr="008D638D">
         <w:trPr>
@@ -8560,190 +8732,8 @@
           </w:p>
         </w:tc>
       </w:tr>
-      <w:tr w:rsidR="006C6FDC" w:rsidRPr="00F86009" w14:paraId="6B8FC6CB" w14:textId="77777777"
-        w:rsidTr="008D638D">
-        <w:trPr>
-          <w:trHeight w:val="236" />
-        </w:trPr>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="1696" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="0EDC796A" w14:textId="0D57CA7D" w:rsidR="006C6FDC"
-            w:rsidRDefault="006C6FDC" w:rsidP="006C6FDC">
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>USD Blender</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="3304" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="3B2A9480" w14:textId="3A87F892" w:rsidR="006C6FDC"
-            w:rsidRDefault="006C6FDC" w:rsidP="006C6FDC">
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-            <w:proofErr w:type="spellStart" />
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>Rozghon</w:t>
-            </w:r>
-            <w:proofErr w:type="spellEnd" />
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t xml:space="preserve"> Artur, </w:t>
-            </w:r>
-            <w:proofErr w:type="spellStart" />
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>Kornishova</w:t>
-            </w:r>
-            <w:proofErr w:type="spellEnd" />
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t xml:space="preserve"> Evgeniya</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
-      <w:tr w:rsidR="006C6FDC" w:rsidRPr="00CE04F3" w14:paraId="7D1E8823" w14:textId="77777777"
-        w:rsidTr="008D638D">
-        <w:trPr>
-          <w:trHeight w:val="236" />
-        </w:trPr>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="1696" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="629101F3" w14:textId="3A77373F" w:rsidR="006C6FDC" w:rsidRPr="00F41822"
-            w:rsidRDefault="006C6FDC" w:rsidP="006C6FDC">
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>Render</w:t>
-            </w:r>
-            <w:r w:rsidRPr="005D1F22">
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t xml:space="preserve"> </w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>Studio</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="3304" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="7004A443" w14:textId="1E081C30" w:rsidR="006C6FDC" w:rsidRPr="00F41822"
-            w:rsidRDefault="006C6FDC" w:rsidP="006C6FDC">
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-            <w:r w:rsidRPr="00616600">
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t xml:space="preserve">Kornishova </w:t>
-            </w:r>
-            <w:proofErr w:type="spellStart" />
-            <w:r w:rsidRPr="00616600">
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>Evgeniya</w:t>
-            </w:r>
-            <w:proofErr w:type="spellEnd" />
-          </w:p>
-        </w:tc>
-      </w:tr>
+      
+      
       <w:tr w:rsidR="006C6FDC" w:rsidRPr="00107BD3" w14:paraId="4E5E63CA" w14:textId="77777777"
         w:rsidTr="008D638D">
         <w:trPr>
