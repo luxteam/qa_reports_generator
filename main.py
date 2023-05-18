@@ -313,6 +313,8 @@ def get_issues_plot(project: Projects, report_date: datetime):
     intervals, blockers_per_interval = get_issues_statistic(project, report_date, IssueType.BLOCKER) 
     _, criticals_per_interval = get_issues_statistic(project, report_date, IssueType.CRITICAL) 
     
+    different_values = len(set(blockers_per_interval + criticals_per_interval)) # to configure high of the plot
+
     # create a scatter plot
     fig = go.Figure(
         [
@@ -346,9 +348,10 @@ def get_issues_plot(project: Projects, report_date: datetime):
                 zeroline=False,
                 tickformat=',d'
             ),
-            width=1000,
+            height=200 + 300 * min(1, abs((different_values-2)/10)), # maximum 500,
+            width=800,
             font=dict(
-                size=12
+                size=10
             ),
             font_family="Segoe UI",
             legend=dict(
@@ -358,7 +361,7 @@ def get_issues_plot(project: Projects, report_date: datetime):
                 y=1,
                 x=1,
                 font=dict(
-                    size=16,
+                    size=15,
                 )
             ),
             margin=dict(

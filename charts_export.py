@@ -13,36 +13,36 @@ JIRA_AMD_PASSWORD = os.environ["JIRA_AMD_PASSWORD"]
 
 projects_chart_names = {
     Projects.MAYA_RPR: {
-        ChartType.UNRESOLVED_ISSUES: "Pie Chart: Maya RPR Unresolved",
-        ChartType.ISSUES_UPDATES_2W: "Pie Chart: Maya RPR 2 weeks",
+        ChartType.UNRESOLVED_ISSUES: "Maya RPR: Unresolved issues",
+        ChartType.ISSUES_UPDATES_2W: "Maya RPR: Issues updates in 2 weeks",
     },
     Projects.MAYA_USD: {
-        ChartType.UNRESOLVED_ISSUES: "MAYA USD: UNRESOLVED ISSUES",
-        ChartType.ISSUES_UPDATES_2W: "MAYA USD: ISSUES UPDATES IN 2 WEEKS",
+        ChartType.UNRESOLVED_ISSUES: "Maya USD: Unresolved issues",
+        ChartType.ISSUES_UPDATES_2W: "Maya USD: Issues updates in 2 weeks",
     },
     Projects.BLENDER_RPR: {
-        ChartType.UNRESOLVED_ISSUES: "Pie Chart: Blender RPR Unresolved",
-        ChartType.ISSUES_UPDATES_2W: "Pie Chart: Blender RPR 2 weeks",
+        ChartType.UNRESOLVED_ISSUES: "Blender RPR: Unresolved issues",
+        ChartType.ISSUES_UPDATES_2W: "Blender RPR: Issues updates in 2 weeks",
     },
     Projects.BLENDER_USD: {
-        ChartType.UNRESOLVED_ISSUES: "BLENDER USD: UNRESOLVED ISSUES",
-        ChartType.ISSUES_UPDATES_2W: "BLENDER USD: ISSUES UPDATES IN 2 WEEKS",
+        ChartType.UNRESOLVED_ISSUES: "Blender USD: Unresolved issues",
+        ChartType.ISSUES_UPDATES_2W: "Blender USD: Issues updates in 2 weeks",
     },
     # Projects.SOLIDWORKS: {
-    #     ChartType.UNRESOLVED_ISSUES: "Pie Chart: SOLIDWORKS unresolved issues",
-    #     ChartType.ISSUES_UPDATES_2W: "Pie Chart: Solidworks issues updates in 2 weeks",
+    #     ChartType.UNRESOLVED_ISSUES: "Solidworks: Unresolved issues",
+    #     ChartType.ISSUES_UPDATES_2W: "Solidworks: Issues updates in 2 weeks",
     # },
     Projects.HOUDINI: {
-        ChartType.UNRESOLVED_ISSUES: "Pie Chart: HOUDINI: UNRESOLVED ISSUES",
-        ChartType.ISSUES_UPDATES_2W: "Pie Chart: HOUDINI: ISSUE UPDATES IN 2 WEEKS",
+        ChartType.UNRESOLVED_ISSUES: "Houdini: Unresolved issues",
+        ChartType.ISSUES_UPDATES_2W: "Houdini: Issues updates in 2 weeks",
     },
     Projects.HDRPR: {
-        ChartType.UNRESOLVED_ISSUES: "Pie Chart: hdRPR: Unresolved",
-        ChartType.ISSUES_UPDATES_2W: "Pie Chart: hdRPR: issues updates in 2 weeks",
+        ChartType.UNRESOLVED_ISSUES: "hdRPR: Unresolved issues",
+        ChartType.ISSUES_UPDATES_2W: "hdRPR: Issues updates in 2 weeks",
     },
     Projects.RENDER_STUDIO: {
-        ChartType.UNRESOLVED_ISSUES: "Pie Chart: Render Studio: unresolved",
-        ChartType.ISSUES_UPDATES_2W: "Pie Chart: Render Studio: updates in 2 weeks",
+        ChartType.UNRESOLVED_ISSUES: "Render Studio: Unresolved issues",
+        ChartType.ISSUES_UPDATES_2W: "Render Studio: Issues updates in 2 weeks",
     },
 }
 
@@ -69,6 +69,53 @@ def login(driver: webdriver.Firefox):
     sleep(2)
 
 
+def _save_chart_screenshot(driver, project: Projects, chart_type: ChartType):
+    chart_name = projects_chart_names[project][chart_type]
+
+    # check wheter chart is available
+    chart_not_available = driver.find_elements(
+        By.XPATH,
+        "//div[text()='{chart_name}']//ancestor::div[6]//descendant::div[contains(text(), 'No Data Available')]".format(
+            chart_name=chart_name
+        ),
+    )
+
+    if chart_not_available:
+        return None
+
+    # find chart
+    chart_el = None
+    try:
+        chart_el = driver.find_element(
+            By.XPATH,
+            "//div[text()='{chart_name}']//ancestor::div[6]//descendant::div[@class='piechart-with-legend']".format(
+                chart_name=chart_name
+            ),
+        )
+    except Exception:
+        sleep(5)
+        chart_el = driver.find_element(
+            By.XPATH,
+            "//div[text()='{chart_name}']//ancestor::div[6]//descendant::div[@class='piechart-with-legend']".format(
+                chart_name=chart_name
+            ),
+        )
+
+    # screen chart box
+    sleep(1)
+    img_name = "pics/chart_{project}_{type}.png".format(
+        project=project.value, type=chart_type.value
+    )
+    chart_el.screenshot(img_name)
+
+    # crop screenshot
+    img = Image.open(img_name)
+    box = (150, 0, img.width - 160, img.height)
+    img.crop(box).save(img_name)
+
+    return img_name
+
+
 def export_charts():
     driver = webdriver.Firefox(executable_path="./geckodriver.exe")
     # driver.fullscreen_window()
@@ -76,64 +123,44 @@ def export_charts():
 
     login(driver)
 
-    driver.get(f"https://{JIRA_AMD_HOST}/jira/dashboards/10322")
-
-    # wait for charts to render
-    WebDriverWait(driver, 30).until(
-        EC.presence_of_element_located((By.XPATH, "//h1[text()='QA report']"))
-    )
-
     result_report = {
         project: {ChartType.UNRESOLVED_ISSUES: None, ChartType.ISSUES_UPDATES_2W: None}
         for project in projects_chart_names
     }
 
+    ################# open issues updates board
+
+    driver.get(f"https://{JIRA_AMD_HOST}/jira/dashboards/10322")
+
+    # wait for charts to render
+    WebDriverWait(driver, 30).until(
+        EC.presence_of_element_located((By.XPATH, "//h1[contains(text(),'QA report')]"))
+    )
+
+    chart_type = ChartType.ISSUES_UPDATES_2W
+
     for project in projects_chart_names:
-        for chart_type in projects_chart_names[project]:
-            chart_name = projects_chart_names[project][chart_type]
+        img_path = _save_chart_screenshot(driver, project, chart_type)
+        if img_path is None:
+            continue
+        result_report[project][chart_type] = img_path
 
-            # check wheter chart is available
-            chart_not_available = driver.find_elements(
-                By.XPATH,
-                "//div[text()='{chart_name}']//ancestor::div[6]//descendant::div[contains(text(), 'No Data Available')]".format(
-                    chart_name=chart_name
-                ),
-            )
+    ################## open unresolved issues board
 
-            if chart_not_available:
-                continue
+    driver.get(f"https://{JIRA_AMD_HOST}/jira/dashboards/10324")
 
-            # find chart
-            chart_el = None
-            try:
-                chart_el = driver.find_element(
-                    By.XPATH,
-                    "//div[text()='{chart_name}']//ancestor::div[6]//descendant::div[@class='piechart-with-legend']".format(
-                        chart_name=chart_name
-                    ),
-                )
-            except Exception:
-                sleep(5)
-                chart_el = driver.find_element(
-                    By.XPATH,
-                    "//div[text()='{chart_name}']//ancestor::div[6]//descendant::div[@class='piechart-with-legend']".format(
-                        chart_name=chart_name
-                    ),
-                )
+    # wait for charts to render
+    WebDriverWait(driver, 30).until(
+        EC.presence_of_element_located((By.XPATH, "//h1[contains(text(),'QA Report')]"))
+    )
 
-            # screen chart box
-            sleep(1)
-            img_name = "pics/chart_{project}_{type}.png".format(
-                project=project.value, type=chart_type.value
-            )
-            chart_el.screenshot(img_name)
+    chart_type = ChartType.UNRESOLVED_ISSUES
 
-            # crop screenshot
-            img = Image.open(img_name)
-            box = (150, 0, img.width - 160, img.height)
-            img.crop(box).save(img_name)
-
-            result_report[project][chart_type] = img_name
+    for project in projects_chart_names:
+        img_path = _save_chart_screenshot(driver, project, chart_type)
+        if img_path is None:
+            continue
+        result_report[project][chart_type] = img_path
 
     driver.close()
 

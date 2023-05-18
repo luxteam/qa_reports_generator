@@ -4494,7 +4494,7 @@
                   </wp:positionV>
                   <wp:extent cx="6037580" cy="3018790" />
                   <wp:effectExtent l="0" t="0" r="1270" b="0" />
-                  <wp:wrapSquare wrapText="bothSides" />
+                  <wp:wrapNone />
                   <wp:docPr id="1005" name="Picture" />
                   <wp:cNvGraphicFramePr>
                       <a:graphicFrameLocks
@@ -4556,6 +4556,12 @@
           <w:t xml:space="preserve">CRITICAL AND BLOCKER</w:t>
       </w:r>
   </w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
+  <w:p></w:p>
   <w:p>
     <w:pPr>
       <w:rPr>
@@ -4571,7 +4577,7 @@
       <w:fldChar w:fldCharType="end" />
     </w:r>
   </w:p>
-  <w:p>
+  <w:p w14:paraId="7026986F" w14:textId="1D41B18B">
     <w:pPr>
       <w:pStyle w:val="3" />
       <w:spacing w:before="120" w:line="360" w:lineRule="auto" />
@@ -4586,12 +4592,12 @@
           relativeHeight="251665408" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1">
           <wp:simplePos x="0" y="0" />
           <wp:positionH relativeFrom="column">
-              <wp:posOffset>2980690</wp:posOffset>
+              <wp:posOffset>3315000</wp:posOffset>
           </wp:positionH>
           <wp:positionV relativeFrom="paragraph">
               <wp:posOffset>423545</wp:posOffset>
           </wp:positionV>
-          <wp:extent cx="2928620" cy="4164965" />
+          <wp:extent cx="2196465" cy="3123723" />
           <wp:effectExtent l="0" t="0" r="5715" b="6985" />
           <wp:wrapNone />
           <wp:docPr id="1010" name="Picture" />
@@ -4656,12 +4662,12 @@
           relativeHeight="251666432" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1">
           <wp:simplePos x="0" y="0" />
           <wp:positionH relativeFrom="column">
-              <wp:posOffset>-156210</wp:posOffset>
+              <wp:posOffset>215000</wp:posOffset>
           </wp:positionH>
           <wp:positionV relativeFrom="paragraph">
               <wp:posOffset>423545</wp:posOffset>
           </wp:positionV>
-          <wp:extent cx="2928620" cy="4164965" />
+          <wp:extent cx="2196465" cy="3123723" />
           <wp:effectExtent l="0" t="0" r="5715" b="6985" />
           <wp:wrapNone />
           <wp:docPr id="1011" name="Picture" />
@@ -5076,7 +5082,7 @@
                     </wp:positionV>
                     <wp:extent cx="6037580" cy="3018790" />
                     <wp:effectExtent l="0" t="0" r="1270" b="0" />
-                    <wp:wrapSquare wrapText="bothSides" />
+                    <wp:wrapNone />
                     <wp:docPr id="1003" name="Picture" />
                     <wp:cNvGraphicFramePr>
                         <a:graphicFrameLocks
@@ -5139,6 +5145,13 @@
         </w:r>
     </w:p>
 
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+
     <w:p>
       <w:pPr>
         <w:spacing w:before="0" w:after="0" />
@@ -5172,12 +5185,12 @@
             wp14:anchorId="06A943BF" wp14:editId="7C0C33B0">
             <wp:simplePos x="0" y="0" />
             <wp:positionH relativeFrom="column">
-                            <wp:posOffset>-156210</wp:posOffset>
+                            <wp:posOffset>215000</wp:posOffset>
                         </wp:positionH>
                         <wp:positionV relativeFrom="paragraph">
                             <wp:posOffset>423545</wp:posOffset>
             </wp:positionV>
-            <wp:extent cx="2927985" cy="4164965" />
+            <wp:extent cx="2196465" cy="3123723" />
             <wp:effectExtent l="0" t="0" r="5715" b="6985" />
             <wp:wrapNone />
             <wp:docPr id="14" name="Picture 14" />
@@ -5243,12 +5256,12 @@
             wp14:anchorId="4812C7F8" wp14:editId="50066339">
             <wp:simplePos x="0" y="0" />
             <wp:positionH relativeFrom="column">
-              <wp:posOffset>2980690</wp:posOffset>
+              <wp:posOffset>3315000</wp:posOffset>
             </wp:positionH>
             <wp:positionV relativeFrom="paragraph">
               <wp:posOffset>423545</wp:posOffset>
             </wp:positionV>
-            <wp:extent cx="2927985" cy="4164965" />
+            <wp:extent cx="2196465" cy="3123723" />
             <wp:effectExtent l="0" t="0" r="5715" b="6985" />
             <wp:wrapNone />
             <wp:docPr id="16" name="Picture 16" />
@@ -5665,7 +5678,7 @@
                     </wp:positionV>
                     <wp:extent cx="6037580" cy="3018790" />
                     <wp:effectExtent l="0" t="0" r="1270" b="0" />
-                    <wp:wrapSquare wrapText="bothSides" />
+                    <wp:wrapNone />
                     <wp:docPr id="1004" name="Picture" />
                     <wp:cNvGraphicFramePr>
                         <a:graphicFrameLocks
@@ -5728,6 +5741,13 @@
         </w:r>
     </w:p>
 
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+
     <w:p>
       <w:pPr>
         <w:spacing w:before="0" w:after="0" />
@@ -5761,12 +5781,12 @@
             wp14:anchorId="62C5BC51" wp14:editId="7151DC97">
             <wp:simplePos x="0" y="0" />
             <wp:positionH relativeFrom="column">
-                <wp:posOffset>2980690</wp:posOffset>
+                <wp:posOffset>3315000</wp:posOffset>
             </wp:positionH>
             <wp:positionV relativeFrom="paragraph">
                 <wp:posOffset>423545</wp:posOffset>
             </wp:positionV>
-            <wp:extent cx="2927985" cy="4164965" />
+            <wp:extent cx="2196465" cy="3123723" />
             <wp:effectExtent l="0" t="0" r="5715" b="6985" />
             <wp:wrapNone />
             <wp:docPr id="18" name="Picture 18" />
@@ -5832,12 +5852,12 @@
             wp14:anchorId="4C6D2753" wp14:editId="03F7436E">
             <wp:simplePos x="0" y="0" />
             <wp:positionH relativeFrom="column">
-                <wp:posOffset>-156210</wp:posOffset>
+                <wp:posOffset>215000</wp:posOffset>
             </wp:positionH>
             <wp:positionV relativeFrom="paragraph">
                 <wp:posOffset>423545</wp:posOffset>
             </wp:positionV>
-            <wp:extent cx="2927985" cy="4164965" />
+            <wp:extent cx="2196465" cy="3123723" />
             <wp:effectExtent l="0" t="0" r="5715" b="6985" />
             <wp:wrapNone />
             <wp:docPr id="17" name="Picture 17" />
@@ -6256,7 +6276,7 @@
                     </wp:positionV>
                     <wp:extent cx="6037580" cy="3018790" />
                     <wp:effectExtent l="0" t="0" r="1270" b="0" />
-                    <wp:wrapSquare wrapText="bothSides" />
+                    <wp:wrapNone />
                     <wp:docPr id="1000" name="Picture" />
                     <wp:cNvGraphicFramePr>
                         <a:graphicFrameLocks
@@ -6319,6 +6339,13 @@
         </w:r>
     </w:p>
 
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+
     <w:p>
       <w:pPr>
         <w:spacing w:before="0" w:after="0" />
@@ -6352,12 +6379,12 @@
             wp14:anchorId="2301C799" wp14:editId="1976EEF5">
             <wp:simplePos x="0" y="0" />
             <wp:positionH relativeFrom="column">
-                <wp:posOffset>2980690</wp:posOffset>
+                <wp:posOffset>3315000</wp:posOffset>
             </wp:positionH>
             <wp:positionV relativeFrom="paragraph">
                 <wp:posOffset>423545</wp:posOffset>
             </wp:positionV>
-            <wp:extent cx="2928620" cy="4164965" />
+            <wp:extent cx="2196465" cy="3123723" />
             <wp:effectExtent l="0" t="0" r="5715" b="6985" />
             <wp:wrapNone />
             <wp:docPr id="5" name="Picture 5" />
@@ -6423,12 +6450,12 @@
             wp14:anchorId="049267EB" wp14:editId="4D78DB7D">
             <wp:simplePos x="0" y="0" />
             <wp:positionH relativeFrom="column">
-                <wp:posOffset>-156210</wp:posOffset>
+                <wp:posOffset>215000</wp:posOffset>
             </wp:positionH>
             <wp:positionV relativeFrom="paragraph">
                 <wp:posOffset>423545</wp:posOffset>
             </wp:positionV>
-            <wp:extent cx="2928620" cy="4164965" />
+            <wp:extent cx="2196465" cy="3123723" />
             <wp:effectExtent l="0" t="0" r="5715" b="6985" />
             <wp:wrapNone />
             <wp:docPr id="2" name="Picture 2" />
@@ -6838,7 +6865,7 @@
                     </wp:positionV>
                     <wp:extent cx="6037580" cy="3018790" />
                     <wp:effectExtent l="0" t="0" r="1270" b="0" />
-                    <wp:wrapSquare wrapText="bothSides" />
+                    <wp:wrapNone />
                     <wp:docPr id="1001" name="Picture" />
                     <wp:cNvGraphicFramePr>
                         <a:graphicFrameLocks
@@ -6901,6 +6928,13 @@
         </w:r>
     </w:p>
 
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+
     <w:p>
       <w:pPr>
         <w:spacing w:before="0" w:after="0" />
@@ -6934,12 +6968,12 @@
             wp14:anchorId="06A7F741" wp14:editId="0E3F721A">
             <wp:simplePos x="0" y="0" />
             <wp:positionH relativeFrom="column">
-                <wp:posOffset>-156210</wp:posOffset>
+                <wp:posOffset>215000</wp:posOffset>
             </wp:positionH>
             <wp:positionV relativeFrom="paragraph">
                 <wp:posOffset>423545</wp:posOffset>
             </wp:positionV>
-            <wp:extent cx="2927985" cy="4164965" />
+            <wp:extent cx="2196465" cy="3123723" />
             <wp:effectExtent l="0" t="0" r="5715" b="6985" />
             <wp:wrapNone />
             <wp:docPr id="9" name="Picture 9" />
@@ -7005,12 +7039,12 @@
             wp14:anchorId="4B02A27C" wp14:editId="06CDF9E7">
             <wp:simplePos x="0" y="0" />
             <wp:positionH relativeFrom="column">
-              <wp:posOffset>2980690</wp:posOffset>
+              <wp:posOffset>3315000</wp:posOffset>
             </wp:positionH>
             <wp:positionV relativeFrom="paragraph">
               <wp:posOffset>423545</wp:posOffset>
             </wp:positionV>
-            <wp:extent cx="2927985" cy="4164965" />
+            <wp:extent cx="2196465" cy="3123723" />
             <wp:effectExtent l="0" t="0" r="5715" b="6985" />
             <wp:wrapNone />
             <wp:docPr id="12" name="Picture 12" />
@@ -7426,7 +7460,7 @@
                     </wp:positionV>
                     <wp:extent cx="6037580" cy="3018790" />
                     <wp:effectExtent l="0" t="0" r="1270" b="0" />
-                    <wp:wrapSquare wrapText="bothSides" />
+                    <wp:wrapNone />
                     <wp:docPr id="1006" name="Picture" />
                     <wp:cNvGraphicFramePr>
                         <a:graphicFrameLocks
@@ -7489,6 +7523,13 @@
         </w:r>
     </w:p>
 
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+
     <w:p>
       <w:pPr>
         <w:spacing w:before="0" w:after="0" />
@@ -7541,12 +7582,12 @@
             wp14:anchorId="0F42DA13" wp14:editId="00A6EC98">
             <wp:simplePos x="0" y="0" />
             <wp:positionH relativeFrom="column">
-                <wp:posOffset>2980690</wp:posOffset>
+                <wp:posOffset>3315000</wp:posOffset>
             </wp:positionH>
             <wp:positionV relativeFrom="paragraph">
                 <wp:posOffset>423545</wp:posOffset>
             </wp:positionV>
-            <wp:extent cx="2927985" cy="4164965" />
+            <wp:extent cx="2196465" cy="3123723" />
             <wp:effectExtent l="0" t="0" r="5715" b="6985" />
             <wp:wrapNone />
             <wp:docPr id="27" name="Picture 27" />
@@ -7612,12 +7653,12 @@
             wp14:anchorId="617BFC48" wp14:editId="7664D287">
             <wp:simplePos x="0" y="0" />
             <wp:positionH relativeFrom="column">
-                <wp:posOffset>-156210</wp:posOffset>
+                <wp:posOffset>215000</wp:posOffset>
             </wp:positionH>
             <wp:positionV relativeFrom="paragraph">
                 <wp:posOffset>423545</wp:posOffset>
             </wp:positionV>
-            <wp:extent cx="2927985" cy="4164965" />
+            <wp:extent cx="2196465" cy="3123723" />
             <wp:effectExtent l="0" t="0" r="5715" b="6985" />
             <wp:wrapNone />
             <wp:docPr id="26" name="Picture 26" />
@@ -7820,7 +7861,7 @@
                     </wp:positionV>
                     <wp:extent cx="6037580" cy="3018790" />
                     <wp:effectExtent l="0" t="0" r="1270" b="0" />
-                    <wp:wrapSquare wrapText="bothSides" />
+                    <wp:wrapNone />
                     <wp:docPr id="1007" name="Picture" />
                     <wp:cNvGraphicFramePr>
                         <a:graphicFrameLocks
@@ -7882,6 +7923,14 @@
             <w:t xml:space="preserve">CRITICAL AND BLOCKER</w:t>
         </w:r>
     </w:p>
+
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+    <w:p></w:p>
+
     <w:p>
       <w:pPr>
         <w:spacing w:before="0" w:after="0" />
@@ -7897,6 +7946,7 @@
         <w:fldChar w:fldCharType="end" />
       </w:r>
     </w:p>
+    
     <w:p>
       <w:pPr>
         <w:pStyle w:val="3" />
@@ -7912,12 +7962,12 @@
             relativeHeight="251665408" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1">
             <wp:simplePos x="0" y="0" />
             <wp:positionH relativeFrom="column">
-                <wp:posOffset>2980690</wp:posOffset>
+                <wp:posOffset>3315000</wp:posOffset>
             </wp:positionH>
             <wp:positionV relativeFrom="paragraph">
                 <wp:posOffset>423545</wp:posOffset>
             </wp:positionV>
-            <wp:extent cx="2928620" cy="4164965" />
+            <wp:extent cx="2196465" cy="3123723" />
             <wp:effectExtent l="0" t="0" r="5715" b="6985" />
             <wp:wrapNone />
             <wp:docPr id="1008" name="Picture" />
@@ -7982,12 +8032,12 @@
             relativeHeight="251666432" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1">
             <wp:simplePos x="0" y="0" />
             <wp:positionH relativeFrom="column">
-                <wp:posOffset>-156210</wp:posOffset>
+                <wp:posOffset>215000</wp:posOffset>
             </wp:positionH>
             <wp:positionV relativeFrom="paragraph">
                 <wp:posOffset>423545</wp:posOffset>
             </wp:positionV>
-            <wp:extent cx="2928620" cy="4164965" />
+            <wp:extent cx="2196465" cy="3123723" />
             <wp:effectExtent l="0" t="0" r="5715" b="6985" />
             <wp:wrapNone />
             <wp:docPr id="1009" name="Picture" />
