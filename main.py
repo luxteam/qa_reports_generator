@@ -288,7 +288,7 @@ def template_validation(tree) -> bool:
     return True
 
 
-def prepare_working_directory():
+def prepare_working_directory(report_file_path: str):
     # remove tmp dir if exists
     if os.path.exists(WORKING_DIR_PATH):
         shutil.rmtree(WORKING_DIR_PATH)
@@ -298,8 +298,8 @@ def prepare_working_directory():
         shutil.rmtree(PICTURES_PATH)
 
     # remove report if exists
-    if os.path.exists(REPORT_FILE_PATH):
-        os.remove(REPORT_FILE_PATH)
+    if os.path.exists(report_file_path):
+        os.remove(report_file_path)
 
     # copy template to the working directory
     shutil.copytree(TEMPLATE_PATH, WORKING_DIR_PATH)
@@ -403,12 +403,14 @@ def get_issues_plot(project: Projects, report_date: datetime):
 
 
 def main():
-    prepare_working_directory()
-    print("[0/11] Initial preparations...")
-
     # eval report dates
     report_date = datetime.today()
     report_start_date = report_date - timedelta(weeks=2) + timedelta(days=1)
+
+    report_path = REPORT_FILE_PATH.format(date=report_date.strftime("%d-%m-%Y"))
+
+    prepare_working_directory(report_path)
+    print("[0/11] Initial preparations...")
 
     # load document.xml (main xml file)
     tree = word.load_xml(word.DOCUMENT_PATH)
@@ -616,8 +618,6 @@ def main():
     word.write_xml(tree, word.DOCUMENT_PATH)
 
     # combine files into docx
-    report_path = REPORT_FILE_PATH.format(date=report_date.strftime("%d-%m-%Y"))
-
     finalize_report(report_path)
 
     print(f"Report '{report_path}' generated!")
