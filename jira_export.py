@@ -34,13 +34,13 @@ projects_jira_names = {
 jira_open_statuses_list = ["Assessment", "Backlog", "Blocked", "In Progress", "In Review", "In Test", "In Testing", "Needs Merging", "Open", "Reopened", "Selected for development", "Testing / QA", "Testing/QA", "To Do", "Waiting for Merge"]
 
 projects_jira_open_statuses = {
-    Projects.MAYA_RPR: '"In Progress","Assessment","In Review","In Test","Open","Reopened"',
-    Projects.MAYA_USD: '"In Progress","Assessment","In Review","In Test","Open","Reopened"',
-    Projects.BLENDER_RPR: '"In Progress","Assessment","In Review","In Test","Open","Reopened"',
-    Projects.BLENDER_USD: '"In Progress","Assessment","In Review","In Test","Open","Reopened"',
+    Projects.MAYA_RPR: '"In Progress","Assessment","In Review","In Test","Open","Reopened",Blocked',
+    Projects.MAYA_USD: '"In Progress","Assessment","In Review","In Test","Open","Reopened",Blocked',
+    Projects.BLENDER_RPR: '"In Progress","Assessment","In Review","In Test","Open","Reopened",Blocked',
+    Projects.BLENDER_USD: '"In Progress","Assessment","In Review","In Test","Open","Reopened",Blocked',
     Projects.RENDER_STUDIO: '"In Progress","Backlog","Blocked","Testing / QA","Waiting for merge"',
     Projects.HOUDINI: '"Backlog","Blocked","In Progress","Selected for development","Testing / QA"',
-    Projects.HDRPR: '"Backlog","In Progress","In Testing","Selected for Development","To Do"',
+    Projects.HDRPR: '"Backlog","In Progress","In Testing","Selected for Development","To Do",Blocked',
     Projects.SOLIDWORKS: '"Blocked","In Progress","In Test","Needs Merging","To Do"',
 }
 
@@ -60,6 +60,7 @@ def get_crits_link(project: Projects):
 def get_project_blockers(project: Projects):
     name = projects_jira_names[project]
     statuses = projects_jira_open_statuses[project]
+
     jql_request = f'project = {name} AND issuetype = Bug AND status in ({statuses}) AND priority = Blocker ORDER BY created DESC'
     issues = jira_instance.jql(jql_request).get("issues")
 
@@ -176,23 +177,23 @@ def get_issues_statistic(project: Projects, report_date: datetime, type: IssueTy
 
 
 if __name__ == "__main__":
-    # print("Bugs: ")
-    # bugs = get_bugs(datetime.today())
-    # for project in projects_jira_names:
-    #     print(projects_jira_names[project] + ": ")
-    #     print(json.dumps(bugs[project], indent=4))
+    print("Bugs: ")
+    bugs = get_bugs(datetime.today())
+    for project in projects_jira_names:
+        print(projects_jira_names[project] + ": ")
+        print(json.dumps(bugs[project], indent=4))
 
-    # print("Blockers:")
-    # blockers = get_blockers()
-    # for project in blockers:
-    #     print(projects_jira_names[project])
-    #     print(json.dumps(blockers[project], indent=4))
+    print("Blockers:")
+    blockers = get_blockers()
+    for project in blockers:
+        print(projects_jira_names[project])
+        print(json.dumps(blockers[project], indent=4))
 
-    # print("Criticals:")
-    # crits = get_crits()
-    # for project in crits:
-    #     print(projects_jira_names[project])
-    #     print(json.dumps(crits[project], indent=4))
+    print("Criticals:")
+    crits = get_crits()
+    for project in crits:
+        print(projects_jira_names[project])
+        print(json.dumps(crits[project], indent=4))
 
     # import plotly.graph_objects as go
 

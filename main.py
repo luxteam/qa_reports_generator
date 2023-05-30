@@ -349,7 +349,7 @@ def get_issues_plot(project: Projects, report_date: datetime):
                 tickformat=',d'
             ),
             height=200 + 300 * min(1, abs((different_values-2)/10)), # maximum 500,
-            width=800,
+            width=1000,
             font=dict(
                 size=10
             ),
