@@ -30,18 +30,21 @@ projects_jira_names = {
     Projects.SOLIDWORKS: "SV",
     Projects.HOUDINI: "RPRHOUD",
     Projects.HDRPR: "RPRUSD",
+    Projects.RPRHYBRID: "RPRHYB",
 }
 
 jira_open_statuses_list = [
     "Assessment",
     "Backlog",
     "Blocked",
+    "Deployment",
     "In Progress",
     "In Review",
     "In Test",
     "In Testing",
     "Needs Merging",
     "Open",
+    "Planning",
     "Reopened",
     "Selected for development",
     "Testing / QA",
@@ -55,10 +58,11 @@ projects_jira_open_statuses = {
     Projects.MAYA_USD: '"In Progress","Assessment","In Review","In Test","Open","Reopened",Blocked',
     Projects.BLENDER_RPR: '"In Progress","Assessment","In Review","In Test","Open","Reopened",Blocked',
     Projects.BLENDER_USD: '"In Progress","Assessment","In Review","In Test","Open","Reopened",Blocked',
-    Projects.RENDER_STUDIO: '"In Progress","Backlog","Blocked","Testing / QA","Waiting for merge"',
+    Projects.RENDER_STUDIO: 'Backlog,Blocked,"In Progress","Testing/QA","To Do","Waiting for Merge"',
     Projects.HOUDINI: '"Backlog","Blocked","In Progress","Selected for development","Testing / QA"',
     Projects.HDRPR: '"Backlog","In Progress","In Testing","Selected for Development","To Do",Blocked',
     Projects.SOLIDWORKS: '"Blocked","In Progress","In Test","Needs Merging","To Do"',
+    Projects.RPRHYBRID: 'Assessment,Deployment,Blocked,"In Progress","In Review","In Test",Open,Planning,Reopened,"To Do"',
 }
 
 

@@ -26,6 +26,7 @@ class Projects(Enum):
     ANARI = 11
     BLENDER_HIP = 12
     WML = 13
+    RPRHYBRID = 14
 
 
 class ChartType(Enum):

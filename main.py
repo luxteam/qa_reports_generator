@@ -430,7 +430,7 @@ def main():
     blockers = get_blockers()
     crits = get_crits()
 
-    for project in Projects:
+    for project in ids.BUILD_STATUS_TABLE_ROW:
         if project != Projects.WML:
             build_data = get_latest_build_data(project)
             fill_build_status_table(tree, project, build_data, blockers, crits)
@@ -449,7 +449,10 @@ def main():
     found_issues = get_bugs(report_date)
 
     for project in found_issues:
-        if project == Projects.SOLIDWORKS:  # skip solidworks in this table for now
+        if project in [
+            Projects.SOLIDWORKS,
+            Projects.RPRHYBRID,
+        ]:  # skip solidworks in this table for now
             continue
 
         table_cell_id = ids.SUMMARY_TABLE[project][SummaryTableColumn.FOUND_ISSUES]
@@ -548,7 +551,10 @@ def main():
     projects_bugs = get_bugs(report_date)
 
     for project in projects_bugs:
-        if project == Projects.SOLIDWORKS:  # skip Solidworks bugs link for now
+        if project in [
+            Projects.SOLIDWORKS,
+            Projects.RPRHYBRID,
+        ]:  # skip Solidworks bugs link for now
             continue
 
         link_id = ids.BUGS_LINK_ID[project]
