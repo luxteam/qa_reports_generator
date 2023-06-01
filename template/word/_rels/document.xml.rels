@@ -97,6 +97,10 @@
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
     Target="https://amdrender.atlassian.net/jira/software/projects/RS/issues/?jql=project%20%3D%20%22RS%22%20AND%20type%20%3D%20%22Bug%22%20AND%20status%20IN%20%28%22Backlog%22%2C%22In%20Progress%22%2C%22Selected%20for%20development%22%2C%22Testing%20%2F%20QA%22%29%20ORDER%20BY%20created%20DESC"
     TargetMode="External" />
+  <Relationship Id="rId33"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+    Target="https://amdrender.atlassian.net/jira/software/projects/RPRUSD/issues/?jql=type%20%3D%20%22Bug%22%20AND%20status%20IN%20%28%22Backlog%22%2C%22In%20Progress%22%2C%22Selected%20for%20development%22%2C%22In%20Testing%22%2C%22Testing%2FQA%22%2C%22To%20Do%22%2CBlocked%29%20AND%20project%20%3D%20RPRUSD%20ORDER%20BY%20created%20DESC"
+    TargetMode="External" />
   <Relationship Id="rId32"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme"
     Target="theme/theme1.xml" />
