@@ -23,8 +23,6 @@ class Projects(Enum):
     SOLIDWORKS = 8
     MATERIALX = 9
     USD_VIEWER_INVENTOR = 10
-    ANARI = 11
-    BLENDER_HIP = 12
     WML = 13
     RPRHYBRID = 14
 

@@ -480,7 +480,7 @@
                 <w:rStyle w:val="ab" />
                 <w:noProof />
               </w:rPr>
-              <w:t>Maya RPR</w:t>
+              <w:t>RPR Maya</w:t>
             </w:r>
             <w:r w:rsidR="008E6CCA">
               <w:rPr>
@@ -551,7 +551,7 @@
                 <w:rStyle w:val="ab" />
                 <w:noProof />
               </w:rPr>
-              <w:t>Blender RPR</w:t>
+              <w:t>RPR Blender</w:t>
             </w:r>
             <w:r w:rsidR="008E6CCA">
               <w:rPr>
@@ -622,7 +622,7 @@
                 <w:rStyle w:val="ab" />
                 <w:noProof />
               </w:rPr>
-              <w:t>Maya USD</w:t>
+              <w:t>USD Maya</w:t>
             </w:r>
             <w:r w:rsidR="008E6CCA">
               <w:rPr>
@@ -693,7 +693,7 @@
                 <w:rStyle w:val="ab" />
                 <w:noProof />
               </w:rPr>
-              <w:t>Blender USD</w:t>
+              <w:t>USD Blender</w:t>
             </w:r>
             <w:r w:rsidR="008E6CCA">
               <w:rPr>
@@ -1777,7 +1777,7 @@
                   <w:rFonts w:cs="Open Sans" />
                   <w:szCs w:val="19" />
                 </w:rPr>
-                <w:t>Maya USD</w:t>
+                <w:t>USD Maya</w:t>
               </w:r>
             </w:hyperlink>
           </w:p>
@@ -1892,7 +1892,7 @@
                   <w:rFonts w:cs="Open Sans" />
                   <w:szCs w:val="19" />
                 </w:rPr>
-                <w:t>Blender USD</w:t>
+                <w:t>USD Blender</w:t>
               </w:r>
             </w:hyperlink>
           </w:p>
@@ -2014,7 +2014,7 @@
                   <w:rFonts w:cs="Open Sans" />
                   <w:szCs w:val="19" />
                 </w:rPr>
-                <w:t>Maya RPR</w:t>
+                <w:t>RPR Maya</w:t>
               </w:r>
             </w:hyperlink>
           </w:p>
@@ -2130,7 +2130,7 @@
                   <w:rFonts w:cs="Open Sans" />
                   <w:szCs w:val="19" />
                 </w:rPr>
-                <w:t>Blender RPR</w:t>
+                <w:t>RPR Blender</w:t>
               </w:r>
             </w:hyperlink>
           </w:p>
@@ -2831,266 +2831,6 @@
           </w:p>
         </w:tc>
       </w:tr>
-      <w:tr id="ANARI_BUILD_STATUS_TABLE_ROW">
-        <w:trPr>
-          <w:trHeight w:val="279" />
-        </w:trPr>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="2122" w:type="dxa" />
-            <w:vAlign w:val="center" />
-          </w:tcPr>
-          <w:p>
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-            <w:proofErr w:type="spellStart" />
-            <w:r w:rsidRPr="004355EF">
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>Anari</w:t>
-            </w:r>
-            <w:proofErr w:type="spellEnd" />
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="1417" w:type="dxa" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-            <w:vAlign w:val="center" />
-          </w:tcPr>
-          <w:p>
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="1418" w:type="dxa" />
-            <w:vAlign w:val="center" />
-          </w:tcPr>
-          <w:p>
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="1134" w:type="dxa" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-            <w:vAlign w:val="center" />
-          </w:tcPr>
-          <w:p w14:paraId="1EA2FD0B" w14:textId="59A2C8E1">
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:b />
-                <w:bCs />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:b />
-                <w:bCs />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>On hold</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="2977" w:type="dxa" />
-          </w:tcPr>
-          <w:p w14:paraId="2852A365" w14:textId="44D5ECC1">
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-                <w:lang w:val="ru-RU" />
-              </w:rPr>
-              <w:t>Project on hold</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
-      <w:tr id="BLENDER_HIP_BUILD_STATUS_TABLE_ROW">
-        <w:trPr>
-          <w:trHeight w:val="279" />
-        </w:trPr>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="2122" w:type="dxa" />
-            <w:vAlign w:val="center" />
-          </w:tcPr>
-          <w:p>
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:szCs w:val="19" />
-                <w:highlight w:val="red" />
-              </w:rPr>
-            </w:pPr>
-            <w:r w:rsidRPr="004355EF">
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>Blender HIP</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="1417" w:type="dxa" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-            <w:vAlign w:val="center" />
-          </w:tcPr>
-          <w:p>
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-                <w:highlight w:val="red" />
-              </w:rPr>
-            </w:pPr>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="1418" w:type="dxa" />
-            <w:vAlign w:val="center" />
-          </w:tcPr>
-          <w:p>
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="1134" w:type="dxa" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-            <w:vAlign w:val="center" />
-          </w:tcPr>
-          <w:p w14:paraId="1EA2FD0B" w14:textId="59A2C8E1">
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:b />
-                <w:bCs />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:b />
-                <w:bCs />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>On hold</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="2977" w:type="dxa" />
-          </w:tcPr>
-          <w:p w14:paraId="2852A365" w14:textId="44D5ECC1">
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-                <w:lang w:val="ru-RU" />
-              </w:rPr>
-              <w:t>Project on hold</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
     </w:tbl>
     <w:p w14:paraId="2CC0B17D" w14:textId="067AD5BB" w:rsidR="00C53BA0" w:rsidRPr="008A0D6F"
       w:rsidRDefault="009B41F8" w:rsidP="00C53BA0">
@@ -3579,7 +3319,7 @@
                   <w:rFonts w:cs="Open Sans" />
                   <w:szCs w:val="19" />
                 </w:rPr>
-                <w:t>Maya USD</w:t>
+                <w:t>USD Maya</w:t>
               </w:r>
             </w:hyperlink>
           </w:p>
@@ -3659,7 +3399,7 @@
                   <w:rFonts w:cs="Open Sans" />
                   <w:szCs w:val="19" />
                 </w:rPr>
-                <w:t>Blender USD</w:t>
+                <w:t>USD Blender</w:t>
               </w:r>
             </w:hyperlink>
           </w:p>
@@ -3739,7 +3479,7 @@
                   <w:rFonts w:cs="Open Sans" />
                   <w:szCs w:val="19" />
                 </w:rPr>
-                <w:t>Maya RPR</w:t>
+                <w:t>RPR Maya</w:t>
               </w:r>
             </w:hyperlink>
           </w:p>
@@ -3819,7 +3559,7 @@
                   <w:rFonts w:cs="Open Sans" />
                   <w:szCs w:val="19" />
                 </w:rPr>
-                <w:t>Blender RPR</w:t>
+                <w:t>RPR Blender</w:t>
               </w:r>
             </w:hyperlink>
           </w:p>
@@ -4758,7 +4498,7 @@
       <w:bookmarkEnd w:id="10" />
       <w:r>
         <w:lastRenderedPageBreak />
-        <w:t>Maya USD</w:t>
+        <w:t>USD Maya</w:t>
       </w:r>
       <w:bookmarkEnd w:id="11" />
     </w:p>
@@ -5360,7 +5100,7 @@
       <w:bookmarkEnd w:id="13" />
       <w:r>
         <w:lastRenderedPageBreak />
-        <w:t>Blender USD</w:t>
+        <w:t>USD Blender</w:t>
       </w:r>
       <w:bookmarkEnd w:id="14" />
     </w:p>
@@ -5955,7 +5695,7 @@
       <w:bookmarkStart w:id="7" w:name="_Toc125915290" />
       <w:bookmarkEnd w:id="6" />
       <w:r>
-        <w:t>Maya RPR</w:t>
+        <w:t>RPR Maya</w:t>
       </w:r>
       <w:bookmarkEnd w:id="7" />
     </w:p>
@@ -6552,7 +6292,7 @@
       <w:bookmarkStart w:id="9" w:name="_Blender_RPR" />
       <w:r>
         <w:lastRenderedPageBreak />
-        <w:t>Blender RPR</w:t>
+        <w:t>RPR Blender</w:t>
       </w:r>
       <w:bookmarkEnd w:id="9" />
       <w:bookmarkEnd w:id="8" />
@@ -9216,153 +8956,6 @@
                 <w:szCs w:val="19" />
               </w:rPr>
               <w:t xml:space="preserve"> Evgeniya</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
-      <w:tr w:rsidR="006C6FDC" w:rsidRPr="006C6FDC" w14:paraId="475D9A4E" w14:textId="77777777"
-        w:rsidTr="008D638D">
-        <w:trPr>
-          <w:trHeight w:val="236" />
-        </w:trPr>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="1696" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="26C5A27A" w14:textId="153D5DC5" w:rsidR="006C6FDC" w:rsidRPr="00616600"
-            w:rsidRDefault="006C6FDC" w:rsidP="006C6FDC">
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>Blender HIP</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="3304" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="06F6DBDE" w14:textId="3F82BA99" w:rsidR="006C6FDC" w:rsidRPr="00616600"
-            w:rsidRDefault="006C6FDC" w:rsidP="006C6FDC">
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-            <w:proofErr w:type="spellStart" />
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>Kornishova</w:t>
-            </w:r>
-            <w:proofErr w:type="spellEnd" />
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t xml:space="preserve"> Evgeniya</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
-      <w:tr w:rsidR="006C6FDC" w:rsidRPr="00107BD3" w14:paraId="007F1B5A" w14:textId="77777777"
-        w:rsidTr="008D638D">
-        <w:trPr>
-          <w:trHeight w:val="236" />
-        </w:trPr>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="1696" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="12BE8A3B" w14:textId="08B5BF90" w:rsidR="006C6FDC"
-            w:rsidRDefault="006C6FDC" w:rsidP="006C6FDC">
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-            <w:proofErr w:type="spellStart" />
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>Anari</w:t>
-            </w:r>
-            <w:proofErr w:type="spellEnd" />
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="3304" w:type="pct" />
-            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-            <w:tcMar>
-              <w:top w:w="100" w:type="dxa" />
-              <w:left w:w="100" w:type="dxa" />
-              <w:bottom w:w="100" w:type="dxa" />
-              <w:right w:w="100" w:type="dxa" />
-            </w:tcMar>
-          </w:tcPr>
-          <w:p w14:paraId="32C9BDB2" w14:textId="4418DBD1" w:rsidR="006C6FDC" w:rsidRPr="008D638D"
-            w:rsidRDefault="006C6FDC" w:rsidP="006C6FDC">
-            <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-            </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
-              </w:rPr>
-              <w:t>Kornishova Evgeniya</w:t>
             </w:r>
           </w:p>
         </w:tc>

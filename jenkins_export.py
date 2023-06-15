@@ -30,11 +30,6 @@ PROJECT_TO_JOB_MAPPING: Dict[Projects, Dict[str, str]] = {
     Projects.MATERIALX: {"default": "job/MaterialXvsHdRPR-Weekly"},
     Projects.SOLIDWORKS: {},
     Projects.USD_VIEWER_INVENTOR: {"default": "job/USD-Viewer-Weekly"},
-    Projects.ANARI: {"default": "job/USD-InventorPlugin-Weekly"},
-    Projects.BLENDER_HIP: {
-        "CPU": "job/BlenderHIP/job/BlenderHIP-WeeklyHIP_CPU",
-        "CUDA": "job/BlenderHIP/job/BlenderHIP-WeeklyHIP_CUDA",
-    },
     Projects.RPRHYBRID: {},
 }
 
