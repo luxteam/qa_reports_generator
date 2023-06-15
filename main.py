@@ -404,7 +404,7 @@ def get_issues_plot(project: Projects, report_date: datetime):
 
 def main():
     # eval report dates
-    report_date = datetime.today() - timedelta(days=1)
+    report_date = datetime.today()
     report_start_date = report_date - timedelta(weeks=2) + timedelta(days=1)
 
     report_path = REPORT_FILE_PATH.format(date=report_date.strftime("%d-%m-%Y"))
