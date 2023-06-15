@@ -5,7 +5,7 @@
     Target="webSettings.xml" />
   <Relationship Id="rId13"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
-    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20RPRMAYA%20AND%20issuetype%20%3D%20Bug%20AND%20status%20in%20(Assessment%2C%20Blocked%2C%20%22In%20Progress%22%2C%20%22In%20Review%22%2C%20%22In%20Test%22%2C%20Open%2C%20Reopened)%20ORDER%20BY%20summary%20ASC"
+    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20RPRMAYA%20AND%20issuetype%20in%20(Bug%2C%20Sub-task)%20AND%20status%20in%20(Assessment%2C%20Blocked%2C%20%22In%20Progress%22%2C%20%22In%20Review%22%2C%20%22In%20Test%22%2C%20Open%2C%20Reopened)%20ORDER%20BY%20summary%20ASC"
     TargetMode="External" />
   <Relationship Id="rId18"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
@@ -41,31 +41,31 @@
     Target="media/image2.png" />
   <Relationship Id="rId_new_bugs_link_MAYA_RPR"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
-    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20RPRMAYA%20AND%20issuetype%20%3D%20Bug%20AND%20created%20%3E%3D%202022-10-07%20AND%20created%20%3C%3D%202022-10-20%20ORDER%20BY%20created%20DESC"
+    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20RPRMAYA%20AND%20issuetype%20in%20(Bug%2C%20Sub-task)%20AND%20created%20%3E%3D%202022-10-07%20AND%20created%20%3C%3D%202022-10-20%20ORDER%20BY%20created%20DESC"
     TargetMode="External" />
   <Relationship Id="rId_new_bugs_link_MAYA_USD"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
-    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20MAYAUS%20AND%20issuetype%20%3D%20Bug%20AND%20created%20%3E%3D%202022-10-07%20AND%20created%20%3C%3D%202022-10-20%20ORDER%20BY%20created%20DESC"
+    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20MAYAUS%20AND%20issuetype%20in%20(Bug%2C%20Sub-task)%20AND%20created%20%3E%3D%202022-10-07%20AND%20created%20%3C%3D%202022-10-20%20ORDER%20BY%20created%20DESC"
     TargetMode="External" />
   <Relationship Id="rId_new_bugs_link_BLENDER_RPR"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
-    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20RPRBLND%20AND%20issuetype%20%3D%20Bug%20AND%20created%20%3E%3D%202022-10-07%20AND%20created%20%3C%3D%202022-10-20%20ORDER%20BY%20created%20DESC"
+    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20RPRBLND%20AND%20issuetype%20in%20(Bug%2C%20Sub-task)%20AND%20created%20%3E%3D%202022-10-07%20AND%20created%20%3C%3D%202022-10-20%20ORDER%20BY%20created%20DESC"
     TargetMode="External" />
   <Relationship Id="rId_new_bugs_link_BLENDER_USD"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
-    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20BLEN%20AND%20issuetype%20%3D%20Bug%20AND%20created%20%3E%3D%202022-10-07%20AND%20created%20%3C%3D%202022-10-20%20ORDER%20BY%20created%20DESC"
+    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20BLEN%20AND%20issuetype%20in%20(Bug%2C%20Sub-task)%20AND%20created%20%3E%3D%202022-10-07%20AND%20created%20%3C%3D%202022-10-20%20ORDER%20BY%20created%20DESC"
     TargetMode="External" />
   <Relationship Id="rId_new_bugs_link_RENDER_STUDIO"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
-    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20RS%20AND%20issuetype%20%3D%20Bug%20AND%20created%20%3E%3D%202022-10-07%20AND%20created%20%3C%3D%202022-10-20%20ORDER%20BY%20created%20DESC"
+    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20RS%20AND%20issuetype%20in%20(Bug%2C%20Sub-task)%20AND%20created%20%3E%3D%202022-10-07%20AND%20created%20%3C%3D%202022-10-20%20ORDER%20BY%20created%20DESC"
     TargetMode="External" />
   <Relationship Id="rId_new_bugs_link_HOUDINI"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
-    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20RPRHOUD%20AND%20issuetype%20%3D%20Bug%20AND%20created%20%3E%3D%202022-10-07%20AND%20created%20%3C%3D%202022-10-20%20ORDER%20BY%20created%20DESC"
+    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20RPRHOUD%20AND%20issuetype%20in%20(Bug%2C%20Sub-task)%20AND%20created%20%3E%3D%202022-10-07%20AND%20created%20%3C%3D%202022-10-20%20ORDER%20BY%20created%20DESC"
     TargetMode="External" />
   <Relationship Id="rId_new_bugs_link_HDRPR"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
-    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20RPRUSD%20AND%20issuetype%20%3D%20Bug%20AND%20created%20%3E%3D%202022-10-07%20AND%20created%20%3C%3D%202022-10-20%20ORDER%20BY%20created%20DESC"
+    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20RPRUSD%20AND%20issuetype%20in%20(Bug%2C%20Sub-task)%20AND%20created%20%3E%3D%202022-10-07%20AND%20created%20%3C%3D%202022-10-20%20ORDER%20BY%20created%20DESC"
     TargetMode="External" />
   <Relationship Id="rId25"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
@@ -75,11 +75,11 @@
     Target="../customXml/item2.xml" />
   <Relationship Id="rId16"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
-    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20RPRBLND%20AND%20issuetype%20%3D%20Bug%20AND%20status%20in%20(Assessment%2C%20Blocked%2C%20%22In%20Progress%22%2C%20%22In%20Review%22%2C%20%22In%20Test%22%2C%20Open%2C%20Reopened)"
+    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20RPRBLND%20AND%20issuetype%20in%20(Bug%2C%20Sub-task)%20AND%20status%20in%20(Assessment%2C%20Blocked%2C%20%22In%20Progress%22%2C%20%22In%20Review%22%2C%20%22In%20Test%22%2C%20Open%2C%20Reopened)"
     TargetMode="External" />
   <Relationship Id="rId20"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
-    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20MAYAUS%20AND%20issuetype%20%3D%20Bug%20AND%20status%20in%20(Assessment%2C%20Blocked%2C%20%22In%20Progress%22%2C%20%22In%20Review%22%2C%20%22In%20Test%22%2C%20Open%2C%20Reopened)"
+    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20MAYAUS%20AND%20issuetype%20in%20(Bug%2C%20Sub-task)%20AND%20status%20in%20(Assessment%2C%20Blocked%2C%20%22In%20Progress%22%2C%20%22In%20Review%22%2C%20%22In%20Test%22%2C%20Open%2C%20Reopened)"
     TargetMode="External" />
   <Relationship Id="rId29"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
@@ -95,11 +95,11 @@
     Target="media/image1.png" />
   <Relationship Id="rId24"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
-    Target="https://amdrender.atlassian.net/jira/software/projects/RS/issues/?jql=project%20%3D%20%22RS%22%20AND%20type%20%3D%20%22Bug%22%20AND%20status%20IN%20%28%22Backlog%22%2C%22In%20Progress%22%2C%22Selected%20for%20development%22%2C%22Testing%20%2F%20QA%22%29%20ORDER%20BY%20created%20DESC"
+    Target="https://amdrender.atlassian.net/jira/software/projects/RS/issues/?jql=project%20%3D%20%22RS%22%20AND%20type%20in%20(Bug%2C%20Sub-task)%20AND%20status%20IN%20%28%22Backlog%22%2C%22In%20Progress%22%2C%22Selected%20for%20development%22%2C%22Testing%20%2F%20QA%22%29%20ORDER%20BY%20created%20DESC"
     TargetMode="External" />
   <Relationship Id="rId33"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
-    Target="https://amdrender.atlassian.net/jira/software/projects/RPRUSD/issues/?jql=type%20%3D%20%22Bug%22%20AND%20status%20IN%20%28%22Backlog%22%2C%22In%20Progress%22%2C%22Selected%20for%20development%22%2C%22In%20Testing%22%2C%22Testing%2FQA%22%2C%22To%20Do%22%2CBlocked%29%20AND%20project%20%3D%20RPRUSD%20ORDER%20BY%20created%20DESC"
+    Target="https://amdrender.atlassian.net/jira/software/projects/RPRUSD/issues/?jql=type%20in%20(Bug%2C%20Sub-task)%20AND%20status%20IN%20%28%22Backlog%22%2C%22In%20Progress%22%2C%22Selected%20for%20development%22%2C%22In%20Testing%22%2C%22Testing%2FQA%22%2C%22To%20Do%22%2CBlocked%29%20AND%20project%20%3D%20RPRUSD%20ORDER%20BY%20created%20DESC"
     TargetMode="External" />
   <Relationship Id="rId32"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme"
@@ -112,7 +112,7 @@
     Target="media/image4.png" />
   <Relationship Id="rId23"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
-    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20BLEN%20AND%20issuetype%20%3D%20Bug%20AND%20status%20in%20(Assessment%2C%20Blocked%2C%20%22In%20Progress%22%2C%20%22In%20Review%22%2C%20%22In%20Test%22%2C%20Open%2C%20Reopened)"
+    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20BLEN%20AND%20issuetype%20in%20(Bug%2C%20Sub-task)%20AND%20status%20in%20(Assessment%2C%20Blocked%2C%20%22In%20Progress%22%2C%20%22In%20Review%22%2C%20%22In%20Test%22%2C%20Open%2C%20Reopened)"
     TargetMode="External" />
   <Relationship Id="rId28"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
@@ -147,15 +147,15 @@
     Target="footer1.xml" />
   <Relationship Id="rId_comment_Render_Studio"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
-    Target="https://amdrender.atlassian.net/jira/software/c/projects/RPRUS/issues/?jql=project%20IN%20%28%22AMD%20Render%20Studio%22%29%20AND%20type%20%3D%20%22Bug%22%20AND%20status%20IN%20%28%22In%20Progress%22%2C%22In%20Testing%22%2C%22Selected%20for%20Development%22%2C%22To%20Do%22%2C%22Backlog%22%2C%22Blocked%22%2C%22Testing%20%2F%20QA%22%2C%22Waiting%20for%20merge%22%29%20AND%20priority%20IN%20%28%22Blocker%22%29%20ORDER%20BY%20created%20DESC"
+    Target="https://amdrender.atlassian.net/jira/software/c/projects/RPRUS/issues/?jql=project%20IN%20%28%22AMD%20Render%20Studio%22%29%20AND%20type%20in%20(Bug%2C%20Sub-task)%20AND%20status%20IN%20%28%22In%20Progress%22%2C%22In%20Testing%22%2C%22Selected%20for%20Development%22%2C%22To%20Do%22%2C%22Backlog%22%2C%22Blocked%22%2C%22Testing%20%2F%20QA%22%2C%22Waiting%20for%20merge%22%29%20AND%20priority%20IN%20%28%22Blocker%22%29%20ORDER%20BY%20created%20DESC"
     TargetMode="External" />
   <Relationship Id="rId_comment_Houdini"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
-    Target="https://amdrender.atlassian.net/jira/software/c/projects/RPRUS/issues/?jql=type%20%3D%20%22Bug%22%20AND%20status%20IN%20%28%22In%20Progress%22%2C%22In%20Testing%22%2C%22Selected%20for%20Development%22%2C%22To%20Do%22%2C%22Backlog%22%2C%22Testing%20%2F%20QA%22%29%20AND%20priority%20%3D%20%22Critical%22%20AND%20project%20%3D%20%22RPRHoudini%22%20ORDER%20BY%20created%20DESC"
+    Target="https://amdrender.atlassian.net/jira/software/c/projects/RPRUS/issues/?jql=type%20in%20(Bug%2C%20Sub-task)%20AND%20status%20IN%20%28%22In%20Progress%22%2C%22In%20Testing%22%2C%22Selected%20for%20Development%22%2C%22To%20Do%22%2C%22Backlog%22%2C%22Testing%20%2F%20QA%22%29%20AND%20priority%20%3D%20%22Critical%22%20AND%20project%20%3D%20%22RPRHoudini%22%20ORDER%20BY%20created%20DESC"
     TargetMode="External" />
   <Relationship Id="rId_comment_hdRPR"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
-    Target="https://amdrender.atlassian.net/jira/software/c/projects/RPRUS/issues/?jql=project%20%3D%20%22RPRUS%22%20AND%20type%20%3D%20%22Bug%22%20AND%20status%20IN%20%28%22In%20Progress%22%2C%22In%20Testing%22%2C%22Selected%20for%20Development%22%2C%22To%20Do%22%29%20AND%20priority%20%3D%20%22Critical%22%20ORDER%20BY%20created%20DESC"
+    Target="https://amdrender.atlassian.net/jira/software/c/projects/RPRUS/issues/?jql=project%20%3D%20%22RPRUS%22%20AND%20type%20in%20(Bug%2C%20Sub-task)%20AND%20status%20IN%20%28%22In%20Progress%22%2C%22In%20Testing%22%2C%22Selected%20for%20Development%22%2C%22To%20Do%22%29%20AND%20priority%20%3D%20%22Critical%22%20ORDER%20BY%20created%20DESC"
     TargetMode="External" />
   <Relationship Id="rId_RENDER_STUDIO_ISSUES_PLOT"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"

@@ -69,7 +69,7 @@ projects_jira_open_statuses = {
 def get_blockers_link(project: Projects) -> str:
     name = projects_jira_names[project]
     statuses = projects_jira_open_statuses[project]
-    jql_request = f"project = {name} AND issuetype = Bug AND status in ({statuses}) AND priority = Blocker ORDER BY created DESC"
+    jql_request = f"project = {name} AND issuetype in (Bug, Sub-task) AND status in ({statuses}) AND priority = Blocker ORDER BY created DESC"
     return (
         JIRA_URL
         + f"/jira/software/c/projects/{name}/issues/?jql="
@@ -80,7 +80,7 @@ def get_blockers_link(project: Projects) -> str:
 def get_crits_link(project: Projects) -> str:
     name = projects_jira_names[project]
     statuses = projects_jira_open_statuses[project]
-    jql_request = f"project = {name} AND issuetype = Bug AND status in ({statuses}) AND priority = Critical ORDER BY created DESC"
+    jql_request = f"project = {name} AND issuetype in (Bug, Sub-task) AND status in ({statuses}) AND priority = Critical ORDER BY created DESC"
     return (
         JIRA_URL
         + f"/jira/software/c/projects/{name}/issues/?jql="
@@ -92,7 +92,7 @@ def get_project_blockers(project: Projects) -> List[dict]:
     name = projects_jira_names[project]
     statuses = projects_jira_open_statuses[project]
 
-    jql_request = f"project = {name} AND issuetype = Bug AND status in ({statuses}) AND priority = Blocker ORDER BY created DESC"
+    jql_request = f"project = {name} AND issuetype in (Bug, Sub-task) AND status in ({statuses}) AND priority = Blocker ORDER BY created DESC"
     issues = jira_instance.jql(jql_request).get("issues")
 
     blockers = []
@@ -110,7 +110,7 @@ def get_project_blockers(project: Projects) -> List[dict]:
 def get_project_crits(project: Projects):
     name = projects_jira_names[project]
     statuses = projects_jira_open_statuses[project]
-    jql_request = f"project = {name} AND issuetype = Bug AND status in ({statuses}) AND priority = Critical ORDER BY created DESC"
+    jql_request = f"project = {name} AND issuetype in (Bug, Sub-task) AND status in ({statuses}) AND priority = Critical ORDER BY created DESC"
     issues = jira_instance.jql(jql_request).get("issues")
 
     crits = []
@@ -147,7 +147,7 @@ def get_bugs(report_date: datetime):
     for project in projects_jira_names:
         project_jira_name = projects_jira_names[project]
 
-        jql_request = "created >= {from_date} AND created < {to_date} AND project = {project} AND issuetype = Bug ORDER BY created DESC".format(
+        jql_request = "created >= {from_date} AND created < {to_date} AND project = {project} AND issuetype in (Bug, Sub-task) ORDER BY created DESC".format(
             from_date=(report_date - timedelta(weeks=2) + timedelta(days=1)).strftime(
                 "%Y-%m-%d"
             ),
@@ -161,7 +161,7 @@ def get_bugs(report_date: datetime):
             JIRA_URL
             + "/issues/?jql="
             + urllib.parse.quote(
-                "project = {project} AND issuetype = Bug AND created >= {from_date} AND created < {to_date} ORDER BY created DESC".format(
+                "project = {project} AND issuetype in (Bug, Sub-task) AND created >= {from_date} AND created < {to_date} ORDER BY created DESC".format(
                     from_date=(
                         report_date - timedelta(weeks=2) + timedelta(days=1)
                     ).strftime("%Y-%m-%d"),
@@ -179,7 +179,7 @@ def get_bugs(report_date: datetime):
 def get_issues_statistic(project: Projects, report_date: datetime, type: IssueType):
     # request issues list
     name = projects_jira_names[project]
-    jql_request = f'project = {name} AND issuetype = Bug AND priority = {"Blocker" if type == IssueType.BLOCKER else "Critical"} AND (updated >= -26w OR status IN ({str(jira_open_statuses_list).replace("[","").replace("]","")})) ORDER BY created ASC'
+    jql_request = f'project = {name} AND issuetype in (Bug, Sub-task) AND priority = {"Blocker" if type == IssueType.BLOCKER else "Critical"} AND (updated >= -26w OR status IN ({str(jira_open_statuses_list).replace("[","").replace("]","")})) ORDER BY created ASC'
     issues = jira_instance.jql(
         jql_request, fields="statuscategorychangedate, created, status"
     ).get("issues")
