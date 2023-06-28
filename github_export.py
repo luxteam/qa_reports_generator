@@ -31,8 +31,9 @@ projects_info = {
     Projects.HDRPR: {
         "owner": "GPUOpen-LibrariesAndSDKs",
         "name": "RadeonProRenderUSD",
-    }
+    },
 }
+
 
 def request_pull_requests_list(project: Projects, report_date: datetime):
     report_start_date = report_date - timedelta(weeks=2)
@@ -55,7 +56,7 @@ def request_pull_requests_list(project: Projects, report_date: datetime):
                 or (
                     pr.get("merged_at", None) is not None
                     and datetime.strptime(pr["merged_at"], "%Y-%m-%dT%H:%M:%SZ").date()
-                    > report_start_date.date()
+                    >= report_start_date.date()
                 )
             ),
             data,
@@ -63,6 +64,7 @@ def request_pull_requests_list(project: Projects, report_date: datetime):
     )
 
     return pull_requests
+
 
 def get_pull_requests_status(project: Projects, report_date: datetime):
     pull_requests = request_pull_requests_list(project, report_date)
@@ -96,25 +98,29 @@ def get_merged_prs(project: Projects, report_date: datetime):
     since_date = report_date - timedelta(weeks=2)
 
     # prepare url
-    url = "https://github.com/{owner}/{name}/pulls?q=is%3Apr+is%3Amerged+closed%3A%3E{date}".format(owner=owner, name=name, date=since_date.strftime('%Y-%m-%d'))
+    url = "https://github.com/{owner}/{name}/pulls?q=is%3Apr+is%3Amerged+merged%3A{from_date}..{to_datetime}".format(
+        owner=owner,
+        name=name,
+        from_date=since_date.strftime("%Y-%m-%d"),
+        to_datetime=report_date.strftime("%Y-%m-%dT%H:%M"),
+    )
 
     # count prs
     pull_requests = request_pull_requests_list(project, report_date)
-    count = len(list(
-        filter(
-            (
-                lambda pr: bool(pr.get("merged_at", None))
-            ),
-            pull_requests,
+    count = len(
+        list(
+            filter(
+                (lambda pr: bool(pr.get("merged_at", None))),
+                pull_requests,
+            )
         )
-    ))
+    )
 
     return {"link": url, "count": count}
 
 
-
 if __name__ == "__main__":
-    for project in projects_info:
+    for project in [Projects.MAYA_RPR]:  # projects_info:
         print(projects_info[project]["name"] + ":")
         prs = get_pull_requests_status(project, datetime.now())
         for pr in prs:
@@ -124,8 +130,6 @@ if __name__ == "__main__":
                 )
             )
 
-        info = get_merged_prs(project, datetime.now()) 
-        print("Link: " + info['link'])
-        print("Merged: " + str(info['count']))
-
-    
+        info = get_merged_prs(project, datetime.now())
+        print("Link: " + info["link"])
+        print("Merged: " + str(info["count"]))

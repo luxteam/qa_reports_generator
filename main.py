@@ -122,6 +122,7 @@ def fill_build_status_table(
     build_data: Dict,
     blockers: Dict,
     crits: Dict,
+    report_date: datetime,
 ):
     row_id = ids.BUILD_STATUS_TABLE_ROW[project]
     row = word.find_by_id(tree, row_id)
@@ -183,14 +184,16 @@ def fill_build_status_table(
             word.clear_table_cell(cells[4])
             amount = len(blockers[project])
             content = Link(
-                url=get_blockers_link(project), text=f"Blocker issues ({amount})"
+                url=get_blockers_link(project, report_date),
+                text=f"Blocker issues ({amount})",
             )
             word.set_table_cell_value(cells[4], content)
         else:  # unstable
             word.clear_table_cell(cells[4])
             amount = len(crits[project])
             content = Link(
-                url=get_crits_link(project), text=f"Critical issues ({amount})"
+                url=get_crits_link(project, report_date),
+                text=f"Critical issues ({amount})",
             )
             word.set_table_cell_value(cells[4], content)
 
@@ -404,7 +407,7 @@ def get_issues_plot(project: Projects, report_date: datetime):
 
 def main():
     # eval report dates
-    report_date = datetime.today()
+    report_date = datetime.now()
     report_start_date = report_date - timedelta(weeks=2) + timedelta(days=1)
 
     report_path = REPORT_FILE_PATH.format(date=report_date.strftime("%d-%m-%Y"))
@@ -427,13 +430,15 @@ def main():
     # update projects status table
     print("[1/11] Projects status table...")
 
-    blockers = get_blockers()
-    crits = get_crits()
+    blockers = get_blockers(report_date)
+    crits = get_crits(report_date)
 
     for project in ids.BUILD_STATUS_TABLE_ROW:
         if project != Projects.WML:
             build_data = get_latest_build_data(project)
-            fill_build_status_table(tree, project, build_data, blockers, crits)
+            fill_build_status_table(
+                tree, project, build_data, blockers, crits, report_date
+            )
 
     # WML link should be placed on the project page instead of projects table
     wml_report_link = get_wml_report_link()
@@ -526,7 +531,7 @@ def main():
     # fill blockers list
     print("[7/11] Blockers list...")
 
-    blockers_by_proj = get_blockers()
+    blockers_by_proj = get_blockers(report_date)
     blockers = []
     for project in blockers_by_proj:
         blockers.extend(blockers_by_proj[project])
