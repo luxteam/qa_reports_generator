@@ -32,6 +32,10 @@ projects_info = {
         "owner": "GPUOpen-LibrariesAndSDKs",
         "name": "RadeonProRenderUSD",
     },
+    Projects.INVENTOR: {
+        "owner": "",
+        "name": ""
+    }
 }
 
 

@@ -44,6 +44,10 @@ projects_chart_names = {
         ChartType.UNRESOLVED_ISSUES: "Render Studio: Unresolved issues",
         ChartType.ISSUES_UPDATES_2W: "Render Studio: Issues updates in 2 weeks",
     },
+    Projects.INVENTOR: {
+        ChartType.UNRESOLVED_ISSUES: "Inventor: Unresolved issues",
+        ChartType.ISSUES_UPDATES_2W: "Inventor: Issues updates in 2 weeks",
+    },
 }
 
 

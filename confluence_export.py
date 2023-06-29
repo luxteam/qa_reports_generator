@@ -19,6 +19,7 @@ projects_confluence_names = {
     # Projects.SOLIDWORKS: "Solidworks",
     Projects.HOUDINI: "Houdini",
     Projects.HDRPR: "hdRPR",
+    Projects.INVENTOR: "Inventor"
 }
 
 

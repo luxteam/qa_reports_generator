@@ -22,7 +22,7 @@ class Projects(Enum):
     HDRPR = 7
     SOLIDWORKS = 8
     MATERIALX = 9
-    USD_VIEWER_INVENTOR = 10
+    INVENTOR = 10
     WML = 13
     RPRHYBRID = 14
 

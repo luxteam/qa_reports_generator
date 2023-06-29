@@ -31,6 +31,7 @@ projects_jira_names = {
     Projects.HOUDINI: "RPRHOUD",
     Projects.HDRPR: "RPRUSD",
     Projects.RPRHYBRID: "RPRHYB",
+    Projects.INVENTOR: "INV",
 }
 
 jira_open_statuses_list = [
@@ -63,6 +64,7 @@ projects_jira_open_statuses = {
     Projects.HDRPR: '"Backlog","In Progress","In Testing","Selected for Development","To Do",Blocked',
     Projects.SOLIDWORKS: '"Blocked","In Progress","In Test","Needs Merging","To Do"',
     Projects.RPRHYBRID: 'Assessment,Deployment,Blocked,"In Progress","In Review","In Test",Open,Planning,Reopened,"To Do"',
+    Projects.INVENTOR: '"In Progress", "In Testing", Open, Reopened',
 }
 
 
