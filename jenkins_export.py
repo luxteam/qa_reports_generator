@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 from typing import Dict
 import json
 from urllib.parse import urljoin
+from lxml import etree
 
 # from selenium import webdriver
 # from selenium.webdriver.common.by import By
@@ -66,8 +67,13 @@ def _get_latest_report_link(build_data: dict) -> str:
 def _get_latest_build_version(project_config: str, build_data: dict) -> str:
     description = build_data["lastBuild"]["description"]
 
-    if "ersion:</b>" in description:
-        return description.split("ersion:</b>")[1].split("<br/>")[0].strip()
+    dom = etree.HTML(description)
+
+    if dom.xpath("//*[@id='version-major']"):
+        major = dom.xpath("//*[@id='version-major']")[0].text.strip()
+        minor = dom.xpath("//*[@id='version-minor']")[0].text.strip()
+        patch = dom.xpath("//*[@id='version-patch']")[0].text.strip()
+        return f"{major}.{minor}.{patch}"
     else:
         return project_config
 
