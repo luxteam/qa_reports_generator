@@ -27,14 +27,17 @@ projects_info = {
         "owner": "GPUOpen-LibrariesAndSDKs",
         "name": "RadeonProRenderUSD",
     },
-    Projects.RENDER_STUDIO: {"owner": "Radeon-Pro", "name": "WebUsdViewer"},
+    Projects.RENDER_STUDIO: {
+        "owner": "Radeon-Pro", 
+        "name": "WebUsdViewer"
+    },
     Projects.HDRPR: {
         "owner": "GPUOpen-LibrariesAndSDKs",
         "name": "RadeonProRenderUSD",
     },
     Projects.INVENTOR: {
-        "owner": "",
-        "name": ""
+        "owner": "Radeon-Pro",
+        "name": "RadeonProRenderInventorPlugin"
     }
 }
 
@@ -124,7 +127,7 @@ def get_merged_prs(project: Projects, report_date: datetime):
 
 
 if __name__ == "__main__":
-    for project in [Projects.MAYA_RPR]:  # projects_info:
+    for project in projects_info:
         print(projects_info[project]["name"] + ":")
         prs = get_pull_requests_status(project, datetime.now())
         for pr in prs:
