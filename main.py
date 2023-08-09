@@ -434,7 +434,7 @@ def main():
     crits = get_crits(report_date)
 
     for project in ids.BUILD_STATUS_TABLE_ROW:
-        if project != Projects.WML:
+        if project not in [Projects.WML, Projects.INVENTOR]:
             build_data = get_latest_build_data(project)
             fill_build_status_table(
                 tree, project, build_data, blockers, crits, report_date

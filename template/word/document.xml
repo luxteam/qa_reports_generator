@@ -2445,16 +2445,16 @@
             </w:tcMar>
             <w:vAlign w:val="center" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="1281E262" w14:textId="293705B7">
             <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
+              <w:pStyle w:val="QAReportTablesText" />
               <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
+                <w:highlight w:val="yellow" />
               </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:t>-</w:t>
+            </w:r>
           </w:p>
         </w:tc>
         <w:tc>
@@ -2462,16 +2462,16 @@
             <w:tcW w:w="1418" w:type="dxa" />
             <w:vAlign w:val="center" />
           </w:tcPr>
-          <w:p>
+          <w:p w14:paraId="1281E262" w14:textId="293705B7">
             <w:pPr>
-              <w:pStyle w:val="Tabletext" />
-              <w:spacing w:before="10" w:after="10" />
-              <w:jc w:val="center" />
+              <w:pStyle w:val="QAReportTablesText" />
               <w:rPr>
-                <w:rFonts w:cs="Open Sans" />
-                <w:szCs w:val="19" />
+                <w:highlight w:val="yellow" />
               </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:t>-</w:t>
+            </w:r>
           </w:p>
         </w:tc>
         <w:tc>
@@ -2495,10 +2495,20 @@
                 <w:rFonts w:cs="Open Sans" />
                 <w:b />
                 <w:bCs />
-                <w:color w:val="E36C0A" w:themeColor="accent6" w:themeShade="BF" />
+                <w:color w:val="FF0000" />
                 <w:szCs w:val="19" />
               </w:rPr>
             </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:cs="Open Sans" />
+                <w:b />
+                <w:bCs />
+                <w:color w:val="FF0000" />
+                <w:szCs w:val="19" />
+              </w:rPr>
+              <w:t>Failed</w:t>
+            </w:r>
           </w:p>
         </w:tc>
         <w:tc>
@@ -2513,7 +2523,7 @@
               </w:rPr>
             </w:pPr>
             <w:r>
-              <w:t>Waiting for the new PRs</w:t>
+              <w:t>Have only early-stage build</w:t>
             </w:r>
           </w:p>
         </w:tc>
