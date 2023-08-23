@@ -73,7 +73,7 @@ def get_blockers_link(project: Projects, report_date: datetime) -> str:
     jql_request = "project = {name} AND issuetype in (Bug, Sub-task) AND status in ({statuses}) AND priority = Blocker AND created < '{to_datetime}' ORDER BY created DESC".format(
         name=name,
         statuses=projects_jira_open_statuses[project],
-        to_datetime=(report_date + timedelta(days=1)).strftime("%Y-%m-%d %H:%M"),
+        to_datetime=(report_date).strftime("%Y-%m-%d %H:%M"),
     )
     return (
         JIRA_URL
@@ -87,7 +87,7 @@ def get_crits_link(project: Projects, report_date: datetime) -> str:
     jql_request = "project = {name} AND issuetype in (Bug, Sub-task) AND status in ({statuses}) AND priority = Critical AND created < '{to_datetime}' ORDER BY created DESC".format(
         name=name,
         statuses=projects_jira_open_statuses[project],
-        to_datetime=(report_date + timedelta(days=1)).strftime("%Y-%m-%d %H:%M"),
+        to_datetime=(report_date).strftime("%Y-%m-%d %H:%M"),
     )
     return (
         JIRA_URL
@@ -101,7 +101,7 @@ def get_project_blockers(project: Projects, report_date: datetime) -> List[dict]
     jql_request = "project = {name} AND issuetype in (Bug, Sub-task) AND status in ({statuses}) AND priority = Blocker AND created < '{to_datetime}' ORDER BY created DESC".format(
         name=projects_jira_names[project],
         statuses=projects_jira_open_statuses[project],
-        to_datetime=(report_date + timedelta(days=1)).strftime("%Y-%m-%d %H:%M"),
+        to_datetime=(report_date).strftime("%Y-%m-%d %H:%M"),
     )
     issues = jira_instance.jql(jql_request).get("issues")
 
@@ -121,7 +121,7 @@ def get_project_crits(project: Projects, report_date: datetime):
     jql_request = "project = {name} AND issuetype in (Bug, Sub-task) AND status in ({statuses}) AND priority = Critical AND created < '{to_datetime}' ORDER BY created DESC".format(
         name=projects_jira_names[project],
         statuses=projects_jira_open_statuses[project],
-        to_datetime=(report_date + timedelta(days=1)).strftime("%Y-%m-%d %H:%M"),
+        to_datetime=(report_date).strftime("%Y-%m-%d %H:%M"),
     )
     issues = jira_instance.jql(jql_request).get("issues")
 
@@ -163,7 +163,7 @@ def get_bugs(report_date: datetime):
             from_date=(report_date - timedelta(weeks=2) + timedelta(days=1)).strftime(
                 "%Y-%m-%d"
             ),
-            to_datetime=(report_date + timedelta(days=1)).strftime("%Y-%m-%d %H:%M"),
+            to_datetime=(report_date).strftime("%Y-%m-%d %H:%M"),
             project=project_jira_name,
         )
         issues = jira_instance.jql(jql_request)
@@ -177,7 +177,7 @@ def get_bugs(report_date: datetime):
                     from_date=(
                         report_date - timedelta(weeks=2) + timedelta(days=1)
                     ).strftime("%Y-%m-%d"),
-                    to_datetime=(report_date + timedelta(days=1)).strftime(
+                    to_datetime=(report_date).strftime(
                         "%Y-%m-%d %H:%M"
                     ),
                     project=project_jira_name,

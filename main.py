@@ -455,9 +455,8 @@ def main():
 
     for project in found_issues:
         if project in [
-            Projects.SOLIDWORKS,
             Projects.RPRHYBRID,
-        ]:  # skip solidworks in this table for now
+        ]:  # skip RPRHYBRID in this table for now
             continue
 
         table_cell_id = ids.SUMMARY_TABLE[project][SummaryTableColumn.FOUND_ISSUES]
@@ -470,6 +469,8 @@ def main():
 
     # Merged PRs
     for project in ids.SUMMARY_TABLE:
+        if project in [ Projects.SOLIDWORKS]:
+            continue # skip Solidworks in this table for now
         table_cell_id = ids.SUMMARY_TABLE[project][SummaryTableColumn.MERGED_PRS]
         table_cell = word.find_by_id(tree, table_cell_id)
 
@@ -497,6 +498,9 @@ def main():
     print("[4/11] PRs status tables...")
 
     for project in ids.PR_STATUS_TABLE_ID:
+        if project in [Projects.SOLIDWORKS]:
+            continue
+        # skip solidworks for now
         data = get_pull_requests_status(project, report_date)
         fill_pr_table(tree, project, data)
 
@@ -557,9 +561,8 @@ def main():
 
     for project in projects_bugs:
         if project in [
-            Projects.SOLIDWORKS,
             Projects.RPRHYBRID,
-        ]:  # skip Solidworks bugs link for now
+        ]:  # skip RPRHYBRID bugs link for now
             continue
 
         link_id = ids.BUGS_LINK_ID[project]

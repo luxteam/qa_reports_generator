@@ -71,6 +71,10 @@
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
     Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20RPRUSD%20AND%20issuetype%20in%20(Bug%2C%20Sub-task)%20AND%20created%20%3E%3D%202022-10-07%20AND%20created%20%3C%3D%202022-10-20%20ORDER%20BY%20created%20DESC"
     TargetMode="External" />
+  <Relationship Id="rId_new_bugs_link_SOLIDWORKS"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20SV%20AND%20issuetype%20in%20(Bug%2C%20Sub-task)%20AND%20created%20%3E%3D%202022-10-07%20AND%20created%20%3C%3D%202022-10-20%20ORDER%20BY%20created%20DESC"
+    TargetMode="External" />
   <Relationship Id="rId25"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
     Target="media/image9.png" />
@@ -181,10 +185,23 @@
     Target="media/issue_plot_bu.png" />
   <Relationship Id="rId_HDRPR_ISSUES_PLOT"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
-    Target="media/issue_plot_bu.png" />
+    Target="media/issue_plot_hd.png" />
   <Relationship Id="rId_INVENTOR_ISSUES_PLOT"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
-    Target="media/issue_plot_bu.png" />
+    Target="media/issue_plot_inv.png" />
+  <Relationship Id="rId_SOLIDWORKS_ISSUES_PLOT"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+    Target="media/issue_plot_sv.png" />
+  <Relationship Id="rId_SOLIDWORKS_VIEW_ISSUES_LINK"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+    Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20SV%20AND%20issuetype%20in%20(Bug%2C%20Sub-task)%20AND%20status%20in%20(Blocked%2C%20%22In%20Progress%22%2C%20%22In%20Test%22%2C%20%22Needs%20Merging%22%2C%20%22To%20Do%22)"
+    TargetMode="External" />
+  <Relationship Id="rId_SOLIDWORKS_ISSUES_UPDATES_PLOT"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+    Target="media/image17.png" />
+  <Relationship Id="rId_SOLIDWORKS_UNRESOLVED_ISSUES_PLOT"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+    Target="media/image18.png" />
   <Relationship Id="rId_INVENTOR_VIEW_ISSUES_LINK"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
     Target="https://amdrender.atlassian.net/issues/?jql=project%20%3D%20INV%20AND%20issuetype%20in%20(Bug%2C%20Sub-task)%20AND%20status%20in%20(%22In%20Progress%22%2C%20%22In%20Testing%22%2C%20Open%2C%20Reopened)"

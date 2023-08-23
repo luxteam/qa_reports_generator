@@ -28,10 +28,10 @@ projects_chart_names = {
         ChartType.UNRESOLVED_ISSUES: "Blender USD: Unresolved issues",
         ChartType.ISSUES_UPDATES_2W: "Blender USD: Issues updates in 2 weeks",
     },
-    # Projects.SOLIDWORKS: {
-    #     ChartType.UNRESOLVED_ISSUES: "Solidworks: Unresolved issues",
-    #     ChartType.ISSUES_UPDATES_2W: "Solidworks: Issues updates in 2 weeks",
-    # },
+    Projects.SOLIDWORKS: {
+        ChartType.UNRESOLVED_ISSUES: "SolidWorks: Unresolved issues",
+        ChartType.ISSUES_UPDATES_2W: "SolidWorks: Issues updates in 2 weeks",
+    },
     Projects.HOUDINI: {
         ChartType.UNRESOLVED_ISSUES: "Houdini: Unresolved issues",
         ChartType.ISSUES_UPDATES_2W: "Houdini: Issues updates in 2 weeks",

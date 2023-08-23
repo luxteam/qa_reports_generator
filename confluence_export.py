@@ -16,7 +16,7 @@ projects_confluence_names = {
     Projects.BLENDER_RPR: "RPR Blender",
     Projects.BLENDER_USD: "Blender USD",
     Projects.RENDER_STUDIO: "Render Studio",
-    # Projects.SOLIDWORKS: "Solidworks",
+    Projects.SOLIDWORKS: "Solidworks",
     Projects.HOUDINI: "Houdini",
     Projects.HDRPR: "hdRPR",
     Projects.INVENTOR: "Inventor"
