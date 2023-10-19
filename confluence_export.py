@@ -71,16 +71,16 @@ def _get_projects_info(report_date: datetime):
             # identify task priority
             # and remove "HP: ", "MP: ", or "LP: " from the start of the string
             priority = ""
-            if task_body.startswith("HP: "):
+            if task_body.startswith("HP:"):
                 priority = "high"
-                task_body = task_body[4:]
-            elif task_body.startswith("MP: "):
+                task_body = task_body[3:].strip()
+            elif task_body.startswith("MP:"):
                 priority = "medium"
-                task_body = task_body[4:]
-            elif task_body.startswith("LP: "):
+                task_body = task_body[3:].strip()
+            elif task_body.startswith("LP:"):
                 priority = "low"
-                task_body = task_body[4:]
-            elif task_body.startswith("NFR: "):  # not for report
+                task_body = task_body[3:].strip()
+            elif task_body.startswith("NFR:"):  # not for report
                 continue
 
             # remove comment from the end of the string
