@@ -9071,8 +9071,6 @@
       </w:r>
     </w:p>
     
-
-
     <w:p w14:paraId="729D0B27" w14:textId="3DBF7BB7" w:rsidR="00721F3E" w:rsidRPr="0036781B"
       w:rsidRDefault="00983AF6" w:rsidP="0036781B">
       <w:pPr>
@@ -9096,6 +9094,79 @@
       </w:r>
       <w:bookmarkEnd w:id="27" />
     </w:p>
+
+
+    <w:p id="WML_TASK_LIST_HEADER_COMPLETED" w14:paraId="747676F1" w14:textId="6154CC90">
+      <w:pPr>
+        <w:pStyle w:val="3" />
+      </w:pPr>
+      <w:r>
+        <w:t>Completed Tasks</w:t>
+      </w:r>
+    </w:p>
+    <w:p id="WML_TASK_LIST_HEADER_PLANNED" w14:paraId="089072A6" w14:textId="6393648B">
+      <w:pPr>
+        <w:pStyle w:val="3" />
+      </w:pPr>
+      <w:r>
+        <w:t>Planned activities</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p/>
+    <w:p w14:paraId="144DC8BF" w14:textId="26BBBCEA">
+      <w:pPr>
+        <w:jc w:val="center" />
+        <w:rPr>
+          <w:lang w:val="en-US" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof />
+          <w:lang w:val="en-US" />
+        </w:rPr>
+        <w:drawing id="WML_PLOT">
+          <wp:inline distT="0" distB="0" distL="0" distR="0" wp14:anchorId="0B4B2012"
+            wp14:editId="5C6DA4AF">
+            <wp:extent cx="5280404" cy="2976113" />
+            <wp:effectExtent l="0" t="0" r="0" b="0" />
+            <wp:docPr id="1206" name="Picture" />
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+                noChangeAspect="1" />
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="1206" name="" />
+                    <pic:cNvPicPr />
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId_WML_PLOT" />
+                    <a:stretch>
+                      <a:fillRect />
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0" />
+                      <a:ext cx="6733126" cy="3794888" />
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst />
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p/>
+
     <w:p id="WML_BUILD_LINK">
       <w:pPr>
         <w:rPr>
@@ -9131,7 +9202,7 @@
         <w:rPr>
           <w:lang w:val="en-US" w:eastAsia="ja-JP" />
         </w:rPr>
-        <w:instrText xml:space="preserve"> HYPERLINK "https://luxproject.luxoft.com/jira/browse/MATLIB-271" </w:instrText>
+        <w:instrText xml:space="preserve"> HYPERLINK "https://luxproject.luxoft.com/jira/projects/MATLIB/issues?filter=allopenissues" </w:instrText>
       </w:r>
       <w:r>
         <w:rPr>

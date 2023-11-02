@@ -19,7 +19,8 @@ projects_confluence_names = {
     Projects.SOLIDWORKS: "Solidworks",
     Projects.HOUDINI: "Houdini",
     Projects.HDRPR: "hdRPR",
-    Projects.INVENTOR: "Inventor"
+    Projects.INVENTOR: "Inventor",
+    Projects.WML: "Web Material Library"
 }
 
 
