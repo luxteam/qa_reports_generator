@@ -24,7 +24,7 @@ PROJECT_TO_JOB_MAPPING: Dict[Projects, Dict[str, str]] = {
     Projects.HDRPR: {"default": "job/HdRPR-Weekly"},
     Projects.MATERIALX: {"default": "job/MaterialXvsHdRPR-Weekly"},
     Projects.SOLIDWORKS: {},
-    Projects.INVENTOR: {"default": "job/USD-Viewer-Weekly"},
+    # Projects.INVENTOR: {"default": "job/USD-Viewer-Weekly"},
     Projects.RPRHYBRID: {},
 }
 

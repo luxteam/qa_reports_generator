@@ -264,6 +264,24 @@ def remove_chart(tree, project, chart_type):
     word.remove_element(image_el)
 
 
+def remove_pr_table(tree, project):
+    # find table and it's title 
+    table = word.find_by_id(
+        tree, ids.PR_STATUS_TABLE_ID[project]
+    )
+    table_title = table.getprevious()
+
+    # add note about table absence
+    note_text = "No open pull requests in 2 weeks"
+    paragraph = word.create_paragraph()
+    word.append_content(paragraph, note_text)
+    word.append_element_before(new_el=paragraph, before=table_title)
+
+    # remove elements
+    word.remove_element(table_title)
+    word.remove_element(table)
+
+
 def replace_image(image_el, new_image_path):
     # identify chart placeholder file location
     image_placeholder_path = word.get_image_file_location(image_el)
@@ -503,9 +521,12 @@ def main():
             continue
         # skip solidworks for now
         data = get_pull_requests_status(project, report_date)
-        fill_pr_table(tree, project, data)
-
-        project_added_elements[project] += len(data)
+        if not data:
+            remove_pr_table(tree, project)
+            project_added_elements[project] -= 3
+        else:
+            fill_pr_table(tree, project, data)
+            project_added_elements[project] += len(data)
 
     ###############################################################
     # import tasks

@@ -4430,7 +4430,7 @@
             </wp:positionV>
             <wp:extent cx="6037580" cy="3018790" />
             <wp:effectExtent l="0" t="0" r="1270" b="0" />
-            <wp:wrapNone />
+            <wp:wrapTopAndBottom />
             <wp:docPr id="1005" name="Picture" />
             <wp:cNvGraphicFramePr>
               <a:graphicFrameLocks
@@ -4492,27 +4492,7 @@
         <w:t xml:space="preserve">CRITICAL AND BLOCKER</w:t>
       </w:r>
     </w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p>
-      <w:pPr>
-        <w:rPr>
-          <w:rFonts w:cs="Open Sans" />
-          <w:caps />
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:cs="Open Sans" />
-          <w:caps />
-        </w:rPr>
-        <w:fldChar w:fldCharType="end" />
-      </w:r>
-    </w:p>
+    <w:p />
     <w:p w14:paraId="7026986F" w14:textId="1D41B18B">
       <w:pPr>
         <w:pStyle w:val="3" />
@@ -5018,7 +4998,7 @@
             </wp:positionV>
             <wp:extent cx="6037580" cy="3018790" />
             <wp:effectExtent l="0" t="0" r="1270" b="0" />
-            <wp:wrapNone />
+            <wp:wrapTopAndBottom />
             <wp:docPr id="1003" name="Picture" />
             <wp:cNvGraphicFramePr>
               <a:graphicFrameLocks
@@ -5080,30 +5060,7 @@
         <w:t xml:space="preserve">CRITICAL AND BLOCKER</w:t>
       </w:r>
     </w:p>
-
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-
-    <w:p>
-      <w:pPr>
-        <w:spacing w:before="0" w:after="0" />
-        <w:contextualSpacing />
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-        <w:fldChar w:fldCharType="end" />
-      </w:r>
-    </w:p>
-
+    <w:p/>
     <w:p w14:paraId="7026986F" w14:textId="1D41B18B" w:rsidR="00BB2E61" w:rsidRDefault="006E4C6B"
       w:rsidP="00AF35BD">
       <w:pPr>
@@ -5614,7 +5571,7 @@
             </wp:positionV>
             <wp:extent cx="6037580" cy="3018790" />
             <wp:effectExtent l="0" t="0" r="1270" b="0" />
-            <wp:wrapNone />
+            <wp:wrapTopAndBottom />
             <wp:docPr id="1004" name="Picture" />
             <wp:cNvGraphicFramePr>
               <a:graphicFrameLocks
@@ -5676,30 +5633,7 @@
         <w:t xml:space="preserve">CRITICAL AND BLOCKER</w:t>
       </w:r>
     </w:p>
-
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-
-    <w:p>
-      <w:pPr>
-        <w:spacing w:before="0" w:after="0" />
-        <w:contextualSpacing />
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-        <w:fldChar w:fldCharType="end" />
-      </w:r>
-    </w:p>
-
+    <w:p/>
     <w:p w14:paraId="26419BEF" w14:textId="2D17C542" w:rsidR="00BB2E61" w:rsidRDefault="003622FE"
       w:rsidP="00AB5815">
       <w:pPr>
@@ -5980,7 +5914,7 @@
             </wp:positionV>
             <wp:extent cx="6037580" cy="3018790" />
             <wp:effectExtent l="0" t="0" r="1270" b="0" />
-            <wp:wrapNone />
+            <wp:wrapTopAndBottom />
             <wp:docPr id="2006" name="Picture" />
             <wp:cNvGraphicFramePr>
               <a:graphicFrameLocks
@@ -6042,30 +5976,7 @@
         <w:t xml:space="preserve">CRITICAL AND BLOCKER</w:t>
       </w:r>
     </w:p>
-
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-
-    <w:p>
-      <w:pPr>
-        <w:spacing w:before="0" w:after="0" />
-        <w:contextualSpacing />
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-        <w:fldChar w:fldCharType="end" />
-      </w:r>
-    </w:p>
-
+    <w:p/>
     <w:p w14:paraId="5DB4E4AE" w14:textId="7FB5CD69">
       <w:pPr>
         <w:spacing w:before="0" w:after="0" />
@@ -6595,7 +6506,7 @@
             </wp:positionV>
             <wp:extent cx="6037580" cy="3018790" />
             <wp:effectExtent l="0" t="0" r="1270" b="0" />
-            <wp:wrapNone />
+            <wp:wrapTopAndBottom />
             <wp:docPr id="1006" name="Picture" />
             <wp:cNvGraphicFramePr>
               <a:graphicFrameLocks
@@ -6657,30 +6568,7 @@
         <w:t xml:space="preserve">CRITICAL AND BLOCKER</w:t>
       </w:r>
     </w:p>
-
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-
-    <w:p>
-      <w:pPr>
-        <w:spacing w:before="0" w:after="0" />
-        <w:contextualSpacing />
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-        <w:fldChar w:fldCharType="end" />
-      </w:r>
-    </w:p>
-
+    <w:p/>
     <w:p w14:paraId="5DB4E4AE" w14:textId="7FB5CD69" w:rsidR="004671BD" w:rsidRDefault="004671BD"
       w:rsidP="004671BD">
       <w:pPr>
@@ -6998,7 +6886,7 @@
             </wp:positionV>
             <wp:extent cx="6037580" cy="3018790" />
             <wp:effectExtent l="0" t="0" r="1270" b="0" />
-            <wp:wrapNone />
+            <wp:wrapTopAndBottom />
             <wp:docPr id="1007" name="Picture" />
             <wp:cNvGraphicFramePr>
               <a:graphicFrameLocks
@@ -7060,30 +6948,7 @@
         <w:t xml:space="preserve">CRITICAL AND BLOCKER</w:t>
       </w:r>
     </w:p>
-
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-
-    <w:p>
-      <w:pPr>
-        <w:spacing w:before="0" w:after="0" />
-        <w:contextualSpacing />
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-        <w:fldChar w:fldCharType="end" />
-      </w:r>
-    </w:p>
-
+    <w:p/>
     <w:p>
       <w:pPr>
         <w:pStyle w:val="3" />
@@ -7594,7 +7459,7 @@
             </wp:positionV>
             <wp:extent cx="6037580" cy="3018790" />
             <wp:effectExtent l="0" t="0" r="1270" b="0" />
-            <wp:wrapNone />
+            <wp:wrapTopAndBottom />
             <wp:docPr id="1000" name="Picture" />
             <wp:cNvGraphicFramePr>
               <a:graphicFrameLocks
@@ -7656,30 +7521,7 @@
         <w:t xml:space="preserve">CRITICAL AND BLOCKER</w:t>
       </w:r>
     </w:p>
-
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-
-    <w:p>
-      <w:pPr>
-        <w:spacing w:before="0" w:after="0" />
-        <w:contextualSpacing />
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-        <w:fldChar w:fldCharType="end" />
-      </w:r>
-    </w:p>
-
+    <w:p/>
     <w:p w14:paraId="3355F509" w14:textId="123D1C71" w:rsidR="00117934" w:rsidRDefault="003622FE"
       w:rsidP="00F67C4A">
       <w:pPr>
@@ -8183,7 +8025,7 @@
             </wp:positionV>
             <wp:extent cx="6037580" cy="3018790" />
             <wp:effectExtent l="0" t="0" r="1270" b="0" />
-            <wp:wrapNone />
+            <wp:wrapTopAndBottom />
             <wp:docPr id="1001" name="Picture" />
             <wp:cNvGraphicFramePr>
               <a:graphicFrameLocks
@@ -8245,30 +8087,7 @@
         <w:t xml:space="preserve">CRITICAL AND BLOCKER</w:t>
       </w:r>
     </w:p>
-
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-
-    <w:p>
-      <w:pPr>
-        <w:spacing w:before="0" w:after="0" />
-        <w:contextualSpacing />
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-        <w:fldChar w:fldCharType="end" />
-      </w:r>
-    </w:p>
-
+    <w:p/>
     <w:p w14:paraId="49E265E3" w14:textId="08C14A45" w:rsidR="006E4C6B" w:rsidRPr="0003239C"
       w:rsidRDefault="006E4C6B" w:rsidP="006E4C6B">
       <w:pPr>
@@ -8764,7 +8583,7 @@
             </wp:positionV>
             <wp:extent cx="6037580" cy="3018790" />
             <wp:effectExtent l="0" t="0" r="1270" b="0" />
-            <wp:wrapNone />
+            <wp:wrapTopAndBottom />
             <wp:docPr id="1106" name="Picture" />
             <wp:cNvGraphicFramePr>
               <a:graphicFrameLocks
@@ -8826,30 +8645,7 @@
         <w:t xml:space="preserve">CRITICAL AND BLOCKER</w:t>
       </w:r>
     </w:p>
-
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-    <w:p></w:p>
-
-    <w:p>
-      <w:pPr>
-        <w:spacing w:before="0" w:after="0" />
-        <w:contextualSpacing />
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-        <w:fldChar w:fldCharType="end" />
-      </w:r>
-    </w:p>
-
+    <w:p/>
     <w:p w14:paraId="5DB4E4AE" w14:textId="7FB5CD69">
       <w:pPr>
         <w:spacing w:before="0" w:after="0" />
