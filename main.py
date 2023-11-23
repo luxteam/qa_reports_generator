@@ -30,6 +30,7 @@ from jira_export import (
 from github_export import get_pull_requests_status, get_merged_prs
 from jenkins_export import get_latest_build_data, get_wml_report_link
 from charts_export import export_charts
+from wml_chart_export import export_wml_chart
 import word
 
 REPORT_FILE_PATH = "./weekly_qa_report-{date}.docx"
@@ -263,6 +264,24 @@ def remove_chart(tree, project, chart_type):
     word.remove_element(image_el)
 
 
+def remove_pr_table(tree, project):
+    # find table and it's title 
+    table = word.find_by_id(
+        tree, ids.PR_STATUS_TABLE_ID[project]
+    )
+    table_title = table.getprevious()
+
+    # add note about table absence
+    note_text = "No open pull requests in 2 weeks"
+    paragraph = word.create_paragraph()
+    word.append_content(paragraph, note_text)
+    word.append_element_before(new_el=paragraph, before=table_title)
+
+    # remove elements
+    word.remove_element(table_title)
+    word.remove_element(table)
+
+
 def replace_image(image_el, new_image_path):
     # identify chart placeholder file location
     image_placeholder_path = word.get_image_file_location(image_el)
@@ -413,7 +432,7 @@ def main():
     report_path = REPORT_FILE_PATH.format(date=report_date.strftime("%d-%m-%Y"))
 
     prepare_working_directory(report_path)
-    print("[0/11] Initial preparations...")
+    print("[0/12] Initial preparations...")
 
     # load document.xml (main xml file)
     tree = word.load_xml(word.DOCUMENT_PATH)
@@ -428,7 +447,7 @@ def main():
 
     ###############################################################
     # update projects status table
-    print("[1/11] Projects status table...")
+    print("[1/12] Projects status table...")
 
     blockers = get_blockers(report_date)
     crits = get_crits(report_date)
@@ -448,7 +467,7 @@ def main():
 
     ###############################################################
     # update summary table
-    print("[2/11] Summary table...")
+    print("[2/12] Summary table...")
 
     # Found issues
     found_issues = get_bugs(report_date)
@@ -483,7 +502,7 @@ def main():
 
     ###############################################################
     # update issues plots
-    print("[3/11] Issue plots...")
+    print("[3/12] Issue plots...")
 
     for project in ids.ISSUES_PLOT:
         plot_id = ids.ISSUES_PLOT[project]
@@ -495,20 +514,23 @@ def main():
 
     ###############################################################
     # update PRs status tables
-    print("[4/11] PRs status tables...")
+    print("[4/12] PRs status tables...")
 
     for project in ids.PR_STATUS_TABLE_ID:
         if project in [Projects.SOLIDWORKS]:
             continue
         # skip solidworks for now
         data = get_pull_requests_status(project, report_date)
-        fill_pr_table(tree, project, data)
-
-        project_added_elements[project] += len(data)
+        if not data:
+            remove_pr_table(tree, project)
+            project_added_elements[project] -= 3
+        else:
+            fill_pr_table(tree, project, data)
+            project_added_elements[project] += len(data)
 
     ###############################################################
     # import tasks
-    print("[5/11] Task lists...")
+    print("[5/12] Task lists...")
 
     projects_tasks = get_tasks(report_date)
 
@@ -522,7 +544,7 @@ def main():
 
     ###############################################################
     # fill main tasks table
-    print("[6/11] Main tasks...")
+    print("[6/12] Main tasks...")
 
     main_tasks = get_main_tasks(projects_tasks)
 
@@ -533,7 +555,7 @@ def main():
 
     ###############################################################
     # fill blockers list
-    print("[7/11] Blockers list...")
+    print("[7/12] Blockers list...")
 
     blockers_by_proj = get_blockers(report_date)
     blockers = []
@@ -555,7 +577,7 @@ def main():
 
     ###############################################################
     # update bugs links
-    print("[8/11] Bugs links")
+    print("[8/12] Bugs links...")
 
     projects_bugs = get_bugs(report_date)
 
@@ -578,7 +600,7 @@ def main():
 
     ###############################################################
     # update report period in footer
-    print("[9/11] Report dates...")
+    print("[9/12] Report dates...")
 
     footer_tree = word.load_xml(word.FOOTER_PATH)
 
@@ -592,7 +614,7 @@ def main():
 
     ###############################################################
     # import images
-    print("[10/11] Charts...")
+    print("[10/12] Charts...")
 
     available_charts = export_charts()
 
@@ -626,7 +648,22 @@ def main():
             word.append_element_after(new_el=page_break, after=bugs_link_paragraph)
 
     ###############################################################
-    print("[11/11] Saving report...")
+    # import wml plot
+    print("[11/12] WML chart...")
+
+    wml_chart_path = export_wml_chart()
+
+    # if new chart available
+    if wml_chart_path is None:
+        print("ERROR: No WML chart in the report!!!")
+        exit(-1)
+
+    image_el = word.find_by_id(tree, ids.WML_CHART_ID)
+    # replace chart image
+    replace_image(image_el, wml_chart_path)
+
+    ###############################################################
+    print("[12/12] Saving report...")
 
     # save report document.xml
     word.write_xml(tree, word.DOCUMENT_PATH)

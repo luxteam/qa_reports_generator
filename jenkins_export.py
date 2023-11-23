@@ -7,12 +7,6 @@ from typing import Dict
 import json
 from urllib.parse import urljoin
 from lxml import etree
-
-# from selenium import webdriver
-# from selenium.webdriver.common.by import By
-# from selenium.webdriver.support import expected_conditions as EC
-# from selenium.webdriver.support.ui import WebDriverWait
-
 from common import Projects
 
 
@@ -30,7 +24,7 @@ PROJECT_TO_JOB_MAPPING: Dict[Projects, Dict[str, str]] = {
     Projects.HDRPR: {"default": "job/HdRPR-Weekly"},
     Projects.MATERIALX: {"default": "job/MaterialXvsHdRPR-Weekly"},
     Projects.SOLIDWORKS: {},
-    Projects.INVENTOR: {"default": "job/USD-Viewer-Weekly"},
+    # Projects.INVENTOR: {"default": "job/USD-Viewer-Weekly"},
     Projects.RPRHYBRID: {},
 }
 
@@ -106,51 +100,6 @@ def get_wml_report_link():
     project_path = "job/WML-Weekly"
     latest_build = _get_latest_build(project_path)
     return urljoin(latest_build["lastBuild"]["url"], "allure")
-
-
-# def get_allure_summary_board():
-#     report_url = get_wml_report_link()
-#     driver = webdriver.Firefox(executable_path="./geckodriver.exe")
-#     driver.set_window_size(1920, 1080)
-
-#     driver.get(report_url)
-
-#     basic_auth = [
-#         "browserstack_executor",
-#         {
-#             "action": "sendBasicAuth",
-#             "arguments": {
-#                 "timeout": "1000",
-#                 "username": JENKINS_USERNAME,
-#                 "password": JENKINS_TOKEN,
-#             },
-#         },
-#     ]
-
-#     y = json.dumps(basic_auth)
-
-#     driver.execute_script(y)
-
-#     # wait for chart to render
-#     WebDriverWait(driver, 10).until(
-#         EC.presence_of_element_located((By.XPATH, "//*[@class='chart__plot']"))
-#     )
-
-#     # find summary table
-#     chart_el = driver.find_element(By.XPATH, "//*[@class='widgets-grid__col']")
-
-#     # screen chart box
-#     img_name = "allure_summary.png"
-#     chart_el.screenshot(img_name)
-
-#     # crop screenshot
-#     # img = Image.open(img_name)
-#     # box = (150, 0, img.width - 160, img.height)
-#     # img.crop(box).save(img_name)
-
-#     driver.close()
-
-#     return img_name
 
 
 if __name__ == "__main__":

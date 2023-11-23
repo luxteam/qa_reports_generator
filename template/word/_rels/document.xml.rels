@@ -212,4 +212,7 @@
   <Relationship Id="rId_INVENTOR_UNRESOLVED_ISSUES_PLOT"
     Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
     Target="media/image16.png" />
+  <Relationship Id="rId_WML_PLOT"
+    Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+    Target="media/wml_chart.png" />
 </Relationships>
