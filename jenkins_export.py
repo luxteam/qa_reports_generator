@@ -8,6 +8,7 @@ import json
 from urllib.parse import urljoin
 from lxml import etree
 from common import Projects
+from http import HTTPStatus
 
 
 JENKINS_HOST = os.getenv("JENKINS_HOST", "rpr.cis.luxoft.com")
@@ -30,10 +31,16 @@ PROJECT_TO_JOB_MAPPING: Dict[Projects, Dict[str, str]] = {
 
 
 def _get_latest_build(project_path: str) -> dict:
-    return requests.get(
+    response = requests.get(
         f"https://{JENKINS_HOST}/{project_path}/api/json?tree=lastBuild[*]",
         auth=HTTPBasicAuth(JENKINS_USERNAME, JENKINS_TOKEN),
-    ).json()
+    )
+
+    if response.status_code == HTTPStatus.UNAUTHORIZED:
+        print("ERROR: Jenkins token in env var 'JENKINS_TOKEN' is invalid!")
+        exit(-1)
+    
+    return response.json()
 
 
 def _get_latest_build_date(build_data: dict) -> str:
@@ -43,10 +50,16 @@ def _get_latest_build_date(build_data: dict) -> str:
 
 
 def _get_latest_report_link(build_data: dict) -> str:
-    latest_build_page = requests.get(
+    response = requests.get(
         build_data["lastBuild"]["url"],
         auth=HTTPBasicAuth(JENKINS_USERNAME, JENKINS_TOKEN),
-    ).text
+    )
+
+    if response.status_code == HTTPStatus.UNAUTHORIZED:
+        print("ERROR: Jenkins token in env var 'JENKINS_TOKEN' is invalid!")
+        exit(-1)
+
+    latest_build_page = response.text
 
     # report link can have different ending, e.g. Test_20Report or Test_20Report_20Northstar
     # however, it always contains 'Test_20Report'
@@ -108,4 +121,3 @@ if __name__ == "__main__":
 
     print("WML :))))))))")
     print("Report link: {link}".format(link=get_wml_report_link()))
-    # get_allure_summary_board()

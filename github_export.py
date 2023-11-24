@@ -3,6 +3,7 @@ import requests
 import json
 from datetime import datetime, timedelta
 from common import Projects, Link
+from http import HTTPStatus
 
 GITHUB_TOKEN = os.environ["GITHUB_TOKEN"]
 
@@ -53,6 +54,11 @@ def request_pull_requests_list(project: Projects, report_date: datetime):
         url,
         headers={"Authorization": f"Bearer {GITHUB_TOKEN}"},
     )
+
+    if response.status_code == HTTPStatus.UNAUTHORIZED:
+        print("ERROR: Github token 'GITHUB_TOKEN' is invalid!")
+        exit(-1)
+
     data = json.loads(response.text)
 
     # filter pull requests (open or updated in last two weeks)

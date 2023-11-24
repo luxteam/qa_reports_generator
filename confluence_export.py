@@ -1,6 +1,7 @@
 import os
 import requests
 import json
+from http import HTTPStatus
 from lxml import html
 from datetime import datetime, timedelta
 from typing import Dict
@@ -24,20 +25,48 @@ projects_confluence_names = {
 }
 
 
-def _request_projects_statuses_page(report_date: datetime) -> html.Element:
-    url = "https://luxproject.luxoft.com/confluence/rest/api/content"
-
+def validate_token():
     headers = {
         "Accept": "application/json",
         "Authorization": f"Bearer {CONFLUENCE_TOKEN}",
     }
 
     response = requests.get(
-        f"{url}/?title=Thursday weekly {report_date.strftime('%d/%m/%Y')}&expand=body.storage",
+        "https://luxproject.luxoft.com/confluence/rest/api/user/current",
         headers=headers,
     )
 
-    page_content = json.loads(response.text)["results"][0]["body"]["storage"]["value"]
+    if response.json()['type'] == "anonymous": 
+        print("ERROR: Confluence token 'CONFLUENCE_TOKEN' is invalid!")
+        exit(-1)
+
+
+# validate token on module's load
+validate_token()
+
+
+def _request_projects_statuses_page(report_date: datetime) -> html.Element:
+    headers = {
+        "Accept": "application/json",
+        "Authorization": f"Bearer {CONFLUENCE_TOKEN}",
+    }
+
+    url = "https://luxproject.luxoft.com/confluence/rest/api/content"
+
+    report_title = f"Thursday weekly {report_date.strftime('%d/%m/%Y')}"
+
+    response = requests.get(
+        f"{url}/?title={report_title}&expand=body.storage",
+        headers=headers,
+    )
+
+    results = response.json()['results']
+
+    if not results:
+        print(f"ERROR: Confluence report '{report_title}' not found!")
+        exit(-1)
+
+    page_content = results[0]["body"]["storage"]["value"]
     return html.fromstring(page_content)
 
 

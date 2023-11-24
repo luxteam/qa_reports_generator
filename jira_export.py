@@ -67,6 +67,15 @@ projects_jira_open_statuses = {
     Projects.INVENTOR: '"In Progress", "In Testing", Open, Reopened',
 }
 
+def validate_token():
+    issues = jira_instance.jql("")
+    if issues['total'] == 0:
+        print("ERROR: Jira token 'JIRA_TOKEN' is invalid!")
+        exit(-1)
+
+
+# validate token on module's load
+validate_token()
 
 def get_blockers_link(project: Projects, report_date: datetime) -> str:
     name = projects_jira_names[project]
@@ -243,20 +252,22 @@ def get_issues_statistic(project: Projects, report_date: datetime, type: IssueTy
 
 
 if __name__ == "__main__":
+    today = datetime.today()
+
     print("Bugs: ")
-    bugs = get_bugs(datetime.today())
+    bugs = get_bugs(today)
     for project in projects_jira_names:
         print(projects_jira_names[project] + ": ")
         print(json.dumps(bugs[project], indent=4))
 
     print("Blockers:")
-    blockers = get_blockers()
+    blockers = get_blockers(today)
     for project in blockers:
         print(projects_jira_names[project])
         print(json.dumps(blockers[project], indent=4))
 
     print("Criticals:")
-    crits = get_crits()
+    crits = get_crits(today)
     for project in crits:
         print(projects_jira_names[project])
         print(json.dumps(crits[project], indent=4))
